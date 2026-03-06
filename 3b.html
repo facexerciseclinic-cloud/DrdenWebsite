@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year of 3B BIOHACK | DR.DEN Clinic - สถาปัตยกรรมความงามแห่งทศวรรษใหม่</title>
+    <meta name="description" content="3B BIOHACK - แคมเปญปีแห่งความงามครบมิติ Biohack · Build · Balance เซลลูลาร์รีเซ็ต สร้างโครงสร้างผิว ปรับสมดุลใบหน้า ที่ DR.DEN Clinic">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="3b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <!-- Magnetic Cursor Follower -->
+    <div class="bb-cursor-glow" id="cursorGlow"></div>
+
+    <section class="bb-hero">
+        <canvas class="bb-hero-canvas" id="heroCanvas"></canvas>
+        <div class="bb-hero-bg">
+            <div class="bb-hero-orb bb-hero-orb--1"></div>
+            <div class="bb-hero-orb bb-hero-orb--2"></div>
+            <div class="bb-hero-orb bb-hero-orb--3"></div>
+        </div>
+        <div class="container">
+            <div class="bb-hero-content">
+                <span class="bb-hero-badge">
+                    <i class="fas fa-dna"></i> Year of 3B Campaign
+                </span>
+                <h1 class="bb-hero-title">
+                    <span class="bb-hero-title-line">
+                        <span class="bb-letter bb-letter--b">B</span>IOHACK ·
+                        <span class="bb-letter bb-letter--b">B</span>UILD ·
+                        <span class="bb-letter bb-letter--b">B</span>ALANCE
+                    </span>
+                    <span class="bb-hero-subtitle">สถาปัตยกรรมความงามแห่งทศวรรษใหม่</span>
+                </h1>
+                <p class="bb-hero-desc">
+                    ผสาน 3 หัตถการหลักแห่งยุคเข้าด้วยกัน เพื่อแก้ไขปัญหาตั้งแต่ระดับเซลล์ โครงสร้างผิว
+                    ไปจนถึงการปรับสมดุลมิติบนใบหน้า เพื่อผลลัพธ์ที่ชัดเจน เป็นธรรมชาติ และยั่งยืนกว่าที่เคย
+                </p>
+                <div class="bb-hero-actions">
+                    <a href="#journey" class="bb-btn bb-btn--primary">
+                        <i class="fas fa-route"></i> เริ่มต้น Journey
+                    </a>
+                    <a href="#pillars" class="bb-btn bb-btn--outline">
+                        <i class="fas fa-flask"></i> รู้จัก 3B
+                    </a>
+                </div>
+                <!-- 3 Mini Stat cards -->
+                <div class="bb-hero-stats">
+                    <div class="bb-hero-stat">
+                        <span class="bb-hero-stat-icon"><i class="fas fa-microscope"></i></span>
+                        <div>
+                            <strong>Cellular Level</strong>
+                            <span>ฟื้นฟูระดับเซลล์</span>
+                        </div>
+                    </div>
+                    <div class="bb-hero-stat">
+                        <span class="bb-hero-stat-icon"><i class="fas fa-cubes"></i></span>
+                        <div>
+                            <strong>Structural Level</strong>
+                            <span>สร้างโครงสร้างผิว</span>
+                        </div>
+                    </div>
+                    <div class="bb-hero-stat">
+                        <span class="bb-hero-stat-icon"><i class="fas fa-balance-scale"></i></span>
+                        <div>
+                            <strong>Harmonization</strong>
+                            <span>ปรับสมดุลใบหน้า</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         THREE PILLARS SECTION
+         ============================================ -->
+    <section class="bb-pillars" id="pillars">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">3 เสาหลักแห่งความงาม</span>
+                <h2 class="section-title">เสาหลักของ 3B BIOHACK</h2>
+                <p class="section-description">สถาปัตยกรรมความงามที่ทำงานร่วมกัน 3 มิติ เพื่อผลลัพธ์ที่ยั่งยืน</p>
+            </div>
+
+            <!-- Pillar Tabs -->
+            <div class="bb-pillar-tabs">
+                <button class="bb-pillar-tab active" data-pillar="biohack">
+                    <i class="fas fa-dna"></i>
+                    <span>BIOHACK</span>
+                </button>
+                <button class="bb-pillar-tab" data-pillar="build">
+                    <i class="fas fa-cubes"></i>
+                    <span>BUILD</span>
+                </button>
+                <button class="bb-pillar-tab" data-pillar="balance">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>BALANCE</span>
+                </button>
+            </div>
+
+            <!-- Pillar Content Panels -->
+            <div class="bb-pillar-panels">
+                <!-- BIOHACK Panel -->
+                <div class="bb-pillar-panel active" data-panel="biohack">
+                    <div class="bb-panel-grid">
+                        <div class="bb-panel-info">
+                            <div class="bb-panel-badge bb-panel-badge--biohack">
+                                <i class="fas fa-dna"></i> เสาหลักที่ 1
+                            </div>
+                            <h3 class="bb-panel-title">
+                                🧬 BIOHACK
+                                <span>Cellular Reset</span>
+                            </h3>
+                            <p class="bb-panel-subtitle">หัตถการหลัก: กลุ่ม NCTF & Skin Booster</p>
+                            <p class="bb-panel-desc">
+                                การ "แฮ็ก" ระบบความเสื่อมโทรมของผิว และรีสตาร์ทเซลล์ผิวใหม่จากภายใน
+                                เป็นด่านแรกของการเตรียมความพร้อมให้ผิวกลับมาแข็งแรง สามารถเปิดรับการฟื้นฟูในขั้นตอนต่อไปได้อย่างเต็มประสิทธิภาพ
+                            </p>
+                            <div class="bb-panel-mechanism">
+                                <h4><i class="fas fa-cogs"></i> กลไกการทำงาน</h4>
+                                <p>NCTF คือสูตรอาหารผิวระดับเซลล์ที่อัดแน่นด้วยกรดอะมิโน วิตามิน แร่ธาตุ โคเอนไซม์ และไฮยาลูรอนิกแอซิดมากกว่า 50 ชนิด ส่งตรงเข้าสู่ชั้นผิวหนังแท้ (Dermis) เพื่อกระตุ้น Cellular Metabolism และการสร้าง Fibroblast</p>
+                            </div>
+                        </div>
+                        <div class="bb-panel-details">
+                            <div class="bb-detail-card">
+                                <h4><i class="fas fa-crosshairs"></i> ปัญหาที่ตอบโจทย์</h4>
+                                <ul class="bb-checklist">
+                                    <li><i class="fas fa-check-circle"></i> ผิวขาดน้ำแต่หน้ามัน (Dehydrated & Oily Skin)</li>
+                                    <li><i class="fas fa-check-circle"></i> ผิวหมองคล้ำ ขาดความกระจ่างใส ดูเหนื่อยล้า</li>
+                                    <li><i class="fas fa-check-circle"></i> รูขุมขนกว้าง ผิวหยาบกร้าน แต่งหน้าไม่ติด</li>
+                                </ul>
+                            </div>
+                            <div class="bb-detail-card bb-detail-card--result">
+                                <h4><i class="fas fa-star"></i> ผลลัพธ์ที่ได้</h4>
+                                <p>ผิวกลับมาฉ่ำวาว <strong>(Glass Skin Effect)</strong> อิ่มฟู ดูโกลว์สุขภาพดี รูขุมขนกระชับขึ้น และปราการผิวแข็งแรงทนทานต่อมลภาวะ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUILD Panel -->
+                <div class="bb-pillar-panel" data-panel="build">
+                    <div class="bb-panel-grid">
+                        <div class="bb-panel-info">
+                            <div class="bb-panel-badge bb-panel-badge--build">
+                                <i class="fas fa-cubes"></i> เสาหลักที่ 2
+                            </div>
+                            <h3 class="bb-panel-title">
+                                🧱 BUILD
+                                <span>Structural Enhancement</span>
+                            </h3>
+                            <p class="bb-panel-subtitle">หัตถการหลัก: กลุ่ม Collagen Biostimulator (Sculptra, Radiesse ฯลฯ)</p>
+                            <p class="bb-panel-desc">
+                                การ "สร้าง" โครงสร้างและรากฐานของผิวใหม่ให้แน่นหนา เสมือนการลงเสาเข็มให้ผิวที่ยุบตัวหรือบางลงตามกาลเวลา
+                                กลับมามีความยืดหยุ่นและสปริงตัวได้ดีอีกครั้ง
+                            </p>
+                            <div class="bb-panel-mechanism">
+                                <h4><i class="fas fa-cogs"></i> กลไกการทำงาน</h4>
+                                <p>สารกระตุ้นการสร้างคอลลาเจน (Biostimulators) จะถูกเดินยาเข้าไปในชั้นผิวที่เหมาะสม เพื่อกระตุ้นระบบภูมิคุ้มกันให้สร้าง Type 1 Collagen และ Elastin ซึ่งเป็นโครงสร้างหลักที่ทำให้ผิวเด็ก โดยสร้างจากเซลล์ของร่างกายอย่างแท้จริง</p>
+                            </div>
+                        </div>
+                        <div class="bb-panel-details">
+                            <div class="bb-detail-card">
+                                <h4><i class="fas fa-crosshairs"></i> ปัญหาที่ตอบโจทย์</h4>
+                                <ul class="bb-checklist">
+                                    <li><i class="fas fa-check-circle"></i> ผิวบาง ย้วย ไม่กระชับ (Skin Laxity)</li>
+                                    <li><i class="fas fa-check-circle"></i> คุณภาพผิวเสื่อมสภาพ มีริ้วรอยเล็กๆ ทั่วใบหน้า</li>
+                                    <li><i class="fas fa-check-circle"></i> ความหย่อนคล้อยระดับเริ่มต้นถึงปานกลาง จากการสูญเสียคอลลาเจนตามวัย</li>
+                                </ul>
+                            </div>
+                            <div class="bb-detail-card bb-detail-card--result">
+                                <h4><i class="fas fa-star"></i> ผลลัพธ์ที่ได้</h4>
+                                <p>ผิวมีความหนาแน่นขึ้น <strong>(Skin Thickness)</strong> เด้ง กระชับ ริ้วรอยยับๆ บนผิวดูเรียบเนียนขึ้น ผลลัพธ์ค่อยๆ ดีขึ้นอย่างเป็นธรรมชาติและอยู่ได้ยาวนาน <strong>1-2 ปี</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BALANCE Panel -->
+                <div class="bb-pillar-panel" data-panel="balance">
+                    <div class="bb-panel-grid">
+                        <div class="bb-panel-info">
+                            <div class="bb-panel-badge bb-panel-badge--balance">
+                                <i class="fas fa-balance-scale"></i> เสาหลักที่ 3
+                            </div>
+                            <h3 class="bb-panel-title">
+                                ⚖️ BALANCE
+                                <span>Harmonizing & Lifting</span>
+                            </h3>
+                            <p class="bb-panel-subtitle">หัตถการหลัก: กลุ่มฟิลเลอร์ (Dermal Filler) & เครื่องมือยกกระชับ (Ulthera, Thermage, Ultraformer)</p>
+                            <p class="bb-panel-desc">
+                                การ "ปรับสมดุล" คืนสัดส่วนที่สมบูรณ์แบบให้ใบหน้า เก็บรายละเอียดความบกพร่อง พร้อมยกกระชับต้านแรงโน้มถ่วง
+                                เพื่อผลลัพธ์ความงามที่ลงตัวและมีมิติในทุกองศา
+                            </p>
+                            <div class="bb-panel-mechanism">
+                                <h4><i class="fas fa-cogs"></i> กลไกการทำงาน</h4>
+                                <p><strong>Lifting Devices:</strong> ใช้พลังงานคลื่นเสียง (Ultrasound) หรือคลื่นวิทยุ (Radiofrequency) ยิงลงลึกถึงชั้น SMAS เพื่อหดตัวและยกกระชับ<br>
+                                <strong>Dermal Filler:</strong> ใช้ HA เติมเต็มการยุบตัวของกระดูกและไขมันชั้นลึก ช่วยหนุนโครงสร้างใบหน้าให้ได้รูปทรงที่สวยงาม</p>
+                            </div>
+                        </div>
+                        <div class="bb-panel-details">
+                            <div class="bb-detail-card">
+                                <h4><i class="fas fa-crosshairs"></i> ปัญหาที่ตอบโจทย์</h4>
+                                <ul class="bb-checklist">
+                                    <li><i class="fas fa-check-circle"></i> หย่อนคล้อยชัดเจน กรอบหน้าไม่ชัด มีเหนียง</li>
+                                    <li><i class="fas fa-check-circle"></i> ร่องลึกต่างๆ (ร่องแก้ม, เบ้าตาลึก, ขมับตอบ)</li>
+                                    <li><i class="fas fa-check-circle"></i> สัดส่วนใบหน้าไม่ได้รูป ขาดมิติ ไม่สมมาตร</li>
+                                </ul>
+                            </div>
+                            <div class="bb-detail-card bb-detail-card--result">
+                                <h4><i class="fas fa-star"></i> ผลลัพธ์ที่ได้</h4>
+                                <p>ใบหน้าดูเด็กลงอย่างเห็นได้ชัด กรอบหน้าคมชัด มีมิติ ร่องลึกตื้นขึ้น ผิวดูตึงกระชับ โดย<strong>ยังคงความเป็นธรรมชาติ</strong>และเอกลักษณ์เฉพาะบุคคล</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SYNERGY QUOTE SECTION
+         ============================================ -->
+    <section class="bb-synergy">
+        <div class="container">
+            <div class="bb-synergy-card">
+                <div class="bb-synergy-icon"><i class="fas fa-infinity"></i></div>
+                <h2>The Synergy of 3B</h2>
+                <p class="bb-synergy-subtitle">ทำไมต้องผสานทั้ง 3 หัตถการ?</p>
+                <blockquote class="bb-synergy-quote">
+                    "เมื่อเซลล์ผิวได้รับการฟื้นฟู <strong>(Biohack)</strong> โครงสร้างคอลลาเจนถูกสร้างใหม่ให้แข็งแรง <strong>(Build)</strong>
+                    และสัดส่วนใบหน้าถูกปรับให้สมดุล <strong>(Balance)</strong> ผลลัพธ์ที่ได้จึงไม่ใช่แค่การแก้ปัญหาชั่วคราว
+                    แต่คือการ<em>รีเวิร์สอายุผิว</em>ให้กลับไปสู่จุดที่ดีที่สุด และคงความอ่อนเยาว์ได้อย่างยั่งยืน"
+                </blockquote>
+                <div class="bb-synergy-flow">
+                    <div class="bb-flow-step">
+                        <div class="bb-flow-icon bb-flow-icon--biohack"><i class="fas fa-dna"></i></div>
+                        <span>Biohack</span>
+                    </div>
+                    <div class="bb-flow-arrow"><i class="fas fa-plus"></i></div>
+                    <div class="bb-flow-step">
+                        <div class="bb-flow-icon bb-flow-icon--build"><i class="fas fa-cubes"></i></div>
+                        <span>Build</span>
+                    </div>
+                    <div class="bb-flow-arrow"><i class="fas fa-plus"></i></div>
+                    <div class="bb-flow-step">
+                        <div class="bb-flow-icon bb-flow-icon--balance"><i class="fas fa-balance-scale"></i></div>
+                        <span>Balance</span>
+                    </div>
+                    <div class="bb-flow-arrow"><i class="fas fa-equals"></i></div>
+                    <div class="bb-flow-step bb-flow-step--result">
+                        <div class="bb-flow-icon bb-flow-icon--result"><i class="fas fa-gem"></i></div>
+                        <span>ผลลัพธ์ยั่งยืน</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         3B JOURNEY SECTION
+         ============================================ -->
+    <section class="bb-journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">เส้นทางสู่ความงามครบมิติ</span>
+                <h2 class="section-title">3B Journey</h2>
+                <p class="section-description">เริ่มต้นง่าย ปลดล็อกสิทธิ์ขั้นต่อไป สะสมจนครบ เพื่อรับรางวัลสูงสุด</p>
+            </div>
+
+            <!-- Journey Highlights -->
+            <div class="bb-philosophy">
+                <div class="bb-philo-card">
+                    <i class="fas fa-door-open"></i>
+                    <span>เริ่มต้นง่าย<br>ปรึกษาแพทย์ก่อนได้</span>
+                </div>
+                <div class="bb-philo-card">
+                    <i class="fas fa-random"></i>
+                    <span>เลือกหมวดอิสระ<br>ไม่บังคับลำดับ</span>
+                </div>
+                <div class="bb-philo-card">
+                    <i class="fas fa-tags"></i>
+                    <span>ราคา Fair Price<br>ทุกหัตถการ</span>
+                </div>
+                <div class="bb-philo-card">
+                    <i class="fas fa-gift"></i>
+                    <span>ปลดล็อกรางวัล<br>ทุกขั้นตอน</span>
+                </div>
+                <div class="bb-philo-card">
+                    <i class="fas fa-crown"></i>
+                    <span>สิทธิ์ VVIP<br>เมื่อครบเควสต์</span>
+                </div>
+            </div>
+
+            <!-- Journey Steps -->
+            <div class="bb-journey-timeline">
+                <!-- Step 1: Tele-Consult -->
+                <div class="bb-step" data-step="start">
+                    <div class="bb-step-marker">
+                        <div class="bb-step-number">START</div>
+                    </div>
+                    <div class="bb-step-card">
+                        <div class="bb-step-header">
+                            <div class="bb-step-icon bb-step-icon--start">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div>
+                                <h3>Tele-Consult</h3>
+                                <span class="bb-step-tag">นัดปรึกษาแพทย์ออนไลน์</span>
+                            </div>
+                        </div>
+                        <p>ทักแชท และจองคิว Tele-Consult เพื่อให้แพทย์ประเมินรูปหน้าและวางแผน <strong>3B Roadmap</strong> เฉพาะบุคคล</p>
+                        <div class="bb-step-reward">
+                            <div class="bb-reward-badge bb-reward-badge--silver">
+                                <i class="fas fa-ticket-alt"></i> Silver Pass
+                            </div>
+                            <div class="bb-reward-detail">
+                                <strong>รับฟรี Silver Pass</strong> (มูลค่า 299 บาท)<br>
+                                ใช้เปิดบิลแรกที่คลินิก สิทธิ์ซื้อหัตถการหมวด Silver ในเรท Fair Price ทันที
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Unlock B #1 -->
+                <div class="bb-step" data-step="1">
+                    <div class="bb-step-marker">
+                        <div class="bb-step-number">B1</div>
+                    </div>
+                    <div class="bb-step-card">
+                        <div class="bb-step-header">
+                            <div class="bb-step-icon bb-step-icon--b1">
+                                <i class="fas fa-lock-open"></i>
+                            </div>
+                            <div>
+                                <h3>ปลดล็อก B ตัวที่ 1</h3>
+                                <span class="bb-step-tag bb-step-tag--gold">เริ่มที่หมวดไหนก่อนก็ได้</span>
+                            </div>
+                        </div>
+                        <p>เปิดบิลแรกด้วยหมวดที่ต้องการ เช่น <strong>Biohack</strong> → NCTF</p>
+
+                        <!-- Pricing Example -->
+                        <div class="bb-pricing-box">
+                            <h4><i class="fas fa-tags"></i> ตัวอย่างเรทราคา (NCTF)</h4>
+                            <div class="bb-price-options">
+                                <div class="bb-price-option">
+                                    <div class="bb-price-label">Option 1</div>
+                                    <div class="bb-price-value">9,900.-<span>/ขวด</span></div>
+                                    <div class="bb-price-note">ราคาปกติ</div>
+                                </div>
+                                <div class="bb-price-option bb-price-option--highlight">
+                                    <div class="bb-price-label">Option 2</div>
+                                    <div class="bb-price-value">7,900.-<span>/ขวด</span></div>
+                                    <div class="bb-price-note">ลูกค้าเก่าที่เคยซื้อ หรือลูกค้าใหม่ซื้อคู่กลุ่ม Build</div>
+                                    <div class="bb-price-save"><i class="fas fa-arrow-down"></i> ประหยัด 2,000.-</div>
+                                </div>
+                                <div class="bb-price-option bb-price-option--best">
+                                    <div class="bb-price-best-label"><i class="fas fa-crown"></i> คุ้มที่สุด</div>
+                                    <div class="bb-price-label">Option 3</div>
+                                    <div class="bb-price-value">6,900.-<span>/ขวด</span></div>
+                                    <div class="bb-price-note">ซื้อ 3 ขวด = 20,700.- (จาก 29,700.-)</div>
+                                    <div class="bb-price-save"><i class="fas fa-arrow-down"></i> ประหยัด 9,000.-</div>
+                                </div>
+                            </div>
+                            <p class="bb-price-cross-note">
+                                <i class="fas fa-info-circle"></i>
+                                Build ที่ร่วมรายการ: Sculptra, Radiesse, Gouri, Juvelook, Profhilo, HarmonyCa
+                            </p>
+                        </div>
+
+                        <div class="bb-step-reward">
+                            <div class="bb-reward-badge bb-reward-badge--gold">
+                                <i class="fas fa-ticket-alt"></i> Gold Pass
+                            </div>
+                            <div class="bb-reward-detail">
+                                <strong>ได้ตราประทับดวงแรก</strong> + รับฟรี <strong>Gold Pass</strong> (มูลค่า 999 บาท)<br>
+                                สิทธิ์ซื้อไอเทมหมวด Gold (Biostimulator ตัวท็อป) ได้สูงสุด 4 อย่างในเรท Fair Price
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Unlock B #2 -->
+                <div class="bb-step" data-step="2">
+                    <div class="bb-step-marker">
+                        <div class="bb-step-number">B2</div>
+                    </div>
+                    <div class="bb-step-card">
+                        <div class="bb-step-header">
+                            <div class="bb-step-icon bb-step-icon--b2">
+                                <i class="fas fa-lock-open"></i>
+                            </div>
+                            <div>
+                                <h3>ปลดล็อก B ตัวที่ 2</h3>
+                                <span class="bb-step-tag bb-step-tag--blue">กลับมาใช้ Pass ทำหมวดถัดไป</span>
+                            </div>
+                        </div>
+                        <p>นำ Gold Pass มาใช้ทำหัตถการหมวดที่ 2 เช่น <strong>Build</strong> → Sculptra</p>
+                        <div class="bb-step-reward">
+                            <div class="bb-reward-badge bb-reward-badge--paragon">
+                                <i class="fas fa-crown"></i> Paragon Card
+                            </div>
+                            <div class="bb-reward-detail">
+                                <strong>ได้ตราประทับดวงที่สอง</strong> + ปลดล็อกรางวัลใหญ่! รับฟรี <strong>Paragon Card</strong> (มูลค่า 2,999 บาท)<br>
+                                สถานะบัตรสูงสุด ซื้อหัตถการทุกหมวดแบบ<strong>ไม่จำกัดครั้ง</strong>ด้วยเรท Fair Price (ใช้ได้ 3 เดือน)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Unlock B #3 -->
+                <div class="bb-step" data-step="3">
+                    <div class="bb-step-marker">
+                        <div class="bb-step-number">B3</div>
+                    </div>
+                    <div class="bb-step-card bb-step-card--final">
+                        <div class="bb-step-header">
+                            <div class="bb-step-icon bb-step-icon--b3">
+                                <i class="fas fa-flag-checkered"></i>
+                            </div>
+                            <div>
+                                <h3>ปลดล็อก B ตัวที่ 3</h3>
+                                <span class="bb-step-tag bb-step-tag--green">จบเควสต์ 3B!</span>
+                            </div>
+                        </div>
+                        <p>ซื้อหมวดสุดท้าย เช่น <strong>Balance</strong> → Filler + Lifting</p>
+
+                        <div class="bb-condition-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>เงื่อนไขสำคัญ:</strong> ยอดบิลของหมวดสุดท้ายต้อง<strong>ไม่ต่ำกว่า 15,000 บาท</strong>
+                            </div>
+                        </div>
+
+                        <div class="bb-step-reward">
+                            <div class="bb-reward-badge bb-reward-badge--voucher">
+                                <i class="fas fa-gift"></i> Cash Voucher
+                            </div>
+                            <div class="bb-reward-detail">
+                                <strong>ตราประทับครบ!</strong> ภารกิจ 3B สำเร็จ 🎉<br>
+                                <div class="bb-voucher-options">
+                                    <div class="bb-voucher-opt">
+                                        <strong>3,000 บาท</strong>
+                                        <span>Voucher สำหรับใช้ครั้งถัดไป</span>
+                                    </div>
+                                    <div class="bb-voucher-opt bb-voucher-opt--review">
+                                        <strong>5,000 บาท</strong>
+                                        <span>Voucher เมื่อสนใจเป็นเคสรีวิว</span>
+                                    </div>
+                                </div>
+                                <small><i class="fas fa-clock"></i> Voucher มีอายุ 3 เดือน</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         VVIP - THE ULTIMATE MASTERPIECE
+         ============================================ -->
+    <section class="bb-vvip" id="vvip">
+        <canvas class="bb-vvip-canvas" id="vvipCanvas"></canvas>
+        <div class="container">
+            <div class="bb-vvip-wrapper">
+                <div class="bb-vvip-glow"></div>
+                <div class="bb-vvip-header">
+                    <span class="bb-vvip-crown"><i class="fas fa-crown"></i></span>
+                    <h2>The Ultimate Masterpiece</h2>
+                    <p class="bb-vvip-subtitle">3B Masterpiece VVIP</p>
+                    <p class="bb-vvip-desc">สำหรับผู้ที่ปรึกษาแพทย์ เก็บครบทั้ง 3 หมวด และผ่านเกณฑ์ยอดสะสม</p>
+                </div>
+
+                <!-- VVIP Conditions -->
+                <div class="bb-vvip-conditions">
+                    <div class="bb-vvip-cond">
+                        <i class="fas fa-stamp"></i>
+                        <div>
+                            <strong>ตราประทับครบ</strong>
+                            <span>ภายใน 6 เดือน นับจากตราแรก</span>
+                        </div>
+                    </div>
+                    <div class="bb-vvip-cond">
+                        <i class="fas fa-coins"></i>
+                        <div>
+                            <strong>ยอดสะสมทะลุ 200,000 บาท</strong>
+                            <span>รวมทั้ง 3 หมวด (หรือรวมทั้งปี)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VVIP Benefits -->
+                <div class="bb-vvip-benefits">
+                    <div class="bb-vvip-card">
+                        <div class="bb-vvip-card-icon"><i class="fas fa-id-card"></i></div>
+                        <h4>Paragon Elite</h4>
+                        <p>บัตรแข็ง Physical Card สลักชื่อลูกค้า <strong>ไม่มีวันหมดอายุ</strong> (Lifetime) ตราบใดที่ยอดใช้จ่ายมากกว่าปีละ 70,000 บาท</p>
+                    </div>
+                    <div class="bb-vvip-card">
+                        <div class="bb-vvip-card-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>Fast Track</h4>
+                        <p>ลัดคิวจองคิวฉีดกับทีมหมอเด่น เป็นคิวแรกเสมอ พร้อมรับ<strong>ฟรี NCTF 1 ขวด</strong>ทุกวันเกิด</p>
+                    </div>
+                    <div class="bb-vvip-card">
+                        <div class="bb-vvip-card-icon"><i class="fas fa-flask"></i></div>
+                        <h4>The First Tester</h4>
+                        <p>ฟิลเลอร์รุ่นใหม่ เครื่องยกกระชับตัวใหม่ ได้ทดลองเป็นกลุ่มแรก ใน<strong>ราคาต้นทุน</strong>หรือฟรีบางจุด</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PARAGON BOOSTER SECTION
+         ============================================ -->
+    <section class="bb-booster" id="booster">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Paragon Booster</span>
+                <h2 class="section-title">สิทธิพิเศษเพิ่มเติมสำหรับผู้ถือ Paragon Card</h2>
+                <p class="section-description">สะสม Credit เพื่อใช้เป็นส่วนลดในครั้งถัดไป — ยิ่งใช้ ยิ่งคุ้ม</p>
+            </div>
+
+            <div class="bb-booster-grid">
+                <div class="bb-booster-card">
+                    <div class="bb-booster-num">1</div>
+                    <div class="bb-booster-content">
+                        <h4><i class="fas fa-stopwatch"></i> Early Visit</h4>
+                        <p>ใช้ Paragon Card ภายใน <strong>30 วัน</strong></p>
+                        <div class="bb-booster-reward">
+                            <i class="fas fa-coins"></i> <strong>1,000 Credit</strong>
+                        </div>
+                        <span class="bb-booster-tag">กลับมาใช้สิทธิ์เร็ว ยิ่งคุ้ม</span>
+                    </div>
+                </div>
+
+                <div class="bb-booster-card">
+                    <div class="bb-booster-num">2</div>
+                    <div class="bb-booster-content">
+                        <h4><i class="fas fa-layer-group"></i> Category Bonus</h4>
+                        <p>ทำหัตถการ<strong>ข้ามหมวด</strong>พร้อมกันในบิลเดียว (ขั้นต่ำ 15,000.-)</p>
+                        <div class="bb-booster-reward">
+                            <i class="fas fa-coins"></i> <strong>1,500 Credit</strong>
+                        </div>
+                        <span class="bb-booster-tag">ดูแลครบจบในครั้งเดียว</span>
+                    </div>
+                </div>
+
+                <div class="bb-booster-card">
+                    <div class="bb-booster-num">3</div>
+                    <div class="bb-booster-content">
+                        <h4><i class="fas fa-chart-line"></i> Spend Milestone</h4>
+                        <p>ยอดสะสมช่วงถือบัตรทะลุ <strong>50,000 บาท</strong></p>
+                        <div class="bb-booster-reward">
+                            <i class="fas fa-coins"></i> <strong>3,000 Credit</strong>
+                        </div>
+                        <span class="bb-booster-tag">รับ Credit ก้อนใหญ่</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CREDIT RULES SECTION
+         ============================================ -->
+    <section class="bb-rules">
+        <div class="container">
+            <div class="bb-rules-wrapper">
+                <div class="bb-rules-header">
+                    <i class="fas fa-scroll"></i>
+                    <h3>Credit Rules — กติกาการใช้เครดิต</h3>
+                </div>
+                <div class="bb-rules-grid">
+                    <div class="bb-rule">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>ใช้ได้<strong>ครั้งถัดไปเท่านั้น</strong> (ไม่ลด On-top ทันที)</span>
+                    </div>
+                    <div class="bb-rule">
+                        <i class="fas fa-percent"></i>
+                        <span>ใช้จ่ายแทนเงินสดได้<strong>ไม่เกิน 20%</strong> ของยอดบิล</span>
+                    </div>
+                    <div class="bb-rule">
+                        <i class="fas fa-check-circle"></i>
+                        <span>ใช้ร่วมกับเรทราคา <strong>Fair Price</strong> ของระบบบัตรได้</span>
+                    </div>
+                    <div class="bb-rule">
+                        <i class="fas fa-times-circle"></i>
+                        <span>ใช้ร่วมกับโปรโมชั่นแคมเปญอื่นนอกระบบ 3B <strong>ไม่ได้</strong></span>
+                    </div>
+                    <div class="bb-rule">
+                        <i class="fas fa-hourglass-half"></i>
+                        <span>เครดิตมีอายุ <strong>60 วัน</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+         ============================================ -->
+    <section class="bb-cta">
+        <div class="container">
+            <div class="bb-cta-content">
+                <h2>พร้อมเริ่มต้น Year of 3B?</h2>
+                <p>จองคิว Tele-Consult วันนี้ รับ Silver Pass ฟรีทันที</p>
+                <div class="bb-cta-actions">
+                    <a href="tel:0982712744" class="bb-btn bb-btn--primary bb-btn--lg">
+                        <i class="fas fa-phone"></i> โทรจองคิว 098-271-2744
+                    </a>
+                    <a href="#" class="bb-btn bb-btn--line bb-btn--lg">
+                        <i class="fab fa-line"></i> ทักแชท Line
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="3b.js"></script>
+</body>
+</html>

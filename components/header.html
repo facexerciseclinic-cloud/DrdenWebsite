@@ -1,0 +1,174 @@
+<!-- Floating Contact Buttons -->
+<div class="floating-contact">
+    <button class="floating-btn" id="contactToggle">
+        <i class="fas fa-comment-dots"></i>
+        <span>ปรึกษาฟรี!</span>
+    </button>
+    <div class="floating-menu" id="floatingMenu">
+        <a href="tel:0982712744" class="contact-item phone">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="#" class="contact-item line">
+            <i class="fab fa-line"></i>
+        </a>
+        <a href="#" class="contact-item facebook">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <a href="#" class="contact-item instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/Logo.png" alt="DR.DEN Clinic - คลินิกหมอเด่น" class="logo-img">
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="nav-search-btn" id="searchToggle" aria-label="ค้นหา">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+                <li><a href="services.html" class="nav-link">บริการ</a></li>
+                <li><a href="reviews.html" class="nav-link">รีวิว</a></li>
+                <li><a href="promotions.html" class="nav-link">โปรโมชั่น</a></li>
+                <li><a href="doctors.html" class="nav-link">แพทย์</a></li>
+                <li><a href="branches.html" class="nav-link">สาขา</a></li>
+                <li><a href="articles.html" class="nav-link">บทความ</a></li>
+                <li><a href="about.html" class="nav-link">เกี่ยวกับเรา</a></li>
+
+                <!-- Dr.den Pass Zone (inside menu for mobile) -->
+                <li class="nav-pass-zone-mobile">
+                    <div class="pass-zone-inner">
+                        <div class="pass-zone-badge">NEW</div>
+                        <a href="https://paragonpass-omega.vercel.app/" target="_blank" class="btn-drden-pass">
+                            <span class="pass-icon-wrap"><i class="fas fa-id-card"></i></span>
+                            <span class="pass-text-wrap">
+                                <span class="pass-label">Dr.den Pass</span>
+                                <span class="pass-subtitle">สะสมแต้ม รับสิทธิพิเศษ</span>
+                            </span>
+                            <span class="pass-sparkle"></span>
+                        </a>
+                    </div>
+                </li>
+
+                <li><a href="index.html#contact" class="btn-primary-nav">จองคิวเลย</a></li>
+            </ul>
+
+            <!-- Dr.den Pass Zone (desktop \u2014 separate section) -->
+            <div class="nav-pass-zone" id="navPassZone">
+                <div class="pass-zone-divider"></div>
+                <div class="pass-zone-inner">
+                    <div class="pass-zone-badge">NEW</div>
+                    <a href="https://paragonpass-omega.vercel.app/" target="_blank" class="btn-drden-pass">
+                        <span class="pass-icon-wrap"><i class="fas fa-id-card"></i></span>
+                        <span class="pass-text-wrap">
+                            <span class="pass-label">Dr.den Pass</span>
+                            <span class="pass-subtitle">สะสมแต้ม รับสิทธิพิเศษ</span>
+                        </span>
+                        <span class="pass-sparkle"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay-backdrop"></div>
+    <div class="search-overlay-content">
+        <!-- Close Button -->
+        <button class="search-close-btn" id="searchClose" aria-label="ปิด">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Search Input Area -->
+        <div class="search-input-wrapper">
+            <div class="search-input-box">
+                <i class="fas fa-search search-input-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาบริการ บทความ แพทย์ สาขา..." autocomplete="off">
+                <span class="search-shortcut" id="searchShortcut">ESC</span>
+            </div>
+        </div>
+
+        <!-- Search Results Container -->
+        <div class="search-results-container" id="searchResults">
+            <!-- Default: Popular Searches -->
+            <div class="search-default" id="searchDefault">
+                <div class="search-section">
+                    <h4 class="search-section-title"><i class="fas fa-fire"></i> ค้นหายอดนิยม</h4>
+                    <div class="search-popular-tags">
+                        <button class="search-tag" data-query="ฟิลเลอร์">ฟิลเลอร์</button>
+                        <button class="search-tag" data-query="โบท็อกซ์">โบท็อกซ์</button>
+                        <button class="search-tag" data-query="Sculptra">Sculptra</button>
+                        <button class="search-tag" data-query="Juvelook">Juvelook</button>
+                        <button class="search-tag" data-query="สิว">รักษาสิว</button>
+                        <button class="search-tag" data-query="Ulthera">Ulthera</button>
+                        <button class="search-tag" data-query="คอลลาเจน">คอลลาเจน</button>
+                        <button class="search-tag" data-query="โปรโมชั่น">โปรโมชั่น</button>
+                    </div>
+                </div>
+                <div class="search-section">
+                    <h4 class="search-section-title"><i class="fas fa-link"></i> ลิงก์ด่วน</h4>
+                    <div class="search-quick-links">
+                        <a href="services.html" class="search-quick-link">
+                            <i class="fas fa-spa"></i>
+                            <span>บริการทั้งหมด</span>
+                        </a>
+                        <a href="promotions.html" class="search-quick-link">
+                            <i class="fas fa-tags"></i>
+                            <span>โปรโมชั่น</span>
+                        </a>
+                        <a href="doctors.html" class="search-quick-link">
+                            <i class="fas fa-user-md"></i>
+                            <span>ทีมแพทย์</span>
+                        </a>
+                        <a href="branches.html" class="search-quick-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>สาขา</span>
+                        </a>
+                        <a href="articles.html" class="search-quick-link">
+                            <i class="fas fa-newspaper"></i>
+                            <span>บทความ</span>
+                        </a>
+                        <a href="reviews.html" class="search-quick-link">
+                            <i class="fas fa-star"></i>
+                            <span>รีวิว</span>
+                        </a>
+                        <a href="about.html" class="search-quick-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>เกี่ยวกับเรา</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Results -->
+            <div class="search-live-results" id="searchLiveResults" style="display:none;"></div>
+
+            <!-- No Results -->
+            <div class="search-no-results" id="searchNoResults" style="display:none;">
+                <div class="search-no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h4>ไม่พบผลลัพธ์</h4>
+                <p>ลองค้นหาด้วยคำอื่น เช่น ฟิลเลอร์, โบท็อกซ์, Sculptra</p>
+            </div>
+        </div>
+    </div>
+</div>

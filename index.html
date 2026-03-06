@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR.DEN Clinic | คลินิกหมอเด่น - ความงามที่ใช่สำหรับคุณ</title>
+    <meta name="description" content="DR.DEN Aesthetic Clinic - คลินิกความงามชั้นนำกว่า 9 ปี พร้อมทีมแพทย์ผู้เชี่ยวชาญ บริการฟิลเลอร์ โบท็อกซ์ รักษาสิว ฝ้า หลุมสิว">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="hero-banner-slider">
+            <!-- Slide 1 -->
+            <div class="hero-banner-slide active">
+                <img src="assets/images/PCP-ผ่อนชำระSPayLater-web-2048x774.png" alt="Campaign 1" class="slide-image">
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-banner-slide">
+                <img src="assets/images/PC-Hero-banner-OliX.jpg" alt="Campaign 2" class="slide-image">
+            </div>
+            <div class="hero-banner-slide">
+                <img src="assets/images/Xerf.jpg" alt="Campaign 2" class="slide-image">
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-banner-slide');
+        const dots = document.querySelectorAll('.slider-dots .dot');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (dots[i]) dots[i].classList.remove('active');
+            });
+            
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            
+            slides[currentSlide].classList.add('active');
+            if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+        }
+        
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            showSlide(currentSlide);
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+        
+        // Touch/Swipe support for hero banner
+        (function() {
+            const slider = document.querySelector('.hero-banner-slider');
+            if (!slider) return;
+            let startX = 0, startY = 0, isDragging = false;
+            
+            slider.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+                isDragging = true;
+            }, { passive: true });
+            
+            slider.addEventListener('touchend', function(e) {
+                if (!isDragging) return;
+                isDragging = false;
+                const endX = e.changedTouches[0].clientX;
+                const endY = e.changedTouches[0].clientY;
+                const diffX = startX - endX;
+                const diffY = Math.abs(startY - endY);
+                
+                // Only trigger if horizontal swipe > 50px and greater than vertical
+                if (Math.abs(diffX) > 50 && Math.abs(diffX) > diffY) {
+                    if (diffX > 0) changeSlide(1);  // Swipe left → next
+                    else changeSlide(-1);            // Swipe right → prev
+                }
+            }, { passive: true });
+        })();
+        
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">
+                        <i class="fas fa-certificate"></i>
+                        ประสบการณ์กว่า 9 ปี
+                    </span>
+                    <h1 class="hero-title">
+                        โดดเด่นด้วย<br>
+                        <span class="gradient-text">เทคนิคเฉพาะ</span><br>
+                        <span class="gradient-text">การบริการ</span><br>
+                        <span class="gradient-text">ความปลอดภัย</span>
+                    </h1>
+                    <p class="hero-description">
+                        พร้อมด้วยทีมแพทย์ผู้เชี่ยวชาญที่มีประสบการณ์ด้านการปรับรูปหน้า<br>
+                        ฉีดฟิลเลอร์ ฉีดโบท็อกซ์ รักษาสิว ฝ้า หลุมสิว ฉีดหน้าใส สลายไขมัน ยกกระชับ
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            จองคิวเลย
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            <i class="fas fa-star"></i>
+                            ดูบริการ
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>9<span class="stat-plus">+</span></h3>
+                            <p>ปีประสบการณ์</p>
+                        </div>
+                        <div class="stat-item stat-highlight">
+                            <h3>9</h3>
+                            <p>สาขาทั่วไทย</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10,000<span class="stat-plus">+</span></h3>
+                            <p>ลูกค้าพอใจ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/images/หมอสอนหมอ-_PC01.jpg" alt="DR.DEN Clinic" class="hero-img">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-check-circle"></i>
+                            <span>FDA Approved</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-user-md"></i>
+                            <span>แพทย์ผู้เชี่ยวชาญ</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>มาตรฐานสากล</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">บริการของเรา</span>
+                <h2 class="section-title">บริการที่โดดเด่น</h2>
+                <p class="section-description">เลือกบริการที่ตรงกับความต้องการของคุณ</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/ฟิลเลอร์-768x1024.webp" alt="Filler ฟิลเลอร์">
+                        <div class="service-card-badge">ยอดนิยม</div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Filler ฟิลเลอร์</h3>
+                        <p>ปรับรูปหน้าให้สวยสมส่วน เติมเต็มร่องลึก ด้วยฟิลเลอร์แท้ FDA</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/โบท็อกซ์-768x1024.webp" alt="Botox โบท็อกซ์">
+                        <div class="service-card-badge">ยอดนิยม</div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Botox โบท็อกซ์</h3>
+                        <p>ลดริ้วรอย ปรับรูปหน้าเรียว ลดกราม ไม่มีดาวน์ไทม์</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/Collagen-Wave-768x1024.webp" alt="งานเครื่อง">
+                    </div>
+                    <div class="service-card-body">
+                        <h3>งานเครื่อง</h3>
+                        <p>ยกกระชับ กระตุ้นคอลลาเจน ด้วย Xerf, Oligio, Ultraformer</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/สิว-768x1024.webp" alt="กำจัดสิว">
+                    </div>
+                    <div class="service-card-body">
+                        <h3>กำจัดสิว</h3>
+                        <p>รักษาสิวทุกประเภท สิวอุดตัน สิวอักเสบ หลุมสิว อย่างตรงจุด</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/Ulthera-Ultra-3-768x1024.webp" alt="Ulthera">
+                        <div class="service-card-badge premium">Premium</div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Ulthera</h3>
+                        <p>ยกกระชับใบหน้าด้วยคลื่นเสียง ไม่ต้องผ่าตัด ไม่มีแผล</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/Reset-ผิว-Young-Reset-768x1024.webp" alt="Reset Young">
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Reset Young</h3>
+                        <p>รีเซ็ตผิวย้อนวัย กระตุ้นเซลล์ผิวใหม่ ผิวกระจ่างใส</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/Juve-768x1024.webp" alt="Juvelook">
+                        <div class="service-card-badge premium">Premium</div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Juvelook</h3>
+                        <p>นวัตกรรมกระตุ้นคอลลาเจนจากเกาหลี ผิวเด้ง อิ่มฟู</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/images/services/Sculpting-768x1024.webp" alt="Sculptra">
+                        <div class="service-card-badge premium">Premium</div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Sculptra</h3>
+                        <p>กระตุ้นคอลลาเจนธรรมชาติ ผลลัพธ์ยาวนานถึง 2 ปี</p>
+                        <a href="services.html" class="service-link">เรียนรู้เพิ่มเติม <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-cta" style="text-align: center; margin-top: 3rem;">
+                <a href="services.html" class="btn btn-primary">
+                    <i class="fas fa-th"></i>
+                    ดูบริการทั้งหมด
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-header">
+                <span class="section-badge">ทำไมต้องคลินิกหมอเด่น?</span>
+                <h2 class="section-title">Characteristics Facial Design</h2>
+                <p class="section-description">
+                    วางแผนการรักษาอย่างตรงจุดด้วยเทคนิคเฉพาะ พร้อมเลือกใช้เทคโนโลยีทันสมัย<br>
+                    และผลิตภัณฑ์แท้จากบริษัทผู้นำเข้าอย่างถูกกฎหมาย
+                </p>
+            </div>
+
+            <div class="why-us-content">
+                <!-- Bento Grid Gallery -->
+                <div class="why-us-bento-gallery">
+                    <!-- Main Large Image -->
+                    <div class="bento-item bento-main">
+                        <img src="assets/images/whyus-4.jpg" alt="หมอเด่นกำลังทำหัตถการ">
+                        <div class="bento-overlay">
+                            <span class="bento-label">ฉีดฟิลเลอร์โดยแพทย์ผู้เชี่ยวชาญ</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Top Right Image -->
+                    <div class="bento-item bento-top-right">
+                        <img src="assets/images/whyus-2.png" alt="ประเมินใบหน้าก่อนทำหัตถการ">
+                        <div class="bento-overlay">
+                            <span class="bento-label">วิเคราะห์โครงหน้า</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Middle Right Image -->
+                    <div class="bento-item bento-mid-right">
+                        <img src="assets/images/whyus-3.jpg" alt="เทคโนโลยีทันสมัย">
+                        <div class="bento-overlay">
+                            <span class="bento-label">เครื่องมือมาตรฐานสากล</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Left Image -->
+                    <div class="bento-item bento-bottom-left">
+                        <img src="assets/images/whyus-1.jpg" alt="ปรึกษาผลการรักษา">
+                        <div class="bento-overlay">
+                            <span class="bento-label">ติดตามผลการรักษา</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Right - Stats Card -->
+                    <div class="bento-item bento-stats">
+                        <div class="bento-stats-content">
+                            <div class="bento-stat">
+                                <span class="bento-stat-number">9+</span>
+                                <span class="bento-stat-label">ปีประสบการณ์</span>
+                            </div>
+                            <div class="bento-stat">
+                                <span class="bento-stat-number">10,000+</span>
+                                <span class="bento-stat-label">เคสที่ดูแล</span>
+                            </div>
+                            <div class="bento-stat">
+                                <span class="bento-stat-number">100%</span>
+                                <span class="bento-stat-label">ผลิตภัณฑ์แท้</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-us-features">
+                    <div class="why-feature-card">
+                        <div class="why-feature-number">01</div>
+                        <div class="why-feature-content">
+                            <h4>ผลิตภัณฑ์แท้ 100%</h4>
+                            <p>นำเข้าตรงจากบริษัทอย่างถูกกฎหมาย ผ่านการรับรองจาก อย. ทุกรายการ</p>
+                        </div>
+                        <div class="why-feature-icon"><i class="fas fa-certificate"></i></div>
+                    </div>
+
+                    <div class="why-feature-card">
+                        <div class="why-feature-number">02</div>
+                        <div class="why-feature-content">
+                            <h4>แพทย์ผู้เชี่ยวชาญ</h4>
+                            <p>ทีมแพทย์ที่มีประสบการณ์สูงด้านการปรับรูปหน้าและความงาม</p>
+                        </div>
+                        <div class="why-feature-icon"><i class="fas fa-user-md"></i></div>
+                    </div>
+
+                    <div class="why-feature-card">
+                        <div class="why-feature-number">03</div>
+                        <div class="why-feature-content">
+                            <h4>เทคโนโลยีทันสมัย</h4>
+                            <p>เครื่องมือมาตรฐานสากลและเทคนิคการรักษาระดับโลก</p>
+                        </div>
+                        <div class="why-feature-icon"><i class="fas fa-microchip"></i></div>
+                    </div>
+
+                    <div class="why-feature-card">
+                        <div class="why-feature-number">04</div>
+                        <div class="why-feature-content">
+                            <h4>ปลอดภัยมาตรฐาน FDA</h4>
+                            <p>ผ่านการรับรองจาก FDA ทุกขั้นตอนปลอดภัยตามมาตรฐานแพทย์</p>
+                        </div>
+                        <div class="why-feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3B Campaign Teaser Section -->
+    <section class="bb-teaser" id="3b-campaign">
+        <div class="bb-teaser-bg">
+            <div class="bb-teaser-orb bb-teaser-orb--1"></div>
+            <div class="bb-teaser-orb bb-teaser-orb--2"></div>
+            <div class="bb-teaser-orb bb-teaser-orb--3"></div>
+        </div>
+        <div class="container">
+            <div class="bb-teaser-content">
+                <div class="bb-teaser-left">
+                    <span class="bb-teaser-badge">
+                        <i class="fas fa-dna"></i> แคมเปญใหม่ 2026
+                    </span>
+                    <h2 class="bb-teaser-title">
+                        Year of <span class="bb-teaser-gold">3B</span> BIOHACK
+                    </h2>
+                    <p class="bb-teaser-subtitle">สถาปัตยกรรมความงามแห่งทศวรรษใหม่</p>
+                    <p class="bb-teaser-desc">
+                        ผสาน 3 หัตถการหลักแห่งยุคเข้าด้วยกัน เพื่อผลลัพธ์ที่ชัดเจน เป็นธรรมชาติ และยั่งยืนกว่าที่เคย
+                    </p>
+
+                    <!-- 3 Pillars Mini -->
+                    <div class="bb-teaser-pillars">
+                        <div class="bb-teaser-pillar bb-teaser-pillar--bio">
+                            <div class="bb-teaser-pillar-icon"><i class="fas fa-dna"></i></div>
+                            <div>
+                                <strong>Biohack</strong>
+                                <span>เซลลูลาร์รีเซ็ต</span>
+                            </div>
+                        </div>
+                        <div class="bb-teaser-pillar bb-teaser-pillar--build">
+                            <div class="bb-teaser-pillar-icon"><i class="fas fa-cubes"></i></div>
+                            <div>
+                                <strong>Build</strong>
+                                <span>สร้างโครงสร้างผิว</span>
+                            </div>
+                        </div>
+                        <div class="bb-teaser-pillar bb-teaser-pillar--bal">
+                            <div class="bb-teaser-pillar-icon"><i class="fas fa-balance-scale"></i></div>
+                            <div>
+                                <strong>Balance</strong>
+                                <span>ปรับสมดุลใบหน้า</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="3b.html" class="bb-teaser-cta">
+                        <span>ดูรายละเอียดแคมเปญ</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="bb-teaser-right">
+                    <div class="bb-teaser-visual">
+                        <div class="bb-teaser-ring bb-teaser-ring--outer"></div>
+                        <div class="bb-teaser-ring bb-teaser-ring--middle"></div>
+                        <div class="bb-teaser-ring bb-teaser-ring--inner"></div>
+                        <div class="bb-teaser-center">
+                            <span class="bb-teaser-center-b">3B</span>
+                            <span class="bb-teaser-center-text">BIOHACK</span>
+                        </div>
+                        <!-- Floating Icons -->
+                        <div class="bb-teaser-float bb-teaser-float--1"><i class="fas fa-dna"></i></div>
+                        <div class="bb-teaser-float bb-teaser-float--2"><i class="fas fa-cubes"></i></div>
+                        <div class="bb-teaser-float bb-teaser-float--3"><i class="fas fa-balance-scale"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">รีวิวจากลูกค้า</span>
+                <h2 class="section-title">เคสปรับรูปหน้าจริง กว่า 10,000+ เคส</h2>
+                <p class="section-description">ความพึงพอใจของลูกค้าคือความสำเร็จของเรา</p>
+            </div>
+
+            <div class="reviews-filter">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="filler">Filler</button>
+                <button class="filter-btn" data-filter="botox">Botox</button>
+                <button class="filter-btn" data-filter="acne">Acne</button>
+                <button class="filter-btn" data-filter="resetyoung">Reset Young</button>
+                <button class="filter-btn" data-filter="sculping">Sculping</button>
+                <button class="filter-btn" data-filter="collagen">Collagen Wave</button>
+                <button class="filter-btn" data-filter="juvelook">Juvelook</button>
+                <button class="filter-btn" data-filter="ulthera">Ulthera</button>
+            </div>
+
+            <!-- Reviews Grid (rendered dynamically by reviews-data.js) -->
+            <div class="reviews-grid"></div>
+            
+            <div class="section-cta" style="text-align: center; margin-top: 3rem;">
+                <a href="reviews.html" class="btn btn-primary">
+                    <i class="fas fa-images"></i>
+                    ดูรีวิวทั้งหมด 10,000+ เคส
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Section -->
+    <!-- Promotion Section - Image Carousel Design -->
+    <section class="promotion-carousel-section" id="promotion">
+        <div class="promo-carousel-container">
+            <!-- Section Header -->
+            <div class="promo-carousel-header">
+                <h2 class="promo-carousel-title">โปรโมชันสุดคุ้ม</h2>
+                <p class="promo-carousel-subtitle">ข้อเสนอพิเศษที่คุณไม่ควรพลาด</p>
+            </div>
+
+            <!-- Image Carousel with Peek Effect -->
+            <div class="promo-image-carousel">
+                <button class="promo-carousel-nav prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="promo-carousel-viewport">
+                    <div class="promo-carousel-track">
+                        <!-- Promo Image 1 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร1.jpg" alt="แพ็กเกจฟิลเลอร์ + โบท็อก ลด 36%">
+                            </a>
+                        </div>
+
+                        <!-- Promo Image 2 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร2.png" alt="Ultherapy ยกกระชับ ลด 33%">
+                            </a>
+                        </div>
+
+                        <!-- Promo Image 3 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร3.jpg" alt="Juvelook ผิวเด้ง ลด 23%">
+                            </a>
+                        </div>
+
+                        <!-- Promo Image 4 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร4.png" alt="Collagen Boost ลด 82%">
+                            </a>
+                        </div>
+
+                        <!-- Promo Image 5 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร5.png" alt="Sculptra ปลุกคอลลาเจน ลด 29%">
+                            </a>
+                        </div>
+
+                        <!-- Promo Image 6 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร6.png" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 7 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร7.png" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 8 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร8.png" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 9 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร9.png" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 10 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร10.png" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 11 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร11.jpg" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 12 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร12.jpg" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                        <!-- Promo Image 13 -->
+                        <div class="promo-image-slide">
+                            <a href="promotions.html" class="promo-image-link">
+                                <img src="assets/images/โปร13.jpg" alt="Young Reset+ ลด 28%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="promo-carousel-nav next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Fade Overlays -->
+                <div class="promo-fade-left"></div>
+                <div class="promo-fade-right"></div>
+            </div>
+
+            <!-- Carousel Dots -->
+            <div class="promo-carousel-dots"></div>
+
+            <!-- Installment Banner -->
+            <div class="promo-installment-banner">
+                <div class="installment-content">
+                    <div class="installment-text">
+                        <span class="installment-label">ผ่อนจ่ายด้วยบัตรเครดิต</span>
+                        <div class="installment-highlight">
+                            <span class="highlight-text">ผ่อน</span>
+                            <span class="highlight-percent">0%</span>
+                            <span class="highlight-text">นานสูงสุด</span>
+                            <span class="highlight-months">6 เดือน</span>
+                        </div>
+                    </div>
+                    <div class="installment-banks">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-jcb"></i>
+                    </div>
+                    <a href="#contact" class="btn btn-primary installment-cta">
+                        <i class="fas fa-mouse-pointer"></i>
+                        กดซื้อเลย!
+                    </a>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="promo-carousel-footer">
+                <a href="promotions.html" class="btn btn-outline btn-lg">
+                    <i class="fas fa-tags"></i>
+                    ดูโปรโมชั่นทั้งหมด
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors-preview" id="doctors">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ทีมแพทย์</span>
+                <h2 class="section-title">แพทย์ผู้เชี่ยวชาญ</h2>
+                <p class="section-description">พบกับทีมแพทย์มืออาชีพที่มีความเชี่ยวชาญเฉพาะทาง</p>
+            </div>
+
+            <div class="doctors-grid">
+                <!-- Rendered by doctors-data.js -->
+            </div>
+
+            <div class="section-cta">
+                <a href="doctors.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-user-doctor"></i>
+                    ดูทีมแพทย์ทั้งหมด
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="branch-showcase" id="branches">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">สาขาของเรา</span>
+                <h2 class="section-title">ในเครือกว่า 9 สาขาทั่วประเทศ</h2>
+                <p class="section-description">Paragon Clinic · Nirvana Clinic · FXC Clinic — มาตรฐานเดียวกันทุกสาขา</p>
+            </div>
+
+            <!-- Brand Tabs -->
+            <div class="brand-tabs" id="homeBrandTabs">
+                <button class="brand-tab active" data-brand="all">
+                    <span class="brand-tab-count">9</span>
+                    <span class="brand-tab-label">ทุกสาขา</span>
+                </button>
+                <button class="brand-tab" data-brand="paragon">
+                    <span class="brand-tab-icon paragon-dot"></span>
+                    <span class="brand-tab-label">Paragon Clinic</span>
+                    <span class="brand-tab-count">6</span>
+                </button>
+                <button class="brand-tab" data-brand="nirvana">
+                    <span class="brand-tab-icon nirvana-dot"></span>
+                    <span class="brand-tab-label">Nirvana Clinic</span>
+                    <span class="brand-tab-count">2</span>
+                </button>
+                <button class="brand-tab" data-brand="fxc">
+                    <span class="brand-tab-icon fxc-dot"></span>
+                    <span class="brand-tab-label">FXC Clinic</span>
+                    <span class="brand-tab-count">1</span>
+                </button>
+            </div>
+
+            <div class="branch-network-grid" id="homeBranchGrid">
+                <!-- 1. Paragon กำแพงเพชร -->
+                <div class="branch-network-card" data-brand="paragon">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Paragon-Clinic-กำแพงเพชร.jpg" alt="Paragon Clinic กำแพงเพชร">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">01</span>
+                        </div>
+                        <div class="branch-network-brand-badge paragon-bg">
+                            <span class="brand-dot paragon-dot"></span>
+                            Paragon Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขากำแพงเพชร</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/T2qrVUL" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอในเมือง, กำแพงเพชร</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0909695203" class="branch-phone"><i class="fas fa-phone"></i> 090-969-5203</a>
+                            <a href="https://lin.ee/U4lN2sO" class="branch-line" target="_blank"><i class="fab fa-line"></i> @prgkp</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0909695203" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/U4lN2sO" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/ParagonClinic.k" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Paragon พิษณุโลก -->
+                <div class="branch-network-card" data-brand="paragon">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Paragon-Clinic-พิษณุโลก.jpg" alt="Paragon Clinic พิษณุโลก">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">02</span>
+                        </div>
+                        <div class="branch-network-brand-badge paragon-bg">
+                            <span class="brand-dot paragon-dot"></span>
+                            Paragon Clinic
+                        </div>
+                        <span class="branch-network-badge">สาขาหลัก</span>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาพิษณุโลก</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/8BDKWCa" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอเมือง, พิษณุโลก</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0652239942" class="branch-phone"><i class="fas fa-phone"></i> 065-223-9942</a>
+                            <a href="https://lin.ee/3B9r4ha" class="branch-line" target="_blank"><i class="fab fa-line"></i> @prgpl</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0652239942" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/3B9r4ha" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/paragonclinicpcp" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Paragon พิจิตร -->
+                <div class="branch-network-card" data-brand="paragon">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Paragon-Clinic-พิจิตร.jpg" alt="Paragon Clinic พิจิตร">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">03</span>
+                        </div>
+                        <div class="branch-network-brand-badge paragon-bg">
+                            <span class="brand-dot paragon-dot"></span>
+                            Paragon Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาพิจิตร</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/nNPrmdn" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอในเมือง, พิจิตร</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0832678967" class="branch-phone"><i class="fas fa-phone"></i> 083-267-8967</a>
+                            <a href="https://lin.ee/gBggUBx" class="branch-line" target="_blank"><i class="fab fa-line"></i> @prgpj</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0832678967" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/gBggUBx" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/ParagonClinicPhichit" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Paragon อยุธยา -->
+                <div class="branch-network-card" data-brand="paragon">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Paragon-Clinic-อยุธยา.jpg" alt="Paragon Clinic อยุธยา">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">04</span>
+                        </div>
+                        <div class="branch-network-brand-badge paragon-bg">
+                            <span class="brand-dot paragon-dot"></span>
+                            Paragon Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาอยุธยา</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/ucpfeuB" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอเมือง, อยุธยา</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0659596987" class="branch-phone"><i class="fas fa-phone"></i> 065-959-6987</a>
+                            <a href="https://lin.ee/sWiIbwGx" class="branch-line" target="_blank"><i class="fab fa-line"></i> @prgau</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0659596987" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/sWiIbwGx" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/profile.php?id=100068278993629" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Paragon อุตรดิตถ์ -->
+                <div class="branch-network-card" data-brand="paragon">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Paragon-Clinic-อุตรดิตถ์.jpg" alt="Paragon Clinic อุตรดิตถ์">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">05</span>
+                        </div>
+                        <div class="branch-network-brand-badge paragon-bg">
+                            <span class="brand-dot paragon-dot"></span>
+                            Paragon Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาอุตรดิตถ์</h3>
+                        <div class="branch-network-location">
+                            <a href="https://www.google.com/maps/search/Paragon+Clinic+%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%A3%E0%B8%94%E0%B8%B4%E0%B8%95%E0%B8%96%E0%B9%8C" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอเมือง, อุตรดิตถ์</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0996325144" class="branch-phone"><i class="fas fa-phone"></i> 099-632-5144</a>
+                            <a href="https://lin.ee/3woJQjp" class="branch-line" target="_blank"><i class="fab fa-line"></i> @prgud</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0996325144" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/3woJQjp" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/ParagonClinic54" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Paragon นครสวรรค์ -->
+                <div class="branch-network-card" data-brand="paragon">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Paragon-Clinic-นครสวรรค์.jpg" alt="Paragon Clinic นครสวรรค์">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">06</span>
+                        </div>
+                        <div class="branch-network-brand-badge paragon-bg">
+                            <span class="brand-dot paragon-dot"></span>
+                            Paragon Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขานครสวรรค์</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/53tkUAP" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอเมือง, นครสวรรค์</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0648261000" class="branch-phone"><i class="fas fa-phone"></i> 064-826-1000</a>
+                            <a href="https://lin.ee/AiqVnjz" class="branch-line" target="_blank"><i class="fab fa-line"></i> @prgns</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0648261000" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/AiqVnjz" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/profile.php?id=61554191213230" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Nirvana ระยอง -->
+                <div class="branch-network-card" data-brand="nirvana">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Nirvana-Clinic-ระยอง.jpg" alt="Nirvana Clinic ระยอง">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">07</span>
+                        </div>
+                        <div class="branch-network-brand-badge nirvana-bg">
+                            <span class="brand-dot nirvana-dot"></span>
+                            Nirvana Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาระยอง</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/uzTek3R" target="_blank"><i class="fas fa-map-marker-alt"></i> อำเภอเมือง, ระยอง</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0640686429" class="branch-phone"><i class="fas fa-phone"></i> 064-068-6429</a>
+                            <a href="https://lin.ee/m1lQ4Uv" class="branch-line" target="_blank"><i class="fab fa-line"></i> @nvnc</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0640686429" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/m1lQ4Uv" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/NirvanaclinicRY1" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Nirvana ศรีราชา -->
+                <div class="branch-network-card" data-brand="nirvana">
+                    <div class="branch-network-image">
+                        <img src="assets/images/Nirvana-Clinic-ศรีราชา.jpg" alt="Nirvana Clinic ศรีราชา">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">08</span>
+                        </div>
+                        <div class="branch-network-brand-badge nirvana-bg">
+                            <span class="brand-dot nirvana-dot"></span>
+                            Nirvana Clinic
+                        </div>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาศรีราชา ชลบุรี</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/WTCvUeC" target="_blank"><i class="fas fa-map-marker-alt"></i> ศรีราชา, ชลบุรี</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0638602000" class="branch-phone"><i class="fas fa-phone"></i> 063-860-2000</a>
+                            <a href="https://lin.ee/e2HKB4P" class="branch-line" target="_blank"><i class="fab fa-line"></i> @nvns</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0638602000" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/e2HKB4P" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/profile.php?id=61556986812353" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. FXC ถนนวิทยุ -->
+                <div class="branch-network-card" data-brand="fxc">
+                    <div class="branch-network-image">
+                        <img src="assets/images/FXC-FaceXercise-Clinic.jpg" alt="FXC Clinic ถนนวิทยุ กรุงเทพ">
+                        <div class="branch-network-overlay">
+                            <span class="branch-network-number">09</span>
+                        </div>
+                        <div class="branch-network-brand-badge fxc-bg">
+                            <span class="brand-dot fxc-dot"></span>
+                            FXC Clinic
+                        </div>
+                        <span class="branch-network-badge">Premium</span>
+                    </div>
+                    <div class="branch-network-body">
+                        <h3 class="branch-network-name">สาขาถนนวิทยุ กรุงเทพ</h3>
+                        <div class="branch-network-location">
+                            <a href="https://g.co/kgs/CxhJ4qJ" target="_blank"><i class="fas fa-map-marker-alt"></i> ถนนวิทยุ, กรุงเทพมหานคร</a>
+                        </div>
+                        <div class="branch-network-contact">
+                            <a href="tel:0982712744" class="branch-phone"><i class="fas fa-phone"></i> 098-271-2744</a>
+                            <a href="https://lin.ee/AqLYwNQ" class="branch-line" target="_blank"><i class="fab fa-line"></i> @fxcc</a>
+                        </div>
+                        <div class="branch-network-actions">
+                            <a href="tel:0982712744" class="btn-network-primary"><i class="fas fa-phone"></i> โทรจอง</a>
+                            <a href="https://lin.ee/AqLYwNQ" class="btn-network-outline" target="_blank"><i class="fab fa-line"></i> แชท</a>
+                            <a href="https://www.facebook.com/FXCClinic24" class="btn-network-outline" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta" style="text-align: center; margin-top: 2rem;">
+                <a href="branches.html" class="btn btn-primary">
+                    <i class="fas fa-map-marker-alt"></i>
+                    ดูสาขาทั้งหมด
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">บทความ</span>
+                <h2 class="section-title">อยากสวยต้องอ่าน</h2>
+                <p class="section-description">ความรู้และเคล็ดลับความงามจากผู้เชี่ยวชาญ</p>
+            </div>
+
+            <div class="articles-grid" id="homepageArticlesGrid">
+                <!-- Rendered by JS from articles-data.js -->
+            </div>
+
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="articles.html" class="btn btn-outline" style="border-color:var(--primary-color);color:var(--primary-color);padding:0.8rem 2rem;border-radius:50px;font-weight:600;">
+                    <i class="fas fa-newspaper" style="margin-right:8px;"></i>ดูบทความทั้งหมด
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ติดต่อเรา</span>
+                <h2 class="section-title">พร้อมให้คำปรึกษา</h2>
+                <p class="section-description">ทีมงานของเราพร้อมให้คำปรึกษาและตอบคำถามทุกข้อสงสัย</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Left: Contact Info -->
+                <div class="contact-info-side">
+                    <div class="contact-intro">
+                        <h3><i class="fas fa-headset"></i> ติดต่อ Dr.den Clinic</h3>
+                        <p>เราพร้อมดูแลคุณทุกวัน ไม่ว่าจะปรึกษาเรื่องผิวพรรณ หรือจองคิวรับบริการ สามารถติดต่อเราได้ทุกช่องทาง</p>
+                    </div>
+
+                    <div class="info-cards-list">
+                        <a href="https://g.co/kgs/CxhJ4qJ" target="_blank" class="info-card-row">
+                            <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-card-text">
+                                <h4>ที่อยู่</h4>
+                                <p>GPF Witthayu Towers, 93/1 Witthayu Rd, Lumphini, Pathum Wan, Bangkok 10330</p>
+                            </div>
+                            <i class="fas fa-arrow-right info-card-arrow"></i>
+                        </a>
+
+                        <a href="tel:0982712744" class="info-card-row">
+                            <div class="info-card-icon"><i class="fas fa-phone"></i></div>
+                            <div class="info-card-text">
+                                <h4>โทรศัพท์</h4>
+                                <p>098-271-2744</p>
+                            </div>
+                            <i class="fas fa-arrow-right info-card-arrow"></i>
+                        </a>
+
+                        <div class="info-card-row">
+                            <div class="info-card-icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-card-text">
+                                <h4>เวลาทำการ</h4>
+                                <p>เปิดทุกวัน 11.00 น. – 20.00 น.</p>
+                            </div>
+                            <span class="info-card-badge">Open</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-section">
+                        <h4>ติดตามเราบนโซเชียลมีเดีย</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon line" aria-label="Line"><i class="fab fa-line"></i></a>
+                            <a href="#" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Booking Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <div class="form-header-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>จองคิวกับเรา</h3>
+                        <p>กรอกข้อมูลด้านล่างเพื่อจองคิว</p>
+                    </div>
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-row form-row-2col">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> ชื่อ-นามสกุล</label>
+                                <input type="text" id="name" placeholder="กรุณากรอกชื่อ" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone-alt"></i> เบอร์โทรศัพท์</label>
+                                <input type="tel" id="phone" placeholder="0XX-XXX-XXXX" required>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-2col">
+                            <div class="form-group">
+                                <label for="service"><i class="fas fa-concierge-bell"></i> บริการที่สนใจ</label>
+                                <select id="service" required>
+                                    <option value="">เลือกบริการ</option>
+                                    <option value="filler">ฟิลเลอร์ & โบท็อกซ์</option>
+                                    <option value="sculptra">Sculptra</option>
+                                    <option value="juvelook">Juvelook</option>
+                                    <option value="acne">รักษาสิว</option>
+                                    <option value="ultherapy">Ultherapy</option>
+                                    <option value="other">อื่นๆ</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="branch"><i class="fas fa-map-pin"></i> สาขาที่สะดวก</label>
+                                <select id="branch" required>
+                                    <option value="">เลือกสาขา</option>
+                                    <option value="phitsanulok">พิษณุโลก</option>
+                                    <option value="nakhonsawan">นครสวรรค์</option>
+                                    <option value="ayutthaya">อยุธยา</option>
+                                    <option value="bangkok">กรุงเทพ</option>
+                                    <option value="rayong">ระยอง</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment-dots"></i> ข้อความ (ถ้ามี)</label>
+                                <textarea id="message" rows="3" placeholder="บอกเราว่าคุณสนใจอะไร..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit-booking">
+                            <i class="fas fa-calendar-check"></i>
+                            จองคิวเลย
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="articles-data.js"></script>
+    <script src="data-bridge.js"></script>
+    <script src="doctors-data.js"></script>
+    <script src="reviews-data.js"></script>
+    <script src="script.js"></script>
+    <script src="branch-contact.js"></script>
+    <script src="search.js"></script>
+
+    <!-- Homepage Articles Renderer -->
+    <script>
+    (function() {
+        if (typeof ARTICLES_DATA === 'undefined') return;
+        const grid = document.getElementById('homepageArticlesGrid');
+        if (!grid) return;
+
+        // Show latest 6 articles (sorted by date desc)
+        const latest = [...ARTICLES_DATA]
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .slice(0, 6);
+
+        function isRecent(dateStr, days) {
+            return (new Date() - new Date(dateStr)) / (1000*60*60*24) <= days;
+        }
+
+        grid.innerHTML = latest.map(a => {
+            const isNew = isRecent(a.date, 14);
+            const isHot = a.views >= 5000;
+            let badge = '';
+            if (isNew) badge = '<span class="article-badge new">ใหม่</span>';
+            else if (isHot) badge = '<span class="article-badge hot">ยอดนิยม</span>';
+
+            return `
+                <article class="article-card">
+                    <a href="article.html?slug=${a.slug}" class="article-card-link">
+                        <div class="article-image">
+                            <img src="${a.image}" alt="${a.title}" loading="lazy">
+                            ${badge}
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta-small">
+                                <span class="article-category-tag small">${a.categoryLabel}</span>
+                                <span class="article-date-small"><i class="far fa-calendar"></i> ${a.dateDisplay}</span>
+                            </div>
+                            <h3>${a.title}</h3>
+                            <p>${a.excerpt}</p>
+                            <div class="article-footer">
+                                <div class="article-stats">
+                                    <span><i class="fas fa-eye"></i> ${formatViews(a.views)}</span>
+                                    <span><i class="far fa-clock"></i> ${a.readTime}</span>
+                                </div>
+                                <span class="article-link">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            `;
+        }).join('');
+
+        // Animate in
+        grid.querySelectorAll('.article-card').forEach((card, i) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, i * 100);
+                        observer.unobserve(card);
+                    }
+                });
+            }, { threshold: 0.1 });
+            observer.observe(card);
+        });
+    })();
+    </script>
+
+    <!-- Homepage Branch Tab Filter -->
+    <script>
+    (function() {
+        const tabs = document.querySelectorAll('#homeBrandTabs .brand-tab');
+        const cards = document.querySelectorAll('#homeBranchGrid .branch-network-card');
+        if (!tabs.length || !cards.length) return;
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const brand = this.dataset.brand;
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                let idx = 0;
+                cards.forEach(card => {
+                    const show = brand === 'all' || card.dataset.brand === brand;
+                    if (show) {
+                        card.style.display = '';
+                        card.style.animation = 'none';
+                        card.offsetHeight;
+                        card.style.animation = `branchCardSlideIn 0.4s ease ${idx * 0.06}s forwards`;
+                        idx++;
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(15px) scale(0.97)';
+                        setTimeout(() => { card.style.display = 'none'; }, 250);
+                    }
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

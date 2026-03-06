@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทความ | DR.DEN Clinic - คลินิกหมอเด่น</title>
+    <meta name="description" content="">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="DR.DEN Clinic - คลินิกหมอเด่น">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js"></script>
+
+    <!-- JSON-LD Structured Data (set dynamically) -->
+    <script type="application/ld+json" id="articleSchema"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Article Detail -->
+    <article class="article-detail" id="articleDetail">
+        <!-- Loading state -->
+        <div class="article-loading" id="articleLoading">
+            <div class="container">
+                <div class="article-loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>กำลังโหลดบทความ...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 404 state -->
+        <div class="article-not-found" id="articleNotFound" style="display:none;">
+            <div class="container">
+                <div class="not-found-content">
+                    <i class="fas fa-file-alt"></i>
+                    <h2>ไม่พบบทความนี้</h2>
+                    <p>บทความที่คุณค้นหาอาจถูกย้ายหรือไม่มีอยู่ในระบบ</p>
+                    <a href="articles.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-left"></i> กลับไปหน้าบทความ
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Content (filled by JS) -->
+        <div id="articleContent" style="display:none;">
+            <!-- Hero -->
+            <div class="article-hero" id="articleHero">
+                <div class="article-hero-overlay"></div>
+                <div class="container">
+                    <div class="article-hero-content">
+                        <a href="articles.html" class="article-back-link">
+                            <i class="fas fa-arrow-left"></i> บทความทั้งหมด
+                        </a>
+                        <span class="article-category-tag" id="articleCategory"></span>
+                        <h1 id="articleTitle"></h1>
+                        <div class="article-meta-detail">
+                            <span class="meta-item"><i class="far fa-calendar"></i> <span id="articleDate"></span></span>
+                            <span class="meta-item"><i class="far fa-clock"></i> <span id="articleReadTime"></span></span>
+                            <span class="meta-item"><i class="far fa-eye"></i> <span id="articleViews"></span> ผู้เข้าชม</span>
+                            <span class="meta-item"><i class="far fa-user"></i> <span id="articleAuthor"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="article-body-wrapper">
+                <div class="container">
+                    <div class="article-layout">
+                        <!-- Main Content -->
+                        <div class="article-main">
+                            <!-- Featured Image -->
+                            <div class="article-featured-image" id="articleImageWrapper">
+                                <img id="articleImage" src="" alt="" loading="lazy">
+                            </div>
+
+                            <!-- Article Body -->
+                            <div class="article-body-content" id="articleBody">
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="article-tags-section" id="articleTags">
+                            </div>
+
+                            <!-- Share -->
+                            <div class="article-share">
+                                <h4><i class="fas fa-share-alt"></i> แชร์บทความนี้</h4>
+                                <div class="share-buttons">
+                                    <a href="#" class="share-btn share-facebook" id="shareFacebook" target="_blank" rel="noopener">
+                                        <i class="fab fa-facebook-f"></i> Facebook
+                                    </a>
+                                    <a href="#" class="share-btn share-line" id="shareLine" target="_blank" rel="noopener">
+                                        <i class="fab fa-line"></i> LINE
+                                    </a>
+                                    <button class="share-btn share-copy" id="shareCopy">
+                                        <i class="fas fa-link"></i> คัดลอกลิงก์
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="article-cta-box">
+                                <div class="cta-box-icon"><i class="fas fa-calendar-check"></i></div>
+                                <h3>สนใจปรึกษาแพทย์?</h3>
+                                <p>พูดคุยกับทีมแพทย์ผู้เชี่ยวชาญของ DR.DEN Clinic ปรึกษาฟรี!</p>
+                                <a href="#" onclick="openBranchCTA(event)" class="btn btn-primary">
+                                    <i class="fas fa-comments"></i> ปรึกษาฟรี
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar -->
+                        <aside class="article-sidebar">
+                            <!-- TOC -->
+                            <div class="sidebar-card sidebar-toc">
+                                <h4><i class="fas fa-list"></i> สารบัญ</h4>
+                                <nav id="articleTOC"></nav>
+                            </div>
+
+                            <!-- Related Articles -->
+                            <div class="sidebar-card sidebar-related">
+                                <h4><i class="fas fa-newspaper"></i> บทความที่เกี่ยวข้อง</h4>
+                                <div id="relatedArticles"></div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="articles-data.js"></script>
+    <script src="data-bridge.js"></script>
+    <script src="branch-contact.js"></script>
+    <script>
+    // ============================================
+    // ARTICLE DETAIL PAGE
+    // ============================================
+    document.addEventListener('DOMContentLoaded', function() {
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+
+        if (!slug) {
+            showNotFound();
+            return;
+        }
+
+        const article = getArticleBySlug(slug);
+        if (!article) {
+            showNotFound();
+            return;
+        }
+
+        renderArticle(article);
+    });
+
+    function showNotFound() {
+        document.getElementById('articleLoading').style.display = 'none';
+        document.getElementById('articleNotFound').style.display = 'block';
+        document.title = 'ไม่พบบทความ | DR.DEN Clinic';
+    }
+
+    function renderArticle(article) {
+        // Hide loading, show content
+        document.getElementById('articleLoading').style.display = 'none';
+        document.getElementById('articleContent').style.display = 'block';
+
+        // Set page title & meta
+        document.title = article.title + ' | DR.DEN Clinic';
+        document.querySelector('meta[name="description"]').setAttribute('content', article.metaDescription);
+        
+        // Open Graph
+        document.querySelector('meta[property="og:title"]').setAttribute('content', article.title);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', article.metaDescription);
+        document.querySelector('meta[property="og:image"]').setAttribute('content', article.image);
+        document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+        document.querySelector('meta[name="twitter:title"]').setAttribute('content', article.title);
+        document.querySelector('meta[name="twitter:description"]').setAttribute('content', article.metaDescription);
+
+        // JSON-LD Structured Data
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": article.title,
+            "description": article.metaDescription,
+            "image": window.location.origin + '/' + article.image,
+            "author": {
+                "@type": "Organization",
+                "name": article.author
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "DR.DEN Clinic - คลินิกหมอเด่น",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": window.location.origin + "/assets/images/Logo.png"
+                }
+            },
+            "datePublished": article.date,
+            "dateModified": article.date,
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": window.location.href
+            }
+        };
+        document.getElementById('articleSchema').textContent = JSON.stringify(schema);
+
+        // Hero background
+        document.getElementById('articleHero').style.backgroundImage = `url('${article.image}')`;
+
+        // Content
+        document.getElementById('articleCategory').textContent = article.categoryLabel;
+        document.getElementById('articleTitle').textContent = article.title;
+        document.getElementById('articleDate').textContent = article.dateDisplay;
+        document.getElementById('articleReadTime').textContent = article.readTime;
+        document.getElementById('articleViews').textContent = formatViews(article.views);
+        document.getElementById('articleAuthor').textContent = article.author;
+
+        // Featured image
+        const imgEl = document.getElementById('articleImage');
+        imgEl.src = article.image;
+        imgEl.alt = article.title;
+
+        // Body
+        document.getElementById('articleBody').innerHTML = article.content;
+
+        // Tags
+        const tagsHTML = article.tags.map(t => `<span class="article-tag-chip"><i class="fas fa-tag"></i> ${t}</span>`).join('');
+        document.getElementById('articleTags').innerHTML = '<h4>แท็ก</h4><div class="tags-list">' + tagsHTML + '</div>';
+
+        // Share links
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(article.title);
+        document.getElementById('shareFacebook').href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+        document.getElementById('shareLine').href = `https://social-plugins.line.me/lineit/share?url=${url}&text=${title}`;
+        document.getElementById('shareCopy').addEventListener('click', function() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                this.innerHTML = '<i class="fas fa-check"></i> คัดลอกแล้ว!';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-link"></i> คัดลอกลิงก์';
+                }, 2000);
+            });
+        });
+
+        // Build TOC from h2 headings
+        buildTOC();
+
+        // Related articles
+        renderRelated(article.slug);
+    }
+
+    function buildTOC() {
+        const headings = document.querySelectorAll('.article-body-content h2');
+        const tocNav = document.getElementById('articleTOC');
+        
+        if (headings.length === 0) {
+            tocNav.parentElement.style.display = 'none';
+            return;
+        }
+
+        let html = '<ul>';
+        headings.forEach((h, i) => {
+            const id = 'section-' + i;
+            h.id = id;
+            html += `<li><a href="#${id}">${h.textContent}</a></li>`;
+        });
+        html += '</ul>';
+        tocNav.innerHTML = html;
+
+        // Smooth scroll
+        tocNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.getElementById(this.getAttribute('href').substring(1));
+                if (target) {
+                    const offset = 100;
+                    window.scrollTo({
+                        top: target.offsetTop - offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active TOC item on scroll
+        window.addEventListener('scroll', function() {
+            const scrollPos = window.scrollY + 120;
+            let activeIndex = 0;
+
+            headings.forEach((h, i) => {
+                if (h.offsetTop <= scrollPos) activeIndex = i;
+            });
+
+            tocNav.querySelectorAll('a').forEach((a, i) => {
+                a.classList.toggle('active', i === activeIndex);
+            });
+        });
+    }
+
+    function renderRelated(currentSlug) {
+        const related = getRelatedArticles(currentSlug, 3);
+        const container = document.getElementById('relatedArticles');
+
+        if (related.length === 0) {
+            // Show other articles if no same-category articles
+            const others = ARTICLES_DATA.filter(a => a.slug !== currentSlug).slice(0, 3);
+            renderRelatedItems(others, container);
+        } else {
+            renderRelatedItems(related, container);
+        }
+    }
+
+    function renderRelatedItems(articles, container) {
+        container.innerHTML = articles.map(a => `
+            <a href="article.html?slug=${a.slug}" class="related-article-item">
+                <div class="related-article-thumb">
+                    <img src="${a.image}" alt="${a.title}" loading="lazy">
+                </div>
+                <div class="related-article-info">
+                    <span class="related-article-cat">${a.categoryLabel}</span>
+                    <h5>${a.title}</h5>
+                    <span class="related-article-date">${a.dateDisplay}</span>
+                </div>
+            </a>
+        `).join('');
+    }
+    </script>
+    <script src="search.js"></script>
+</body>
+</html>

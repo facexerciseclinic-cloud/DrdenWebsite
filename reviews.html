@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รีวิวจากลูกค้า | DR.DEN Clinic - คลินิกหมอเด่น</title>
+    <meta name="description" content="รีวิวจากลูกค้าจริง กว่า 10,000+ เคส ฟิลเลอร์ โบท็อกซ์ Ultherapy Collagen Wave รักษาสิว">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="section-badge">รีวิวจากลูกค้า</span>
+                <h1 class="page-title">เคสปรับรูปหน้าจริง<br>กว่า <span class="gradient-text">10,000+</span> เคส</h1>
+                <p class="page-description">ความพึงพอใจของลูกค้าคือความสำเร็จของเรา<br>ดูผลงานจริงจากลูกค้าจริง ทุกเคสได้รับการดูแลจากแพทย์ผู้เชี่ยวชาญ</p>
+                <div class="page-stats">
+                    <div class="stat">
+                        <h3 class="stat-number">10,000+</h3>
+                        <p class="stat-label">เคสความสำเร็จ</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">ความพึงพอใจ</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">9+</h3>
+                        <p class="stat-label">ปีประสบการณ์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Filter Section -->
+    <section class="reviews-page">
+        <div class="container">
+            <!-- Filter Tabs (rendered dynamically by reviews-data.js) -->
+            <div class="reviews-filter-enhanced"></div>
+
+            <!-- Search and Sort -->
+            <div class="reviews-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="ค้นหารีวิว..." id="reviewSearch">
+                </div>
+                <div class="sort-box">
+                    <label for="reviewSort">เรียงตาม:</label>
+                    <select id="reviewSort">
+                        <option value="latest">ล่าสุด</option>
+                        <option value="popular">ยอดนิยม</option>
+                        <option value="rating">คะแนนสูงสุด</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Reviews Grid (rendered dynamically by reviews-data.js) -->
+            <div class="reviews-grid-enhanced"></div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-primary load-more-btn" id="loadMoreReviews">
+                    <i class="fas fa-plus-circle"></i>
+                    โหลดรีวิวเพิ่มเติม
+                </button>
+                <p class="reviews-count"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>พร้อมเปลี่ยนแปลงแล้วใช่ไหม?</h2>
+                <p>ปรึกษาฟรี! กับทีมแพทย์ผู้เชี่ยวชาญ<br>วางแผนการดูแลผิวที่เหมาะกับคุณ</p>
+                <div class="cta-buttons">
+                    <a href="#" onclick="openBranchCTA(event)" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        จองคิวเลย
+                    </a>
+                    <a href="#" onclick="openBranchCTA(event)" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        ติดต่อสาขา
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="data-bridge.js"></script>
+    <script src="reviews-data.js"></script>
+    <script src="script.js"></script>
+    <script src="reviews.js"></script>
+    <script src="branch-contact.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

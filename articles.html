@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทความความงาม | DR.DEN Clinic - คลินิกหมอเด่น</title>
+    <meta name="description" content="บทความและเคล็ดลับความงาม Sculptra Juvelook Young Reset ฟิลเลอร์ โบท็อกซ์ Ultherapy รักษาสิว จากทีมแพทย์ผู้เชี่ยวชาญ DR.DEN Clinic">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="section-badge">บทความความงาม</span>
+                <h1 class="page-title">อยากสวยต้องอ่าน<br><span class="gradient-text">ความรู้จากผู้เชี่ยวชาญ</span></h1>
+                <p class="page-description">บทความความงาม เคล็ดลับ และความรู้ทางการแพทย์<br>จากทีมแพทย์ผู้เชี่ยวชาญด้านความงามและผิวหนัง</p>
+                <div class="page-stats">
+                    <div class="stat">
+                        <h3 class="stat-number" id="statArticleCount">10</h3>
+                        <p class="stat-label">บทความคุณภาพ</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">50,000+</h3>
+                        <p class="stat-label">ผู้เข้าชม</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">อัปเดตทุกสัปดาห์</h3>
+                        <p class="stat-label">เนื้อหาใหม่</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Page -->
+    <section class="articles-page">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="article-categories">
+                <button class="article-category-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    <span>ทั้งหมด</span>
+                </button>
+                <button class="article-category-btn" data-category="treatment">
+                    <i class="fas fa-syringe"></i>
+                    <span>บทความการรักษา</span>
+                </button>
+                <button class="article-category-btn" data-category="skincare">
+                    <i class="fas fa-spa"></i>
+                    <span>ดูแลผิว</span>
+                </button>
+                <button class="article-category-btn" data-category="product">
+                    <i class="fas fa-flask"></i>
+                    <span>ผลิตภัณฑ์</span>
+                </button>
+                <button class="article-category-btn" data-category="tips">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>เคล็ดลับ</span>
+                </button>
+                <button class="article-category-btn" data-category="trend">
+                    <i class="fas fa-fire"></i>
+                    <span>เทรนด์ความงาม</span>
+                </button>
+            </div>
+
+            <!-- Search Box -->
+            <div class="article-search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="ค้นหาบทความ..." id="articleSearch">
+            </div>
+
+            <!-- Featured Article (rendered by JS) -->
+            <div id="featuredArticleContainer"></div>
+
+            <!-- Articles Grid (rendered by JS) -->
+            <div class="articles-grid" id="articlesGrid"></div>
+
+            <!-- No results message -->
+            <div class="no-results-message" id="noResults" style="display:none;">
+                <i class="fas fa-search"></i>
+                <h3>ไม่พบบทความที่คุณค้นหา</h3>
+                <p>ลองค้นหาด้วยคำค้นอื่น หรือเลือกหมวดหมู่อื่น</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>พร้อมเริ่มต้นการเปลี่ยนแปลงแล้วหรือยัง?</h2>
+                <p>ปรึกษาฟรี! พูดคุยกับทีมผู้เชี่ยวชาญของเรา</p>
+                <div class="cta-buttons">
+                    <a href="#" onclick="openBranchCTA(event)" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        จองปรึกษาฟรี
+                    </a>
+                    <a href="#" onclick="openBranchCTA(event)" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        ติดต่อสาขา
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="articles-data.js"></script>
+    <script src="data-bridge.js"></script>
+    <script src="articles.js"></script>
+    <script src="branch-contact.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

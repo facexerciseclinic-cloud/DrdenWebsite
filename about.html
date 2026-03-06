@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา | DR.DEN Clinic - คลินิกหมอเด่น</title>
+    <meta name="description" content="เกี่ยวกับ DR.DEN Clinic กลุ่มคลินิกความงามชั้นนำ FXC Clinic, Paragon Clinic, Nirvana Clinic กว่า 9 สาขาทั่วประเทศ ดูแลโดยทีมหมอเด่น">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js"></script>
+
+    <style>
+        /* ========================================
+           ABOUT PAGE - SPECIFIC STYLES
+        ======================================== */
+
+        /* Hero Section */
+        .about-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 8rem 0 5rem;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(230,176,48,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(230,176,48,0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .about-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 120px;
+            background: linear-gradient(to top, var(--bg-primary), transparent);
+            pointer-events: none;
+        }
+        .about-hero .section-badge {
+            margin-bottom: 1.5rem;
+        }
+        .about-hero-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+        }
+        .about-hero-subtitle {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.75);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+        .about-hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        .about-hero-stat {
+            text-align: center;
+        }
+        .about-hero-stat h3 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #E6B030, #FFD54F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+        }
+        .about-hero-stat p {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.9rem;
+            margin: 0.25rem 0 0;
+        }
+
+        /* DNA / Umbrella Trust Section */
+        .dna-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            position: relative;
+        }
+        .dna-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(230,176,48,0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .dna-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(230,176,48,0.08), rgba(230,176,48,0.02));
+            border: 1px solid rgba(230,176,48,0.2);
+            border-radius: 24px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .dna-card::before {
+            content: '';
+            position: absolute;
+            top: -40px; right: -40px;
+            width: 160px; height: 160px;
+            background: radial-gradient(circle, rgba(230,176,48,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .dna-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, rgba(230,176,48,0.15), rgba(230,176,48,0.05));
+            border: 1px solid rgba(230,176,48,0.3);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            color: #FFD54F;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        .dna-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .dna-title span {
+            color: #E6B030;
+        }
+        .dna-subtitle {
+            font-size: 1rem;
+            color: #E6B030;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .dna-text {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        .dna-pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .dna-pillar {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .dna-pillar:hover {
+            background: rgba(230,176,48,0.08);
+            border-color: rgba(230,176,48,0.2);
+            transform: translateY(-3px);
+        }
+        .dna-pillar-icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, rgba(230,176,48,0.15), rgba(230,176,48,0.05));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .dna-pillar-icon i {
+            font-size: 1.3rem;
+            color: #E6B030;
+        }
+        .dna-pillar h4 {
+            color: #FFD54F;
+            font-size: 1rem;
+            margin: 0 0 0.4rem;
+            font-weight: 600;
+        }
+        .dna-pillar p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Brand Sections */
+        .brand-section {
+            padding: 5rem 0;
+            position: relative;
+        }
+        .brand-section:nth-child(even) {
+            background: var(--bg-secondary, #f8f8f8);
+        }
+        .brand-section:nth-child(odd) {
+            background: var(--bg-primary, #ffffff);
+        }
+
+        .brand-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .brand-icon-wrapper {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+        .brand-icon-wrapper::after {
+            content: '';
+            position: absolute;
+            top: -6px; left: -6px; right: -6px; bottom: -6px;
+            border-radius: 50%;
+            border: 2px dashed;
+            opacity: 0.3;
+            animation: spinSlow 20s linear infinite;
+        }
+        @keyframes spinSlow {
+            to { transform: rotate(360deg); }
+        }
+        .brand-icon-wrapper i {
+            font-size: 2rem;
+            color: #fff;
+        }
+        .brand-name {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-primary, #1a1a2e);
+            margin: 0 0 0.3rem;
+        }
+        .brand-tagline-en {
+            font-size: 1rem;
+            color: var(--primary-color, #E6B030);
+            font-weight: 600;
+            font-style: italic;
+            margin: 0 0 0.8rem;
+        }
+        .brand-tagline-th {
+            font-size: 1.05rem;
+            color: var(--text-secondary, #666);
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Story & Philosophy Cards */
+        .brand-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .brand-card {
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-4px);
+        }
+        .brand-card-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .brand-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0 0 1rem;
+            line-height: 1.4;
+        }
+        .brand-card p {
+            line-height: 1.9;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* FXC Theme — Dark Red / Vivid Red */
+        .fxc-theme .brand-icon-wrapper {
+            background: linear-gradient(135deg, #8B0000, #C62828);
+        }
+        .fxc-theme .brand-icon-wrapper::after {
+            border-color: #C62828;
+        }
+        .fxc-theme .brand-card {
+            background: linear-gradient(135deg, #fff5f5, #fce8e8);
+            border: 1px solid rgba(198,40,40,0.12);
+        }
+        .fxc-theme .brand-card:hover {
+            box-shadow: 0 12px 40px rgba(198,40,40,0.15);
+        }
+        .fxc-theme .brand-card-label {
+            background: rgba(198,40,40,0.08);
+            color: #8B0000;
+        }
+        .fxc-theme .brand-card h3 {
+            color: #8B0000;
+        }
+        .fxc-theme .brand-card p {
+            color: #5a3030;
+        }
+        .fxc-theme .brand-highlight {
+            background: linear-gradient(135deg, #8B0000, #C62828);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+        }
+        .fxc-theme .brand-highlight p {
+            color: rgba(255,255,255,0.9);
+            margin: 0;
+        }
+        .fxc-theme .brand-highlight strong {
+            color: #FFD54F;
+        }
+
+        /* Paragon Theme */
+        .paragon-theme .brand-icon-wrapper {
+            background: linear-gradient(135deg, #E6B030, #D4941F);
+        }
+        .paragon-theme .brand-icon-wrapper::after {
+            border-color: #E6B030;
+        }
+        .paragon-theme .brand-card {
+            background: linear-gradient(135deg, #fffbf0, #fff5e0);
+            border: 1px solid rgba(230,176,48,0.15);
+        }
+        .paragon-theme .brand-card:hover {
+            box-shadow: 0 12px 40px rgba(230,176,48,0.12);
+        }
+        .paragon-theme .brand-card-label {
+            background: rgba(230,176,48,0.12);
+            color: #b8860b;
+        }
+        .paragon-theme .brand-card h3 {
+            color: #8B6914;
+        }
+        .paragon-theme .brand-card p {
+            color: #5a4a28;
+        }
+        .paragon-theme .brand-highlight {
+            background: linear-gradient(135deg, #E6B030, #D4941F);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+        }
+        .paragon-theme .brand-highlight p {
+            color: #fff;
+            margin: 0;
+        }
+        .paragon-theme .brand-highlight strong {
+            color: #1a1a2e;
+        }
+
+        /* Nirvana Theme — Sky Blue */
+        .nirvana-theme .brand-icon-wrapper {
+            background: linear-gradient(135deg, #0288D1, #039BE5);
+        }
+        .nirvana-theme .brand-icon-wrapper::after {
+            border-color: #039BE5;
+        }
+        .nirvana-theme .brand-card {
+            background: linear-gradient(135deg, #f0f9ff, #e1f5fe);
+            border: 1px solid rgba(3,155,229,0.12);
+        }
+        .nirvana-theme .brand-card:hover {
+            box-shadow: 0 12px 40px rgba(3,155,229,0.15);
+        }
+        .nirvana-theme .brand-card-label {
+            background: rgba(3,155,229,0.08);
+            color: #0277BD;
+        }
+        .nirvana-theme .brand-card h3 {
+            color: #01579B;
+        }
+        .nirvana-theme .brand-card p {
+            color: #37474F;
+        }
+        .nirvana-theme .brand-highlight {
+            background: linear-gradient(135deg, #0288D1, #039BE5);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+        }
+        .nirvana-theme .brand-highlight p {
+            color: rgba(255,255,255,0.95);
+            margin: 0;
+        }
+        .nirvana-theme .brand-highlight strong {
+            color: #FFD54F;
+        }
+
+        /* Brand Badges */
+        .brand-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.2rem;
+        }
+        .brand-badge-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .fxc-theme .brand-badge-item {
+            background: rgba(198,40,40,0.07);
+            color: #8B0000;
+        }
+        .paragon-theme .brand-badge-item {
+            background: rgba(230,176,48,0.1);
+            color: #8B6914;
+        }
+        .nirvana-theme .brand-badge-item {
+            background: rgba(3,155,229,0.08);
+            color: #0277BD;
+        }
+
+        /* CTA Section */
+        .about-cta {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .about-cta::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(230,176,48,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .about-cta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .about-cta-text {
+            color: rgba(255,255,255,0.7);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        .about-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .about-cta-btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .about-cta-btn-primary {
+            background: linear-gradient(135deg, #E6B030, #D4941F);
+            color: #1a1a2e;
+            box-shadow: 0 4px 20px rgba(230,176,48,0.3);
+        }
+        .about-cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(230,176,48,0.4);
+        }
+        .about-cta-btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .about-cta-btn-outline:hover {
+            border-color: #E6B030;
+            color: #E6B030;
+            transform: translateY(-2px);
+        }
+
+        /* Brand Gallery */
+        .brand-gallery {
+            margin-top: 2.5rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Doctor Team Section */
+        .brand-doctors {
+            margin-top: 2.5rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .brand-doctors-title {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .brand-doctors-title i {
+            font-size: 1rem;
+        }
+        .brand-doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.2rem;
+            justify-items: center;
+        }
+        .doctor-profile-card {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .doctor-profile-card:hover {
+            transform: translateY(-5px);
+        }
+        .doctor-profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 3px solid #eee;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 0.6rem;
+        }
+        .doctor-profile-card:hover .doctor-profile-img {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .doctor-profile-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0;
+            color: var(--text-primary, #1a1a2e);
+        }
+        /* Theme-specific doctor borders */
+        .fxc-theme .doctor-profile-img {
+            border-color: rgba(198,40,40,0.3);
+        }
+        .fxc-theme .doctor-profile-card:hover .doctor-profile-img {
+            border-color: #C62828;
+        }
+        .fxc-theme .brand-doctors-title {
+            color: #8B0000;
+        }
+        .paragon-theme .doctor-profile-img {
+            border-color: rgba(230,176,48,0.3);
+        }
+        .paragon-theme .doctor-profile-card:hover .doctor-profile-img {
+            border-color: #E6B030;
+        }
+        .paragon-theme .brand-doctors-title {
+            color: #8B6914;
+        }
+        .nirvana-theme .doctor-profile-img {
+            border-color: rgba(3,155,229,0.3);
+        }
+        .nirvana-theme .doctor-profile-card:hover .doctor-profile-img {
+            border-color: #039BE5;
+        }
+        .nirvana-theme .brand-doctors-title {
+            color: #01579B;
+        }
+        .brand-gallery-title {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary, #666);
+        }
+        .brand-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .brand-gallery-item {
+            border-radius: 14px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .brand-gallery-item:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        .brand-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .brand-gallery-item:hover img {
+            transform: scale(1.08);
+        }
+        .brand-gallery-hero {
+            grid-column: 1 / -1;
+            aspect-ratio: 21/9;
+            border-radius: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 7rem 0 3.5rem;
+            }
+            .about-hero-title {
+                font-size: 1.8rem;
+            }
+            .about-hero-subtitle {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+            .about-hero-stats {
+                gap: 1.5rem;
+            }
+            .about-hero-stat h3 {
+                font-size: 1.8rem;
+            }
+            .brand-content {
+                grid-template-columns: 1fr;
+            }
+            .brand-name {
+                font-size: 1.5rem;
+            }
+            .brand-tagline-th {
+                font-size: 0.95rem;
+                padding: 0 1rem;
+            }
+            .dna-card {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+            .dna-pillars {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .dna-title {
+                font-size: 1.35rem;
+            }
+            .about-cta-title {
+                font-size: 1.5rem;
+            }
+            .about-cta-text {
+                font-size: 0.95rem;
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-hero-title {
+                font-size: 1.5rem;
+            }
+            .about-hero-stats {
+                gap: 1rem;
+            }
+            .about-hero-stat h3 {
+                font-size: 1.5rem;
+            }
+            .brand-card {
+                padding: 1.8rem;
+            }
+            .brand-gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.6rem;
+            }
+            .brand-gallery-hero {
+                aspect-ratio: 16/9;
+            }
+            .brand-doctors-grid {
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                gap: 0.8rem;
+            }
+            .doctor-profile-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- ========================================
+         HERO SECTION
+    ======================================== -->
+    <section class="about-hero">
+        <div class="container">
+            <span class="section-badge">เกี่ยวกับเรา</span>
+            <h1 class="about-hero-title">
+                ยกระดับมาตรฐาน<br>
+                <span class="gradient-text">ความงามไทย</span>
+            </h1>
+            <p class="about-hero-subtitle">
+                กลุ่มคลินิกเวชกรรมความงามชั้นนำ ภายใต้การดูแลของ "ทีมหมอเด่น"<br>
+                ด้วยปรัชญา Biohack, Build &amp; Balance เพื่อผลลัพธ์ที่ยั่งยืนและเป็นธรรมชาติ
+            </p>
+            <div class="about-hero-stats">
+                <div class="about-hero-stat">
+                    <h3>3</h3>
+                    <p>แบรนด์ในเครือ</p>
+                </div>
+                <div class="about-hero-stat">
+                    <h3>9+</h3>
+                    <p>สาขาทั่วประเทศ</p>
+                </div>
+                <div class="about-hero-stat">
+                    <h3>100,000+</h3>
+                    <p>เคสที่ดูแล</p>
+                </div>
+                <div class="about-hero-stat">
+                    <h3>7+</h3>
+                    <p>ปีแห่งประสบการณ์</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         DNA OF EXCELLENCE - UMBRELLA TRUST
+    ======================================== -->
+    <section class="dna-section">
+        <div class="container">
+            <div class="dna-card">
+                <div class="dna-badge">
+                    <i class="fas fa-dna"></i>
+                    The DNA of Excellence
+                </div>
+                <h2 class="dna-title">มาตรฐานภายใต้<span>ทีมแพทย์ชั้นนำ</span></h2>
+                <p class="dna-subtitle">"ทุกความสวยของคุณ ถูกดูแลภายใต้มาตรฐานสูงสุด"</p>
+                <p class="dna-text">
+                    ไม่ว่าคุณจะเข้ารับบริการที่ <strong style="color:#E6B030;">FXC Clinic</strong>, 
+                    <strong style="color:#E6B030;">Paragon Clinic</strong> หรือ 
+                    <strong style="color:#E6B030;">Nirvana Clinic</strong> ทุกความสวยของคุณจะถูกดูแลภายใต้มาตรฐานสูงสุดของ 
+                    <strong style="color:#fff;">'ทีมหมอเด่น' (นพ.อภิวัฒน์ มงคลสินธุ์)</strong> 
+                    และทีมแพทย์ผู้ชำนาญการที่ผ่านการอบรมและประเมินทักษะอย่างเข้มข้น
+                </p>
+                <p class="dna-text" style="margin-top:1rem;">
+                    เรายึดมั่นในปรัชญาการดูแลแบบ <strong style="color:#FFD54F;">Biohack, Build &amp; Balance</strong> 
+                    ที่ไม่เพียงแค่แก้ไขปัญหาเฉพาะหน้า แต่ยังฟื้นฟูตั้งแต่วิทยาศาสตร์ระดับเซลล์ สร้างโครงสร้างที่แข็งแรง 
+                    และปรับสมดุลความงามอย่างยั่งยืน
+                </p>
+
+                <div class="dna-pillars">
+                    <div class="dna-pillar">
+                        <div class="dna-pillar-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Biohack</h4>
+                        <p>ฟื้นฟูตั้งแต่ระดับเซลล์<br>ด้วยวิทยาศาสตร์ล้ำสมัย</p>
+                    </div>
+                    <div class="dna-pillar">
+                        <div class="dna-pillar-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h4>Build</h4>
+                        <p>สร้างโครงสร้างผิว<br>ให้แข็งแรงจากภายใน</p>
+                    </div>
+                    <div class="dna-pillar">
+                        <div class="dna-pillar-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4>Balance</h4>
+                        <p>ปรับสมดุลความงาม<br>อย่างเป็นธรรมชาติ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BRAND 1: FXC CLINIC
+    ======================================== -->
+    <section class="brand-section" id="fxc">
+        <div class="container">
+            <div class="brand-header fxc-theme">
+                <div class="brand-icon-wrapper">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h2 class="brand-name">FXC Clinic</h2>
+                <p class="brand-tagline-en">Mastering the Art of Facial Contouring</p>
+                <p class="brand-tagline-th">
+                    กว่า 20 ปีแห่งความเชี่ยวชาญ สู่การเป็นพรีเมียมคลินิกชั้นนำระดับประเทศ
+                    ที่เข้าใจโครงสร้างผิวและรูปหน้าอย่างลึกซึ้ง เราผสานศิลปะแห่งการออกแบบรูปหน้า
+                    เข้ากับนวัตกรรมทางการแพทย์ขั้นสุด เพื่อผลลัพธ์ที่สง่างาม เป็นธรรมชาติ และปลอดภัยสูงสุด
+                </p>
+            </div>
+
+            <div class="brand-content fxc-theme">
+                <!-- Our Story -->
+                <div class="brand-card">
+                    <div class="brand-card-label">
+                        <i class="fas fa-book-open"></i> Our Story
+                    </div>
+                    <h3>จุดเริ่มต้นของ FXC Clinic</h3>
+                    <p>
+                        FXC Clinic ถือกำเนิดขึ้นจากความมุ่งมั่นที่จะยกระดับมาตรฐานวงการเวชกรรมความงามไทย 
+                        ด้วยประสบการณ์การดูแลคนไข้มากกว่า <strong>100,000 เคส</strong> ตลอดระยะเวลากว่า 
+                        <strong>7 ปี</strong>ที่ผ่านมาในฐานะแบรนด์ชั้นนำ เราไม่เพียงแค่รักษาตามอาการ 
+                        แต่เราเน้นการวิเคราะห์ลึกถึง<strong>โครงสร้างกายวิภาค (Anatomy)</strong> ของแต่ละบุคคล
+                    </p>
+                    <div class="brand-badges">
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> 100,000+ เคส</span>
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> 7+ ปี</span>
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> Anatomy-Based</span>
+                    </div>
+                </div>
+
+                <!-- Our Philosophy -->
+                <div class="brand-card">
+                    <div class="brand-card-label">
+                        <i class="fas fa-lightbulb"></i> Our Philosophy
+                    </div>
+                    <h3>ปรัชญาที่เราเชื่อมั่น</h3>
+                    <p>
+                        เราเชื่อว่าความงามที่ยั่งยืนเริ่มต้นจากการมีโครงสร้างที่แข็งแรง แนวทางการรักษาของเราจึงมุ่งเน้นไปที่การ 
+                        <strong>สร้าง (Build)</strong> โครงร่างตาข่ายผิวให้กลับมากระชับ และ 
+                        <strong>ปรับสมดุล (Balance)</strong> มิติของใบหน้าให้ได้สัดส่วนที่สมบูรณ์แบบที่สุด
+                    </p>
+                    <div class="brand-highlight">
+                        <p>
+                            การันตีคุณภาพด้วยรางวัล <strong>Top 10 Premium Clinic</strong> ระดับประเทศ 
+                            ทุกเคสดูแลโดยแพทย์ผู้ชำนาญการ ภายใต้มาตรฐานความปลอดภัยสูงสุดด้วย
+                            <strong>ตัวยาแท้ 100%</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FXC Doctors -->
+            <div class="brand-doctors fxc-theme">
+                <h3 class="brand-doctors-title"><i class="fas fa-user-md"></i> ทีมแพทย์ FXC Clinic</h3>
+                <div class="brand-doctors-grid">
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/FXC/หมอเด่น-FXC-1.webp" alt="หมอเด่น" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเด่น</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/FXC/หมอเฟิร์น-FXC-2.webp" alt="หมอเฟิร์น" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเฟิร์น</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/FXC/หมอกร-FXC-3.webp" alt="หมอกร" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอกร</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/FXC/หมอปอนด์-FXC-4.webp" alt="หมอปอนด์" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอปอนด์</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/FXC/หมอผึ้ง-FXC-5.webp" alt="หมอผึ้ง" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอผึ้ง</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/FXC/หมอมุ้งมิ้ง-FXC-6.webp" alt="หมอมุ้งมิ้ง" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอมุ้งมิ้ง</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FXC Gallery -->
+            <div class="brand-gallery">
+                <div class="brand-gallery-grid">
+                    <div class="brand-gallery-item brand-gallery-hero">
+                        <img src="assets/images/FXCClinic/DSC00236.jpg" alt="FXC Clinic บรรยากาศภายใน" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/FXCClinic/DSC00255-1.jpg" alt="FXC Clinic ห้องทรีทเมนต์" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/FXCClinic/DSC00280.jpg" alt="FXC Clinic พื้นที่ต้อนรับ" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/FXCClinic/DSC00302 (1).jpg" alt="FXC Clinic ทีมแพทย์" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/FXCClinic/DSC00302.jpg" alt="FXC Clinic คลินิก" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BRAND 2: PARAGON CLINIC
+    ======================================== -->
+    <section class="brand-section" id="paragon">
+        <div class="container">
+            <div class="brand-header paragon-theme">
+                <div class="brand-icon-wrapper">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2 class="brand-name">Paragon Clinic</h2>
+                <p class="brand-tagline-en">Customized Beauty, Perfected for You</p>
+                <p class="brand-tagline-th">
+                    เพราะความสวยของคุณมีเพียงหนึ่งเดียว Paragon Clinic มุ่งเน้นการออกแบบรูปหน้า
+                    และฟื้นฟูโครงสร้างผิวแบบเฉพาะบุคคล (Personalized Design) ด้วยศาสตร์แห่งการชะลอวัย
+                    และผลิตภัณฑ์ระดับโลก เพื่อดึงเวอร์ชันที่ดีที่สุดของคุณออกมา
+                </p>
+            </div>
+
+            <div class="brand-content paragon-theme">
+                <!-- Our Story -->
+                <div class="brand-card">
+                    <div class="brand-card-label">
+                        <i class="fas fa-book-open"></i> Our Story
+                    </div>
+                    <h3>จุดหมายของคนรุ่นใหม่</h3>
+                    <p>
+                        Paragon Clinic คือจุดหมายปลายทางของคนรุ่นใหม่ที่ใส่ใจในภาพลักษณ์และต้องการความมั่นใจอย่างเต็มเปี่ยม 
+                        เราโดดเด่นและได้รับการยอมรับอย่างกว้างขวางในฐานะ<strong>คลินิกชั้นนำระดับประเทศ</strong>ด้านการฉีดฟิลเลอร์และโบท็อกซ์ 
+                        รวมถึงนวัตกรรม <strong>Skin Booster</strong> ที่ครอบคลุมทุกปัญหาผิว
+                    </p>
+                    <div class="brand-badges">
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> Filler & Botox</span>
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> Skin Booster</span>
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> Personalized</span>
+                    </div>
+                </div>
+
+                <!-- Our Philosophy -->
+                <div class="brand-card">
+                    <div class="brand-card-label">
+                        <i class="fas fa-lightbulb"></i> Our Philosophy
+                    </div>
+                    <h3>ออกแบบความงามแบบองค์รวม</h3>
+                    <p>
+                        หัวใจสำคัญของ Paragon Clinic คือการออกแบบความงามแบบองค์รวม เรานำแนวคิดการฟื้นฟูผิวลึกถึง
+                        <strong>ระดับเซลล์ (Biohack)</strong> มาใช้ร่วมกับนวัตกรรมใหม่ๆ เพื่อกระตุ้นการสร้างคอลลาเจนตามธรรมชาติ 
+                        ผนวกกับการวิเคราะห์และออกแบบรูปหน้าอย่างพิถีพิถัน
+                    </p>
+                    <div class="brand-highlight">
+                        <p>
+                            เพื่อให้ได้ผลลัพธ์ที่ตอบโจทย์ไลฟ์สไตล์ ดูอ่อนเยาว์ 
+                            และ<strong>คงความเป็นเอกลักษณ์ของคุณ</strong>ไว้อย่างชัดเจน
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paragon Doctors -->
+            <div class="brand-doctors paragon-theme">
+                <h3 class="brand-doctors-title"><i class="fas fa-user-md"></i> ทีมแพทย์ Paragon Clinic</h3>
+                <div class="brand-doctors-grid">
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอเด่น-PC.webp" alt="หมอเด่น" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเด่น</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอมุ้งมิ้ง-PC-scaled.webp" alt="หมอมุ้งมิ้ง" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอมุ้งมิ้ง</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอเซฟ-PC-scaled.webp" alt="หมอเซฟ" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเซฟ</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอเมย์-PC-scaled.webp" alt="หมอเมย์" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเมย์</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอบัว-PC.webp" alt="หมอบัว" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอบัว</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอบับเบิ้ล-PC-scaled.webp" alt="หมอบับเบิ้ล" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอบับเบิ้ล</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Paragon/หมอจีจี้-PC.webp" alt="หมอจีจี้" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอจีจี้</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paragon Gallery -->
+            <div class="brand-gallery">
+                <div class="brand-gallery-grid">
+                    <div class="brand-gallery-item brand-gallery-hero">
+                        <img src="assets/images/ParagonClinic/รูปรวม-PC-01.webp" alt="Paragon Clinic บรรยากาศ" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/ParagonClinic/Frame-8.jpg" alt="Paragon Clinic สาขา" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/ParagonClinic/Frame-10.jpg" alt="Paragon Clinic ภายใน" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/ParagonClinic/Frame-11.jpg" alt="Paragon Clinic ห้องทรีทเมนต์" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/ParagonClinic/รูปรวม-PC_PA.webp" alt="Paragon Clinic รวมสาขา" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BRAND 3: NIRVANA CLINIC
+    ======================================== -->
+    <section class="brand-section" id="nirvana">
+        <div class="container">
+            <div class="brand-header nirvana-theme">
+                <div class="brand-icon-wrapper">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h2 class="brand-name">Nirvana Clinic</h2>
+                <p class="brand-tagline-en">The No.1 Aesthetic Destination in the East</p>
+                <p class="brand-tagline-th">
+                    ยกมาตรฐานความงามระดับพรีเมียมจากกรุงเทพฯ สู่ภาคตะวันออก 
+                    Nirvana Clinic คือศูนย์รวมนวัตกรรมความงามและการปรับรูปหน้า
+                    ที่ได้รับความไว้วางใจสูงสุด ด้วยทีมแพทย์ผู้ชำนาญการและเทคนิคการรักษาที่เป็นเอกสิทธิ์เฉพาะ
+                </p>
+            </div>
+
+            <div class="brand-content nirvana-theme">
+                <!-- Our Story -->
+                <div class="brand-card">
+                    <div class="brand-card-label">
+                        <i class="fas fa-book-open"></i> Our Story
+                    </div>
+                    <h3>วิสัยทัศน์สู่ภาคตะวันออก</h3>
+                    <p>
+                        Nirvana Clinic ก่อตั้งขึ้นด้วยวิสัยทัศน์ที่ต้องการให้ทุกคนในพื้นที่<strong>ภาคตะวันออก 
+                        (ระยอง ชลบุรี และพื้นที่ใกล้เคียง)</strong> สามารถเข้าถึงบริการทางการแพทย์ด้านความงามระดับพรีเมียมได้
+                        โดยไม่ต้องเดินทางไกล เราเติบโตอย่างมั่นคงจากเสียงตอบรับและคำบอกต่อ (Word of Mouth) 
+                        จนก้าวขึ้นเป็น<strong>คลินิกความงามอันดับ 1 ในภูมิภาค</strong> ที่ได้รับการรับรองจากสถาบันระดับสากล
+                    </p>
+                    <div class="brand-badges">
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> No.1 ภาคตะวันออก</span>
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> สากลรับรอง</span>
+                        <span class="brand-badge-item"><i class="fas fa-check-circle"></i> Word of Mouth</span>
+                    </div>
+                </div>
+
+                <!-- Our Philosophy -->
+                <div class="brand-card">
+                    <div class="brand-card-label">
+                        <i class="fas fa-lightbulb"></i> Our Philosophy
+                    </div>
+                    <h3>มาตรฐานที่ไม่เคยประนีประนอม</h3>
+                    <p>
+                        <strong>มาตรฐาน</strong> คือสิ่งที่เราไม่เคยประนีประนอม Nirvana Clinic บริหารงานและควบคุมคุณภาพ
+                        การรักษาภายใต้มาตรฐานเดียวกับคลินิกชั้นนำในกรุงเทพฯ เราพิถีพิถันตั้งแต่การเลือกใช้<strong>ตัวยาแท้</strong> 
+                        นวัตกรรมเครื่องมือที่ทันสมัย ไปจนถึงเทคนิคการรักษาเฉพาะตัว เช่น เทคนิคการวางตัวยาเพื่อฟื้นฟูผิวขั้นสุด
+                    </p>
+                    <div class="brand-highlight">
+                        <p>
+                            เพื่อส่งมอบประสบการณ์ความงามที่ <strong>ปลอดภัย คุ้มค่า</strong> 
+                            และเห็นผลลัพธ์ที่ชัดเจนที่สุดสำหรับลูกค้าทุกท่าน
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nirvana Doctors -->
+            <div class="brand-doctors nirvana-theme">
+                <h3 class="brand-doctors-title"><i class="fas fa-user-md"></i> ทีมแพทย์ Nirvana Clinic</h3>
+                <div class="brand-doctors-grid">
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Nirvana/หมอเด่น-NC04.webp" alt="หมอเด่น" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเด่น</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Nirvana/หมอเฟิร์น-NC05.webp" alt="หมอเฟิร์น" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอเฟิร์น</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Nirvana/หมอกร-NC01.webp" alt="หมอกร" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอกร</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Nirvana/หมอปอน์ด-NC02.webp" alt="หมอปอน์ด" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอปอน์ด</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <img src="assets/images/doctor-new/Nirvana/หมอผึ้ง-NC03.webp" alt="หมอผึ้ง" class="doctor-profile-img" loading="lazy">
+                        <p class="doctor-profile-name">หมอผึ้ง</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nirvana Gallery -->
+            <div class="brand-gallery">
+                <div class="brand-gallery-grid">
+                    <div class="brand-gallery-item brand-gallery-hero">
+                        <img src="assets/images/NirvanaClinic/image-2-2048x714.jpg" alt="Nirvana Clinic บรรยากาศ" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/NirvanaClinic/Frame-119.jpg" alt="Nirvana Clinic สาขา" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/NirvanaClinic/Frame-120.jpg" alt="Nirvana Clinic ภายใน" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/NirvanaClinic/image-1.jpg" alt="Nirvana Clinic ห้องทรีทเมนต์" loading="lazy">
+                    </div>
+                    <div class="brand-gallery-item">
+                        <img src="assets/images/NirvanaClinic/image-2-2048x714 (1).jpg" alt="Nirvana Clinic คลินิก" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA SECTION
+    ======================================== -->
+    <section class="about-cta">
+        <div class="container">
+            <h2 class="about-cta-title">
+                เริ่มต้นเส้นทางสู่<span class="gradient-text"> เวอร์ชันที่ดีที่สุด</span>ของคุณ
+            </h2>
+            <p class="about-cta-text">
+                ไม่ว่าคุณจะอยู่ที่ไหน DR.DEN Clinic พร้อมดูแลคุณ<br>
+                ด้วยมาตรฐานเดียวกัน ทุกสาขาทั่วประเทศ
+            </p>
+            <div class="about-cta-buttons">
+                <a href="branches.html" class="about-cta-btn about-cta-btn-primary">
+                    <i class="fas fa-map-marker-alt"></i>
+                    ดูสาขาทั้งหมด
+                </a>
+                <a href="services.html" class="about-cta-btn about-cta-btn-outline">
+                    <i class="fas fa-th-list"></i>
+                    ดูบริการทั้งหมด
+                </a>
+                <a href="#" class="about-cta-btn about-cta-btn-outline cta-trigger">
+                    <i class="fab fa-line"></i>
+                    ปรึกษาฟรี
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="data-bridge.js"></script>
+    <script src="branch-contact.js"></script>
+</body>
+</html>
