@@ -467,7 +467,7 @@ a[href*="http"] {
 }
 
 /* ============================================
-   FLOATING CONTACT BUTTONS
+   FLOATING CONTACT BUTTONS — Enhanced CTA
    ============================================ */
 .floating-contact {
     position: fixed;
@@ -478,28 +478,145 @@ a[href*="http"] {
 }
 
 .floating-btn {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 1.5rem;
-    background: var(--gradient-primary);
+    gap: 0.75rem;
+    padding: 1rem 1.75rem;
+    background: linear-gradient(135deg, #E6B030 0%, #D4941F 40%, #E6B030 60%, #FFD54F 100%);
+    background-size: 200% 200%;
+    animation: fabGradientShift 3s ease infinite;
     color: white;
     border: none;
-    border-radius: var(--radius-xl);
+    border-radius: 60px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
-    box-shadow: var(--shadow-lg);
-    transition: all var(--transition-base);
+    box-shadow:
+        0 4px 20px rgba(230, 176, 48, 0.45),
+        0 0 40px rgba(230, 176, 48, 0.15),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: visible;
+    z-index: 2;
 }
 
 .floating-btn:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow-xl);
+    transform: scale(1.08) translateY(-3px);
+    box-shadow:
+        0 8px 32px rgba(230, 176, 48, 0.55),
+        0 0 60px rgba(230, 176, 48, 0.25),
+        inset 0 1px 0 rgba(255,255,255,0.3);
 }
 
-.floating-btn i {
-    font-size: 1.25rem;
+.floating-btn:active {
+    transform: scale(0.97);
+    transition-duration: 0.1s;
+}
+
+/* Icon wrapper with bounce */
+.fab-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: fabIconBounce 2s ease-in-out infinite;
+}
+
+.fab-icon-wrap i {
+    font-size: 1.15rem;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+}
+
+/* Label text */
+.fab-label {
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    white-space: nowrap;
+}
+
+/* FREE badge */
+.fab-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff3b5c;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 3px 7px;
+    border-radius: 20px;
+    letter-spacing: 0.08em;
+    box-shadow: 0 2px 8px rgba(255, 59, 92, 0.5);
+    animation: fabBadgePop 2s ease-in-out infinite;
+    z-index: 3;
+}
+
+/* Pulse rings */
+.fab-pulse-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 60px;
+    border: 2px solid rgba(230, 176, 48, 0.5);
+    animation: fabPulseRing 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    pointer-events: none;
+}
+
+.fab-ring-2 {
+    animation-delay: 1.25s;
+}
+
+/* Sparkle dots */
+.fab-sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFD54F;
+    pointer-events: none;
+    opacity: 0;
+    animation: fabSparkle 3s ease-in-out infinite;
+}
+
+.fab-sp1 { top: -10px; left: 20%; animation-delay: 0s; }
+.fab-sp2 { bottom: -8px; right: 15%; animation-delay: 1s; }
+.fab-sp3 { top: 50%; left: -10px; animation-delay: 2s; }
+
+/* ---- Keyframes ---- */
+@keyframes fabGradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes fabIconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+@keyframes fabBadgePop {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+@keyframes fabPulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+
+@keyframes fabSparkle {
+    0%, 100% { opacity: 0; transform: scale(0) translateY(0); }
+    30% { opacity: 1; transform: scale(1) translateY(-6px); }
+    60% { opacity: 0.5; transform: scale(0.5) translateY(-12px); }
 }
 
 .floating-menu {
@@ -4662,12 +4779,33 @@ a.info-card-row:hover .info-card-arrow {
     }
 
     .floating-btn {
-        padding: 0.875rem 1.25rem;
+        padding: 0.875rem 1rem;
         font-size: 0.875rem;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        justify-content: center;
     }
 
-    .floating-btn span {
+    .floating-btn .fab-label {
         display: none;
+    }
+
+    .fab-icon-wrap {
+        width: 28px;
+        height: 28px;
+        background: transparent;
+    }
+
+    .fab-badge {
+        top: -6px;
+        right: -6px;
+        font-size: 0.5rem;
+        padding: 2px 5px;
+    }
+
+    .fab-pulse-ring {
+        border-radius: 50%;
     }
 
     /* Section spacing */
