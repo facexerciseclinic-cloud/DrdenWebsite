@@ -31,31 +31,55 @@
     <section class="services-page">
         <div class="container">
             <!-- Category Filter -->
-            <div class="services-categories">
-                <button class="category-btn active" data-category="all">
+            <div class="services-categories" role="tablist" aria-label="ตัวกรองหมวดบริการ">
+                <button class="category-btn active" data-category="all" aria-pressed="true">
                     <i class="fas fa-th"></i>
                     <span>ทั้งหมด</span>
                 </button>
-                <button class="category-btn" data-category="injection">
+                <button class="category-btn" data-category="injection" aria-pressed="false">
                     <i class="fas fa-syringe"></i>
                     <span>ฉีด</span>
                 </button>
-                <button class="category-btn" data-category="machine">
+                <button class="category-btn" data-category="machine" aria-pressed="false">
                     <i class="fas fa-cog"></i>
                     <span>งานเครื่อง</span>
                 </button>
-                <button class="category-btn" data-category="skin">
+                <button class="category-btn" data-category="skin" aria-pressed="false">
                     <i class="fas fa-spa"></i>
                     <span>ดูแลผิว</span>
                 </button>
-                <button class="category-btn" data-category="lifting">
+                <button class="category-btn" data-category="lifting" aria-pressed="false">
                     <i class="fas fa-magic"></i>
                     <span>ยกกระชับ</span>
                 </button>
             </div>
 
+            <div class="services-toolbar" aria-label="เครื่องมือค้นหาบริการ">
+                <div class="services-search-wrap">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input
+                        type="search"
+                        id="serviceSearchInput"
+                        class="services-search-input"
+                        placeholder="ค้นหาบริการ เช่น Filler, Botox, Ulthera"
+                        autocomplete="off"
+                    >
+                </div>
+                <div class="services-sort-wrap">
+                    <label for="serviceSortSelect">เรียงตาม</label>
+                    <select id="serviceSortSelect" class="services-sort-select">
+                        <option value="recommended">แนะนำ</option>
+                        <option value="az">ชื่อ A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="services-result-meta">
+                <p id="servicesResultCount" class="services-result-count" aria-live="polite"></p>
+            </div>
+
             <!-- Services Grid -->
-            <div class="services-grid-enhanced">
+            <div class="services-grid-enhanced" id="servicesGrid">
                 <!-- Service 1: Filler -->
                 <div class="service-card-enhanced" data-category="injection">
                     <div class="service-image">
@@ -258,6 +282,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="servicesEmptyState" class="services-empty-state" hidden>
+                <i class="fas fa-search"></i>
+                <h3>ไม่พบบริการที่ค้นหา</h3>
+                <p>ลองเปลี่ยนคำค้นหา หรือเลือกหมวด “ทั้งหมด” เพื่อดูบริการเพิ่มเติม</p>
             </div>
         </div>
     </section>
