@@ -5340,29 +5340,34 @@ a[href^="tel:"] {
     box-shadow: 0 0 0 3px rgba(230, 176, 48, 0.1);
 }
 
-/* Enhanced Reviews Grid */
+/* Enhanced Reviews Grid - Image Gallery */
 .reviews-grid-enhanced {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+    gap: 1.25rem;
     margin-bottom: 3rem;
 }
 
-/* Enhanced Review Card */
+/* Enhanced Review Card - Image Only */
 .review-card-enhanced {
     background: white;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: all var(--transition-base);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .review-card-enhanced:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Hide review text content - image-only gallery */
+.review-content-enhanced {
+    display: none !important;
 }
 
 .review-image-enhanced {
@@ -5571,7 +5576,7 @@ a[href^="tel:"] {
 /* Responsive Styles */
 @media (max-width: 992px) {
     .reviews-grid-enhanced {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .page-header {
@@ -5611,8 +5616,8 @@ a[href^="tel:"] {
     }
 
     .reviews-grid-enhanced {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .review-image-enhanced {
@@ -5647,13 +5652,9 @@ a[href^="tel:"] {
         margin: 0;
     }
 
-    .review-content-enhanced {
-        padding: 1.25rem;
-    }
-
-    .user-avatar {
-        width: 40px;
-        height: 40px;
+    .reviews-grid-enhanced {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
     }
 }
 
@@ -11539,7 +11540,7 @@ a[href^="tel:"] {
     }
 
     .reviews-grid-enhanced {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .services-grid-enhanced {
