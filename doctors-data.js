@@ -362,8 +362,7 @@ function renderDoctorCard(doctor, index) {
              data-specialty="${specialtyData}" 
              data-index="${index}"
              data-doctor-id="${doctor.id}"
-             style="animation-delay: ${index * 0.07}s"
-             onclick="openDoctorModal(${doctor.id})">
+             style="animation-delay: ${index * 0.07}s">
             <div class="doc-photo-area">
                 ${roleHTML}
                 <div class="doc-photo">
@@ -372,10 +371,6 @@ function renderDoctorCard(doctor, index) {
                 </div>
                 ${brandSwitcherHTML}
                 <div class="doc-photo-gradient"></div>
-                <div class="doc-view-profile">
-                    <i class="fas fa-user-md"></i>
-                    <span>ดูประวัติ</span>
-                </div>
             </div>
             <div class="doc-info-area">
                 <h3 class="doc-nickname">${doctor.nickname}</h3>
