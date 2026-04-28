@@ -8398,7 +8398,7 @@ a[href^="tel:"] {
 }
 
 .doc-profile-card {
-    cursor: pointer;
+    cursor: default;
 }
 
 .doc-profile-card:hover .doc-view-profile {
@@ -9483,17 +9483,18 @@ a[href^="tel:"] {
     position: relative;
     height: 400px;
     overflow: hidden;
+    background: #f7f7f7;
 }
 
 .featured-article-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
 
 .featured-article-card:hover .featured-article-image img {
-    transform: scale(1.05);
+    transform: none;
 }
 
 .featured-article-image .image-placeholder {
@@ -9646,17 +9647,18 @@ a[href^="tel:"] {
     position: relative;
     height: 220px;
     overflow: hidden;
+    background: #f7f7f7;
 }
 
 .article-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
 
 .article-card:hover .article-image img {
-    transform: scale(1.08);
+    transform: none;
 }
 
 .article-image .image-placeholder {
