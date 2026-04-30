@@ -27,14 +27,20 @@ async function sha256Hex(text) {
         .join('');
 }
 
+function getActivePasswordHash() {
+    try { return localStorage.getItem('drden_admin_pwd_override') || ADMIN_PASSWORD_HASH; }
+    catch { return ADMIN_PASSWORD_HASH; }
+}
+
 async function adminLogin(username, password) {
     if (username !== ADMIN_USERNAME) return false;
     const hash = await sha256Hex(password);
-    if (hash !== ADMIN_PASSWORD_HASH) return false;
+    const expected = getActivePasswordHash();
+    if (hash !== expected) return false;
     const token = {
         user: username,
         ts: Date.now(),
-        sig: await sha256Hex(username + ':' + Date.now() + ':' + ADMIN_PASSWORD_HASH)
+        sig: await sha256Hex(username + ':' + Date.now() + ':' + expected)
     };
     sessionStorage.setItem(AUTH_KEY, JSON.stringify(token));
     return true;

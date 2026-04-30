@@ -786,3 +786,198 @@ select.form-control {
         width: 100%;
     }
 }
+
+/* ============================================
+   ADMIN v2 — TOOLBARS, IMAGE UPLOAD, TOAST, GRID FORMS
+   ============================================ */
+.section-toolbar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.search-box {
+    position: relative;
+    flex: 1;
+    min-width: 240px;
+}
+.search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95a5a6;
+}
+.search-box input {
+    width: 100%;
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+.search-box input:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+.filter-select {
+    max-width: 200px;
+}
+
+.cell-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+/* Form grid */
+.form-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+@media (max-width: 600px) {
+    .form-grid-2 { grid-template-columns: 1fr; }
+}
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.checkbox-label:hover { background: #f5f5f5; }
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #ffd700;
+    cursor: pointer;
+}
+
+/* Image upload */
+.image-upload-box {
+    border: 2px dashed #d0d0d0;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fafafa;
+}
+.image-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: #aaa;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+.image-preview img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.image-preview i {
+    font-size: 3rem;
+}
+.image-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.image-actions input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* Modal sizes */
+.modal-content-admin[data-size="sm"] { max-width: 420px; }
+.modal-content-admin[data-size="lg"] { max-width: 760px; }
+.modal-content-admin[data-size="xl"] { max-width: 960px; }
+
+/* Toast */
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transform: translateX(420px);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    border-left: 4px solid #43e97b;
+    max-width: 380px;
+    font-size: 0.95rem;
+}
+.toast.show { transform: translateX(0); }
+.toast-error { border-left-color: #e74c3c; }
+.toast-error i { color: #e74c3c; }
+.toast-success i { color: #43e97b; }
+.toast-info { border-left-color: #4facfe; }
+.toast-info i { color: #4facfe; }
+
+/* Activity item */
+.activity-item {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: flex-start;
+}
+.activity-item:last-child { border-bottom: none; }
+.activity-item small { font-size: 0.8rem; }
+
+/* Info list */
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.info-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+.info-list li:last-child { border-bottom: none; }
+.info-list strong { color: #2c3e50; margin-right: 0.5rem; }
+
+/* Settings grid 2-col on wide */
+@media (min-width: 992px) {
+    .settings-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile toolbar */
+@media (max-width: 600px) {
+    .section-toolbar { flex-direction: column; align-items: stretch; }
+    .filter-select { max-width: 100%; }
+    .toast { left: 1rem; right: 1rem; bottom: 1rem; max-width: none; }
+}

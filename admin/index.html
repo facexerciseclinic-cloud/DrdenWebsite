@@ -11,59 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="admin-body">
-    <!-- Admin Sidebar -->
     <aside class="admin-sidebar" id="adminSidebar">
         <div class="admin-logo">
             <img src="/assets/images/Logo.png" alt="DR.DEN Clinic" class="admin-logo-img">
-            <div class="logo-text">
-                <p>Admin Panel</p>
-            </div>
+            <div class="logo-text"><p>Admin Panel</p></div>
         </div>
-
         <nav class="admin-nav">
-            <a href="#dashboard" class="admin-nav-link active" data-section="dashboard">
-                <i class="fas fa-chart-line"></i>
-                <span>Dashboard</span>
-            </a>
-            <a href="#reviews" class="admin-nav-link" data-section="reviews">
-                <i class="fas fa-star"></i>
-                <span>จัดการรีวิว</span>
-            </a>
-            <a href="#services" class="admin-nav-link" data-section="services">
-                <i class="fas fa-syringe"></i>
-                <span>จัดการบริการ</span>
-            </a>
-            <a href="#promotions" class="admin-nav-link" data-section="promotions">
-                <i class="fas fa-gift"></i>
-                <span>จัดการโปรโมชั่น</span>
-            </a>
-            <a href="#articles" class="admin-nav-link" data-section="articles">
-                <i class="fas fa-newspaper"></i>
-                <span>จัดการบทความ</span>
-            </a>
-            <a href="#doctors" class="admin-nav-link" data-section="doctors">
-                <i class="fas fa-user-md"></i>
-                <span>จัดการแพทย์</span>
-            </a>
-            <a href="#branches" class="admin-nav-link" data-section="branches">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>จัดการสาขา</span>
-            </a>
+            <a href="#dashboard" class="admin-nav-link active" data-section="dashboard"><i class="fas fa-chart-line"></i><span>Dashboard</span></a>
+            <a href="#reviews" class="admin-nav-link" data-section="reviews"><i class="fas fa-star"></i><span>จัดการรีวิว</span></a>
+            <a href="#services" class="admin-nav-link" data-section="services"><i class="fas fa-syringe"></i><span>จัดการบริการ</span></a>
+            <a href="#promotions" class="admin-nav-link" data-section="promotions"><i class="fas fa-gift"></i><span>จัดการโปรโมชั่น</span></a>
+            <a href="#articles" class="admin-nav-link" data-section="articles"><i class="fas fa-newspaper"></i><span>จัดการบทความ</span></a>
+            <a href="#doctors" class="admin-nav-link" data-section="doctors"><i class="fas fa-user-md"></i><span>จัดการแพทย์</span></a>
+            <a href="#branches" class="admin-nav-link" data-section="branches"><i class="fas fa-map-marker-alt"></i><span>จัดการสาขา</span></a>
             <div class="nav-divider"></div>
-            <a href="#settings" class="admin-nav-link" data-section="settings">
-                <i class="fas fa-cog"></i>
-                <span>ตั้งค่า</span>
-            </a>
-            <a href="/" class="admin-nav-link" target="_blank" rel="noopener">
-                <i class="fas fa-external-link-alt"></i>
-                <span>ดูเว็บไซต์</span>
-            </a>
+            <a href="#settings" class="admin-nav-link" data-section="settings"><i class="fas fa-cog"></i><span>ตั้งค่า</span></a>
+            <a href="/" class="admin-nav-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i><span>ดูเว็บไซต์</span></a>
         </nav>
-
         <div class="admin-user">
-            <div class="user-avatar">
-                <i class="fas fa-user-shield"></i>
-            </div>
+            <div class="user-avatar"><i class="fas fa-user-shield"></i></div>
             <div class="user-info">
                 <p class="user-name">Admin</p>
                 <p class="user-role">ผู้ดูแลระบบ</p>
@@ -71,320 +37,157 @@
         </div>
     </aside>
 
-    <!-- Admin Main Content -->
     <main class="admin-main">
-        <!-- Top Bar -->
         <header class="admin-topbar">
-            <button class="sidebar-toggle" id="sidebarToggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
             <h1 class="page-title-admin" id="pageTitle">Dashboard</h1>
             <div class="topbar-actions">
-                <button class="btn-icon" title="Refresh">
-                    <i class="fas fa-sync-alt"></i>
-                </button>
-                <button class="btn-icon" title="Notifications">
-                    <i class="fas fa-bell"></i>
-                    <span class="badge">3</span>
-                </button>
-                <button class="btn-icon" title="Logout" id="logoutBtn">
-                    <i class="fas fa-sign-out-alt"></i>
-                </button>
+                <button class="btn-icon" title="Refresh"><i class="fas fa-sync-alt"></i></button>
+                <button class="btn-icon" title="Logout" id="logoutBtn"><i class="fas fa-sign-out-alt"></i></button>
             </div>
         </header>
 
-        <!-- Dashboard Section -->
         <section class="admin-section active" id="section-dashboard">
             <div class="admin-container">
                 <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="stat-info">
-                            <p class="stat-label">รีวิวทั้งหมด</p>
-                            <h3 class="stat-value" id="totalReviews">0</h3>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-                            <i class="fas fa-gift"></i>
-                        </div>
-                        <div class="stat-info">
-                            <p class="stat-label">โปรโมชั่น</p>
-                            <h3 class="stat-value" id="totalPromotions">0</h3>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
-                        <div class="stat-info">
-                            <p class="stat-label">บทความ</p>
-                            <h3 class="stat-value" id="totalArticles">0</h3>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
-                            <i class="fas fa-syringe"></i>
-                        </div>
-                        <div class="stat-info">
-                            <p class="stat-label">บริการ</p>
-                            <h3 class="stat-value" id="totalServices">0</h3>
-                        </div>
-                    </div>
+                    <div class="stat-card"><div class="stat-icon" style="background:linear-gradient(135deg,#667eea,#764ba2);"><i class="fas fa-star"></i></div><div class="stat-info"><p class="stat-label">รีวิว</p><h3 class="stat-value" id="totalReviews">0</h3></div></div>
+                    <div class="stat-card"><div class="stat-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c);"><i class="fas fa-gift"></i></div><div class="stat-info"><p class="stat-label">โปรโมชั่น</p><h3 class="stat-value" id="totalPromotions">0</h3></div></div>
+                    <div class="stat-card"><div class="stat-icon" style="background:linear-gradient(135deg,#4facfe,#00f2fe);"><i class="fas fa-newspaper"></i></div><div class="stat-info"><p class="stat-label">บทความ</p><h3 class="stat-value" id="totalArticles">0</h3></div></div>
+                    <div class="stat-card"><div class="stat-icon" style="background:linear-gradient(135deg,#43e97b,#38f9d7);"><i class="fas fa-syringe"></i></div><div class="stat-info"><p class="stat-label">บริการ</p><h3 class="stat-value" id="totalServices">0</h3></div></div>
+                    <div class="stat-card"><div class="stat-icon" style="background:linear-gradient(135deg,#fa709a,#fee140);"><i class="fas fa-user-md"></i></div><div class="stat-info"><p class="stat-label">แพทย์</p><h3 class="stat-value" id="totalDoctors">0</h3></div></div>
+                    <div class="stat-card"><div class="stat-icon" style="background:linear-gradient(135deg,#30cfd0,#330867);"><i class="fas fa-map-marker-alt"></i></div><div class="stat-info"><p class="stat-label">สาขา</p><h3 class="stat-value" id="totalBranches">0</h3></div></div>
                 </div>
-
                 <div class="dashboard-grid">
                     <div class="dashboard-card">
-                        <div class="card-header">
-                            <h3><i class="fas fa-chart-line"></i> ภาพรวมระบบ</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>ยินดีต้อนรับสู่ระบบจัดการเนื้อหา DR.DEN Clinic</p>
-                            <p>เลือกเมนูด้านซ้ายเพื่อเริ่มจัดการข้อมูล</p>
-                        </div>
+                        <div class="card-header"><h3><i class="fas fa-clock"></i> กิจกรรมล่าสุด</h3></div>
+                        <div class="card-body"><div class="activity-list" id="activityList"><p class="text-muted">ยังไม่มีกิจกรรม</p></div></div>
                     </div>
-
                     <div class="dashboard-card">
-                        <div class="card-header">
-                            <h3><i class="fas fa-clock"></i> กิจกรรมล่าสุด</h3>
-                        </div>
+                        <div class="card-header"><h3><i class="fas fa-database"></i> พื้นที่จัดเก็บ</h3></div>
                         <div class="card-body">
-                            <div class="activity-list" id="activityList">
-                                <p class="text-muted">ยังไม่มีกิจกรรม</p>
-                            </div>
+                            <div id="storageInfo"></div>
+                            <p class="text-muted" style="margin-top:1rem;font-size:.85rem;">ข้อมูลถูกเก็บใน LocalStorage ของเบราว์เซอร์นี้ — ส่งออกเป็นประจำเพื่อสำรองข้อมูล</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Reviews Section -->
         <section class="admin-section" id="section-reviews">
             <div class="admin-container">
-                <div class="section-header-admin">
-                    <h2>จัดการรีวิว</h2>
-                    <button class="btn btn-primary" id="addReviewBtn">
-                        <i class="fas fa-plus"></i> เพิ่มรีวิว
-                    </button>
+                <div class="section-header-admin"><h2>จัดการรีวิว</h2><button class="btn btn-primary" id="addReviewBtn"><i class="fas fa-plus"></i> เพิ่มรีวิว</button></div>
+                <div class="section-toolbar">
+                    <div class="search-box"><i class="fas fa-search"></i><input id="reviewSearch" placeholder="ค้นหา ชื่อลูกค้า, หัวข้อ, บริการ..."></div>
+                    <select id="reviewCatFilter" class="form-control filter-select">
+                        <option value="">ทุกหมวดหมู่</option>
+                        <option value="filler">Filler</option><option value="botox">Botox</option><option value="acne">Acne</option>
+                        <option value="resetyoung">ResetYoung</option><option value="sculping">Sculping</option>
+                        <option value="collagen">Collagen</option><option value="juvelook">Juvelook</option><option value="ulthera">Ulthera</option>
+                    </select>
                 </div>
-
-                <div class="table-container">
-                    <table class="admin-table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อลูกค้า</th>
-                                <th>บริการ</th>
-                                <th>คะแนน</th>
-                                <th>วันที่</th>
-                                <th>สถานะ</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody id="reviewsTableBody">
-                            <tr>
-                                <td colspan="6" class="text-center">กำลังโหลดข้อมูล...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th style="width:80px">รูป</th><th>ลูกค้า / หัวข้อ</th><th>หมวด</th><th>คะแนน</th><th>วันที่</th><th>สถานะ</th><th style="width:120px">จัดการ</th></tr></thead><tbody id="reviewsTableBody"><tr><td colspan="7" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
-        <!-- Services Section -->
         <section class="admin-section" id="section-services">
             <div class="admin-container">
-                <div class="section-header-admin">
-                    <h2>จัดการบริการ</h2>
-                    <button class="btn btn-primary" id="addServiceBtn">
-                        <i class="fas fa-plus"></i> เพิ่มบริการ
-                    </button>
-                </div>
-
-                <div class="table-container">
-                    <table class="admin-table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อบริการ</th>
-                                <th>หมวดหมู่</th>
-                                <th>ราคาเริ่มต้น</th>
-                                <th>สถานะ</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody id="servicesTableBody">
-                            <tr>
-                                <td colspan="5" class="text-center">กำลังโหลดข้อมูล...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="section-header-admin"><h2>จัดการบริการ</h2><button class="btn btn-primary" id="addServiceBtn"><i class="fas fa-plus"></i> เพิ่มบริการ</button></div>
+                <div class="section-toolbar"><div class="search-box"><i class="fas fa-search"></i><input id="serviceSearch" placeholder="ค้นหาบริการ..."></div></div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th style="width:80px">รูป</th><th>ชื่อบริการ</th><th>หมวด</th><th>ราคา</th><th>สถานะ</th><th style="width:120px">จัดการ</th></tr></thead><tbody id="servicesTableBody"><tr><td colspan="6" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
-        <!-- Promotions Section -->
         <section class="admin-section" id="section-promotions">
             <div class="admin-container">
-                <div class="section-header-admin">
-                    <h2>จัดการโปรโมชั่น</h2>
-                    <button class="btn btn-primary" id="addPromotionBtn">
-                        <i class="fas fa-plus"></i> เพิ่มโปรโมชั่น
-                    </button>
-                </div>
-
-                <div class="table-container">
-                    <table class="admin-table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อโปรโมชั่น</th>
-                                <th>ส่วนลด</th>
-                                <th>วันที่เริ่ม</th>
-                                <th>วันที่สิ้นสุด</th>
-                                <th>สถานะ</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody id="promotionsTableBody">
-                            <tr>
-                                <td colspan="6" class="text-center">กำลังโหลดข้อมูล...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="section-header-admin"><h2>จัดการโปรโมชั่น</h2><button class="btn btn-primary" id="addPromotionBtn"><i class="fas fa-plus"></i> เพิ่มโปรโมชั่น</button></div>
+                <div class="section-toolbar"><div class="search-box"><i class="fas fa-search"></i><input id="promoSearch" placeholder="ค้นหาโปรโมชั่น..."></div></div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th style="width:80px">รูป</th><th>ชื่อ</th><th>Badge</th><th>หมวด</th><th>เด่น</th><th style="width:120px">จัดการ</th></tr></thead><tbody id="promotionsTableBody"><tr><td colspan="6" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
-        <!-- Articles Section -->
         <section class="admin-section" id="section-articles">
             <div class="admin-container">
-                <div class="section-header-admin">
-                    <h2>จัดการบทความ</h2>
-                    <button class="btn btn-primary" id="addArticleBtn">
-                        <i class="fas fa-plus"></i> เพิ่มบทความ
-                    </button>
-                </div>
-
-                <div class="table-container">
-                    <table class="admin-table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อบทความ</th>
-                                <th>หมวดหมู่</th>
-                                <th>ผู้เขียน</th>
-                                <th>วันที่</th>
-                                <th>สถานะ</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody id="articlesTableBody">
-                            <tr>
-                                <td colspan="6" class="text-center">กำลังโหลดข้อมูล...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="section-header-admin"><h2>จัดการบทความ</h2><button class="btn btn-primary" id="addArticleBtn"><i class="fas fa-plus"></i> เพิ่มบทความ</button></div>
+                <div class="section-toolbar"><div class="search-box"><i class="fas fa-search"></i><input id="articleSearch" placeholder="ค้นหาบทความ, tags..."></div></div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th>ชื่อบทความ</th><th>หมวด</th><th>ผู้เขียน</th><th>วันที่</th><th>สถานะ</th><th style="width:140px">จัดการ</th></tr></thead><tbody id="articlesTableBody"><tr><td colspan="6" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
-        <!-- Doctors Section -->
         <section class="admin-section" id="section-doctors">
             <div class="admin-container">
-                <div class="section-header-admin">
-                    <h2>จัดการแพทย์</h2>
-                    <button class="btn btn-primary" id="addDoctorBtn">
-                        <i class="fas fa-plus"></i> เพิ่มแพทย์
-                    </button>
-                </div>
-
-                <div class="table-container">
-                    <table class="admin-table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อแพทย์</th>
-                                <th>ความเชี่ยวชาญ</th>
-                                <th>สาขา</th>
-                                <th>สถานะ</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody id="doctorsTableBody">
-                            <tr>
-                                <td colspan="5" class="text-center">กำลังโหลดข้อมูล...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="section-header-admin"><h2>จัดการแพทย์</h2><button class="btn btn-primary" id="addDoctorBtn"><i class="fas fa-plus"></i> เพิ่มแพทย์</button></div>
+                <div class="section-toolbar"><div class="search-box"><i class="fas fa-search"></i><input id="doctorSearch" placeholder="ค้นหาแพทย์..."></div></div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th style="width:80px">รูป</th><th>ชื่อ</th><th>License</th><th>สาขา</th><th>เด่น</th><th style="width:120px">จัดการ</th></tr></thead><tbody id="doctorsTableBody"><tr><td colspan="6" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
-        <!-- Branches Section -->
         <section class="admin-section" id="section-branches">
             <div class="admin-container">
-                <div class="section-header-admin">
-                    <h2>จัดการสาขา</h2>
-                    <button class="btn btn-primary" id="addBranchBtn">
-                        <i class="fas fa-plus"></i> เพิ่มสาขา
-                    </button>
-                </div>
-
-                <div class="table-container">
-                    <table class="admin-table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อสาขา</th>
-                                <th>ที่อยู่</th>
-                                <th>เบอร์โทร</th>
-                                <th>สถานะ</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody id="branchesTableBody">
-                            <tr>
-                                <td colspan="5" class="text-center">กำลังโหลดข้อมูล...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="section-header-admin"><h2>จัดการสาขา</h2><button class="btn btn-primary" id="addBranchBtn"><i class="fas fa-plus"></i> เพิ่มสาขา</button></div>
+                <div class="section-toolbar"><div class="search-box"><i class="fas fa-search"></i><input id="branchSearch" placeholder="ค้นหาสาขา..."></div></div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th>ชื่อสาขา</th><th>ภูมิภาค</th><th>ที่อยู่</th><th>เบอร์โทร</th><th>LINE ID</th><th style="width:120px">จัดการ</th></tr></thead><tbody id="branchesTableBody"><tr><td colspan="6" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
-        <!-- Settings Section -->
         <section class="admin-section" id="section-settings">
             <div class="admin-container">
-                <h2>ตั้งค่าระบบ</h2>
+                <h2 style="margin-bottom:2rem;">ตั้งค่าระบบ</h2>
                 <div class="settings-grid">
                     <div class="settings-card">
                         <h3><i class="fas fa-database"></i> จัดการข้อมูล</h3>
+                        <p class="text-muted" style="margin-bottom:1rem;font-size:.9rem;">สำรองและกู้คืนข้อมูลทั้งหมดในรูปแบบ JSON</p>
                         <div class="settings-actions">
-                            <button class="btn btn-outline" id="exportDataBtn">
-                                <i class="fas fa-download"></i> ส่งออกข้อมูล
-                            </button>
-                            <button class="btn btn-outline" id="importDataBtn">
-                                <i class="fas fa-upload"></i> นำเข้าข้อมูล
-                            </button>
-                            <button class="btn btn-danger" id="clearDataBtn">
-                                <i class="fas fa-trash"></i> ล้างข้อมูลทั้งหมด
-                            </button>
+                            <button class="btn btn-outline" id="exportDataBtn"><i class="fas fa-download"></i> ส่งออก JSON</button>
+                            <button class="btn btn-outline" id="importDataBtn"><i class="fas fa-upload"></i> นำเข้า JSON</button>
+                            <button class="btn btn-primary" id="seedDataBtn"><i class="fas fa-cloud-download-alt"></i> ดึงจากเว็บไซต์</button>
+                            <button class="btn btn-danger" id="clearDataBtn"><i class="fas fa-trash"></i> ล้างข้อมูลทั้งหมด</button>
                         </div>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3><i class="fas fa-file-code"></i> ส่งออกเป็นไฟล์ .js</h3>
+                        <p class="text-muted" style="margin-bottom:1rem;font-size:.9rem;">นำไฟล์ที่ดาวน์โหลดไปแทนที่ในโปรเจกต์เพื่ออัปเดตเว็บไซต์จริง</p>
+                        <div class="settings-actions">
+                            <button class="btn btn-outline" data-export-js="reviews"><i class="fas fa-star"></i> reviews-data.js</button>
+                            <button class="btn btn-outline" data-export-js="articles"><i class="fas fa-newspaper"></i> articles-data.js</button>
+                            <button class="btn btn-outline" data-export-js="promotions"><i class="fas fa-gift"></i> promotions-data.js</button>
+                            <button class="btn btn-outline" data-export-js="doctors"><i class="fas fa-user-md"></i> doctors-data.js</button>
+                            <button class="btn btn-outline" data-export-js="branches"><i class="fas fa-map-marker-alt"></i> branch-contact.js</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3><i class="fas fa-key"></i> เปลี่ยนรหัสผ่านแอดมิน</h3>
+                        <p class="text-muted" style="margin-bottom:1rem;font-size:.9rem;">รหัสผ่านใหม่จะถูกบันทึกในเบราว์เซอร์นี้เท่านั้น</p>
+                        <form id="passwordForm" style="max-width:420px;">
+                            <div class="form-group"><label class="form-label">รหัสผ่านปัจจุบัน</label><input class="form-control" type="password" name="current" required autocomplete="current-password"></div>
+                            <div class="form-group"><label class="form-label">รหัสผ่านใหม่</label><input class="form-control" type="password" name="next" minlength="6" required autocomplete="new-password"></div>
+                            <div class="form-group"><label class="form-label">ยืนยันรหัสผ่านใหม่</label><input class="form-control" type="password" name="confirm" minlength="6" required autocomplete="new-password"></div>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> บันทึกรหัสผ่าน</button>
+                        </form>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3><i class="fas fa-info-circle"></i> เกี่ยวกับระบบ</h3>
+                        <ul class="info-list">
+                            <li><strong>เวอร์ชัน:</strong> 2.0</li>
+                            <li><strong>ฐานข้อมูล:</strong> Browser LocalStorage (~5MB)</li>
+                            <li><strong>การยืนยันตัวตน:</strong> SHA-256 (Client-side)</li>
+                            <li>ระบบนี้เป็น CMS แบบ static ใช้สำหรับจัดการข้อมูลและ export เป็น JSON / JS เพื่อ deploy ลงเว็บไซต์จริง</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Modal Form (will be dynamically populated) -->
     <div class="admin-modal" id="adminModal">
         <div class="modal-content-admin">
             <div class="modal-header-admin">
                 <h3 id="modalTitle">เพิ่มข้อมูล</h3>
-                <button class="modal-close" id="modalClose">
-                    <i class="fas fa-times"></i>
-                </button>
+                <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
             </div>
-            <div class="modal-body-admin" id="modalBody">
-                <!-- Form will be inserted here dynamically -->
-            </div>
+            <div class="modal-body-admin" id="modalBody"></div>
         </div>
     </div>
 
