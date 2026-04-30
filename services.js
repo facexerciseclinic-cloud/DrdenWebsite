@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // If it's #contact, redirect to index.html#contact
             if (href === '#contact') {
-                window.location.href = 'index.html#contact';
+                window.location.href = 'index#contact';
                 return;
             }
             

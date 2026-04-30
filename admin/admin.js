@@ -14,22 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================================
-// AUTHENTICATION (Simple Mock)
+// AUTHENTICATION — uses auth.js (must be loaded BEFORE this script)
+// auth.js auto-redirects to login.html if not authenticated
 // ============================================
 function checkAuthentication() {
-    const isAuthenticated = localStorage.getItem('adminAuthenticated');
-    if (!isAuthenticated) {
-        // In production, redirect to login page
-        console.log('Admin authenticated (mock)');
-        localStorage.setItem('adminAuthenticated', 'true');
+    if (typeof isAdminAuthenticated === 'function' && !isAdminAuthenticated()) {
+        window.location.replace('login.html');
     }
 }
 
 document.getElementById('logoutBtn')?.addEventListener('click', function() {
     if (confirm('ต้องการออกจากระบบ?')) {
-        localStorage.removeItem('adminAuthenticated');
-        alert('ออกจากระบบเรียบร้อย');
-        window.location.reload();
+        if (typeof adminLogout === 'function') {
+            adminLogout();
+        } else {
+            window.location.replace('login.html');
+        }
     }
 });
 

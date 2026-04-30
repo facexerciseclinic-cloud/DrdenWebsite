@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ | Admin DR.DEN Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            color: #fff;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,215,0,0.2);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+        }
+        .login-logo {
+            text-align: center;
+            margin-bottom: 1.75rem;
+        }
+        .login-logo img {
+            height: 60px;
+            margin-bottom: 0.75rem;
+        }
+        .login-logo h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffd700;
+            letter-spacing: 0.5px;
+        }
+        .login-logo p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-top: 0.25rem;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            color: rgba(255,255,255,0.85);
+            font-weight: 500;
+        }
+        .form-input-wrap {
+            position: relative;
+        }
+        .form-input-wrap i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255,215,0,0.7);
+            font-size: 0.95rem;
+        }
+        .form-input {
+            width: 100%;
+            padding: 0.85rem 1rem 0.85rem 2.75rem;
+            background: rgba(0,0,0,0.25);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 12px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #ffd700;
+            background: rgba(0,0,0,0.35);
+            box-shadow: 0 0 0 3px rgba(255,215,0,0.15);
+        }
+        .form-input::placeholder { color: rgba(255,255,255,0.35); }
+        .login-btn {
+            width: 100%;
+            padding: 0.95rem;
+            background: linear-gradient(135deg, #ffd700, #ffb300);
+            color: #1a1a2e;
+            border: none;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.5rem;
+        }
+        .login-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,215,0,0.35);
+        }
+        .login-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .login-error {
+            background: rgba(245,87,108,0.15);
+            border: 1px solid rgba(245,87,108,0.4);
+            color: #ffb4bd;
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        .login-error.visible { display: block; }
+        .login-footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            opacity: 0.55;
+        }
+        .login-footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-card" id="loginForm" autocomplete="off">
+        <div class="login-logo">
+            <img src="../assets/images/Logo.png" alt="DR.DEN Clinic" onerror="this.style.display='none'">
+            <h1><i class="fas fa-shield-halved"></i> Admin Panel</h1>
+            <p>DR.DEN Clinic — ระบบจัดการเนื้อหา</p>
+        </div>
+
+        <div class="login-error" id="loginError">
+            <i class="fas fa-circle-exclamation"></i>
+            <span id="loginErrorMsg">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</span>
+        </div>
+
+        <div class="form-group">
+            <label for="username">ชื่อผู้ใช้</label>
+            <div class="form-input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" class="form-input" placeholder="admin" required autofocus>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">รหัสผ่าน</label>
+            <div class="form-input-wrap">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+            </div>
+        </div>
+
+        <button type="submit" class="login-btn" id="loginBtn">
+            <i class="fas fa-right-to-bracket"></i> เข้าสู่ระบบ
+        </button>
+
+        <div class="login-footer">
+            <a href="../index"><i class="fas fa-arrow-left"></i> กลับไปยังเว็บไซต์</a>
+        </div>
+    </form>
+
+    <script src="auth.js"></script>
+    <script>
+        // Already logged in? Go to dashboard
+        if (isAdminAuthenticated()) {
+            window.location.replace('index.html');
+        }
+
+        const form = document.getElementById('loginForm');
+        const errBox = document.getElementById('loginError');
+        const errMsg = document.getElementById('loginErrorMsg');
+        const btn = document.getElementById('loginBtn');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            errBox.classList.remove('visible');
+            const u = document.getElementById('username').value.trim();
+            const p = document.getElementById('password').value;
+            if (!u || !p) return;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> กำลังตรวจสอบ...';
+            const ok = await adminLogin(u, p);
+            if (ok) {
+                window.location.replace('index.html');
+            } else {
+                errMsg.textContent = 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง';
+                errBox.classList.add('visible');
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-right-to-bracket"></i> เข้าสู่ระบบ';
+            }
+        });
+    </script>
+</body>
+</html>

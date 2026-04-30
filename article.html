@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -52,7 +52,7 @@
                     <i class="fas fa-file-alt"></i>
                     <h2>ไม่พบบทความนี้</h2>
                     <p>บทความที่คุณค้นหาอาจถูกย้ายหรือไม่มีอยู่ในระบบ</p>
-                    <a href="articles.html" class="btn btn-primary">
+                    <a href="articles" class="btn btn-primary">
                         <i class="fas fa-arrow-left"></i> กลับไปหน้าบทความ
                     </a>
                 </div>
@@ -66,7 +66,7 @@
                 <div class="article-hero-overlay"></div>
                 <div class="container">
                     <div class="article-hero-content">
-                        <a href="articles.html" class="article-back-link">
+                        <a href="articles" class="article-back-link">
                             <i class="fas fa-arrow-left"></i> บทความทั้งหมด
                         </a>
                         <span class="article-category-tag" id="articleCategory"></span>
@@ -333,7 +333,7 @@
 
     function renderRelatedItems(articles, container) {
         container.innerHTML = articles.map(a => `
-            <a href="article.html?slug=${a.slug}" class="related-article-item">
+            <a href="article?slug=${a.slug}" class="related-article-item">
                 <div class="related-article-thumb">
                     <img src="${a.image}" alt="${a.title}" loading="lazy">
                 </div>
