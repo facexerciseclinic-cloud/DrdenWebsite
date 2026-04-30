@@ -377,11 +377,14 @@
     background: white;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
 }
 
 .admin-table {
     width: 100%;
+    min-width: 640px;
     border-collapse: collapse;
 }
 

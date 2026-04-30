@@ -12422,3 +12422,318 @@ a[href^="tel:"] {
         display: none;
     }
 }
+/* ============================================================
+   RESPONSIVE POLISH LAYER (v2 - 2026-04-30)
+   Final overrides for cross-device consistency
+   Targets fixes from comprehensive audit
+   ============================================================ */
+
+/* ----- FLUID CONTAINER & SECTION PADDING ----- */
+.container {
+    padding-left: clamp(1rem, 4vw, 2rem);
+    padding-right: clamp(1rem, 4vw, 2rem);
+}
+
+section {
+    padding-top: clamp(2.5rem, 6vw, 4rem);
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+/* ----- THAI TEXT WRAPPING ----- */
+.btn, .btn-primary, .btn-outline, .btn-secondary,
+.nav-link, .section-title, .section-description,
+h1, h2, h3, h4, h5, h6, p, label, li {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+/* ----- NO HORIZONTAL OVERFLOW ----- */
+html, body {
+    max-width: 100vw;
+    overflow-x: clip;
+}
+
+/* ----- TABLES — ALWAYS SCROLLABLE ON SMALL ----- */
+.table-container,
+.table-wrapper,
+.responsive-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+}
+
+/* ----- IMAGES NEVER OVERFLOW ----- */
+img, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================
+   TABLET LANDSCAPE (768-992px) — bridge gap
+   ============================================================ */
+@media (max-width: 992px) and (min-width: 769px) {
+    .services-grid,
+    .doctors-grid,
+    .articles-grid,
+    .promotions-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .hero-image-wrapper {
+        height: clamp(320px, 50vw, 450px) !important;
+    }
+}
+
+/* ============================================================
+   TABLET PORTRAIT & SMALL (≤768px)
+   ============================================================ */
+@media (max-width: 768px) {
+    /* Section padding tighter */
+    :root {
+        --spacing-xl: 2.5rem;
+        --spacing-lg: 1.75rem;
+    }
+
+    /* Typography tighter on small */
+    h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+    h2 { font-size: clamp(1.5rem, 5vw, 2rem); }
+    h3 { font-size: clamp(1.15rem, 4vw, 1.5rem); }
+
+    /* Logo a bit smaller */
+    .logo-img {
+        height: clamp(40px, 11vw, 55px);
+    }
+
+    /* Hero stats — single line layout */
+    .hero-stats {
+        gap: 1rem;
+    }
+
+    /* Article single column */
+    .article-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Grids fallback to 2 cols */
+    .services-grid,
+    .doctors-grid,
+    .articles-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Modal takes most of viewport */
+    .doctor-modal .modal-content,
+    .modal-content,
+    .modal-content-admin {
+        max-width: 95vw !important;
+        max-height: 92vh !important;
+        margin: 1rem auto !important;
+    }
+
+    /* Search overlay — full width */
+    .search-overlay-content {
+        max-width: 95vw;
+        padding: clamp(1rem, 4vw, 2rem);
+    }
+    .search-input-wrapper {
+        padding-top: clamp(1rem, 5vw, 3rem);
+    }
+
+    /* Quick links 2-col on small tablet */
+    .search-quick-links {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Hero banner — limit height */
+    .hero-banner .slide-image {
+        max-height: 60vh;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+/* ============================================================
+   PHONE (≤576px)
+   ============================================================ */
+@media (max-width: 576px) {
+    /* Section padding even tighter */
+    :root {
+        --spacing-xl: 2rem;
+        --spacing-lg: 1.5rem;
+        --spacing-md: 1.25rem;
+    }
+
+    /* Typography */
+    h1 { font-size: clamp(1.5rem, 7vw, 2rem); }
+    h2 { font-size: clamp(1.35rem, 6vw, 1.75rem); }
+
+    /* All single-column grids */
+    .services-grid,
+    .doctors-grid,
+    .articles-grid,
+    .reviews-grid,
+    .promotions-grid,
+    .branches-grid,
+    .features-grid,
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Hero stats vertical */
+    .hero-stats {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem;
+    }
+
+    /* Bento gallery flexible rows */
+    .why-us-bento-gallery {
+        grid-auto-rows: minmax(120px, auto) !important;
+    }
+
+    /* Quick links 2-col */
+    .search-quick-links {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem;
+    }
+
+    /* Floating contact tighter */
+    .floating-contact {
+        bottom: 1rem !important;
+        right: 1rem !important;
+    }
+
+    /* Buttons full width */
+    .form-actions {
+        flex-direction: column;
+    }
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    /* Section description */
+    .section-description {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+}
+
+/* ============================================================
+   FORM INPUTS — IOS ZOOM PREVENTION (≥16px font)
+   ============================================================ */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="url"],
+    input[type="date"],
+    select,
+    textarea,
+    .form-control,
+    .search-input,
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px !important;
+    }
+}
+
+/* ============================================================
+   TAP TARGETS — ENFORCE 44px ON TOUCH DEVICES
+   ============================================================ */
+@media (hover: none) and (pointer: coarse) {
+    button:not(.dot):not(.fab-sparkle),
+    .btn,
+    .btn-icon,
+    .btn-action,
+    .nav-link,
+    .nav-search-btn,
+    .mobile-toggle,
+    .slider-btn,
+    a.contact-item,
+    .floating-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Slim text links inside content stay flowing */
+    p a, li a, .article-body a {
+        min-height: 0;
+        min-width: 0;
+        display: inline;
+    }
+}
+
+/* ============================================================
+   EXTRA-SMALL PHONES (≤360px)
+   ============================================================ */
+@media (max-width: 360px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .logo-img {
+        height: 36px !important;
+    }
+    .floating-btn {
+        width: 56px !important;
+        height: 56px !important;
+    }
+    .hero-stats h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* ============================================================
+   LANDSCAPE PHONE — short height fix
+   ============================================================ */
+@media (max-height: 500px) and (orientation: landscape) and (max-width: 920px) {
+    .hero,
+    .hero-banner {
+        min-height: 0;
+    }
+    .hero-banner .slide-image {
+        max-height: 100vh;
+    }
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .nav-menu {
+        max-height: calc(100vh - 60px) !important;
+    }
+}
+
+/* ============================================================
+   ADMIN TABLES (cross-page polish)
+   ============================================================ */
+.admin-table-wrapper,
+.admin .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ============================================================
+   FOOTER COLUMNS — graceful collapse
+   ============================================================ */
+@media (max-width: 768px) {
+    .footer-grid,
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer-grid,
+    .footer-content {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ============================================================
+   END RESPONSIVE POLISH LAYER
+   ============================================================ */
