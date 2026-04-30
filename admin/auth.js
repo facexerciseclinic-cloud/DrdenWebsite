@@ -58,15 +58,15 @@ function isAdminAuthenticated() {
 
 function adminLogout() {
     sessionStorage.removeItem(AUTH_KEY);
-    window.location.replace('login.html');
+    window.location.replace('/admin/login');
 }
 
 // Auto-guard: if this script is loaded on any page other than login,
-// redirect unauthenticated users to login.html
+// redirect unauthenticated users to login page
 (function guardAdminPage() {
     const path = window.location.pathname.toLowerCase();
-    const isLoginPage = path.endsWith('/login.html') || path.endsWith('/login');
+    const isLoginPage = path.endsWith('/admin/login') || path.endsWith('/admin/login.html') || path.endsWith('/login.html');
     if (!isLoginPage && !isAdminAuthenticated()) {
-        window.location.replace('login.html');
+        window.location.replace('/admin/login');
     }
 })();

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 function checkAuthentication() {
     if (typeof isAdminAuthenticated === 'function' && !isAdminAuthenticated()) {
-        window.location.replace('login.html');
+        window.location.replace('/admin/login');
     }
 }
 

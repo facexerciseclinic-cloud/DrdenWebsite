@@ -136,7 +136,7 @@
 <body>
     <form class="login-card" id="loginForm" autocomplete="off">
         <div class="login-logo">
-            <img src="../assets/images/Logo.png" alt="DR.DEN Clinic" onerror="this.style.display='none'">
+            <img src="/assets/images/Logo.png" alt="DR.DEN Clinic" onerror="this.style.display='none'">
             <h1><i class="fas fa-shield-halved"></i> Admin Panel</h1>
             <p>DR.DEN Clinic — ระบบจัดการเนื้อหา</p>
         </div>
@@ -171,11 +171,11 @@
         </div>
     </form>
 
-    <script src="auth.js"></script>
+    <script src="/admin/auth.js"></script>
     <script>
         // Already logged in? Go to dashboard
         if (isAdminAuthenticated()) {
-            window.location.replace('index.html');
+            window.location.replace('/admin/');
         }
 
         const form = document.getElementById('loginForm');
@@ -193,7 +193,7 @@
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> กำลังตรวจสอบ...';
             const ok = await adminLogin(u, p);
             if (ok) {
-                window.location.replace('index.html');
+                window.location.replace('/admin/');
             } else {
                 errMsg.textContent = 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง';
                 errBox.classList.add('visible');
