@@ -4135,6 +4135,88 @@ const ARTICLES_DATA = [
                 * ผลลัพธ์อาจแตกต่างกันในแต่ละบุคคล ขึ้นอยู่กับสภาพผิว อายุ และการดูแลหลังหัตถการ ควรปรึกษาแพทย์เฉพาะทางเพื่อรับการประเมินที่เหมาะสม
             </p>
         `
+    },
+    {
+        id: 19,
+        slug: 'mordane-speaker-ampex-global-aesthetics-forum-2026',
+        title: 'หมอเด่น ขึ้นแท่น Speaker เวที AMPEX GLOBAL AESTHETICS FORUM 2026 ถ่ายทอดองค์ความรู้ Aesthetics & Longevity',
+        excerpt: 'หมอเด่นรับเชิญขึ้นบรรยายในเวทีระดับโลก AMPEX GLOBAL AESTHETICS FORUM 2026 ณ Waldorf Astoria Bangkok ถ่ายทอดเทคนิค Craft Vector Technique™ สำหรับการแก้ไขปัญหา Low Face ตอกย้ำบทบาทผู้นำด้าน Aesthetic Design ระดับนานาชาติ',
+        metaDescription: 'หมอเด่น ขึ้นเวที Speaker ใน AMPEX GLOBAL AESTHETICS FORUM 2026 ณ Waldorf Astoria Bangkok บรรยายเทคนิค Craft Vector Technique™ แก้ปัญหา Low Face | DR.DEN Clinic',
+        category: 'news',
+        categoryLabel: 'ข่าวสาร',
+        tags: ['หมอเด่น', 'AMPEX', 'Global Aesthetics Forum', 'Craft Vector Technique', 'Low Face', 'Aesthetic Design', 'Speaker', 'Longevity'],
+        image: 'assets/images/blog/Event-neauvia/07 RE ADS หมอเดน งาน Neauvia-01.jpg',
+        author: 'ทีม DR.DEN Clinic',
+        date: '2026-04-25',
+        dateDisplay: '25 เมษายน 2026',
+        readTime: '5 นาที',
+        views: 0,
+        featured: true,
+        content: `
+            <p class="article-lead">
+                เมื่อวันที่ <strong>24 เมษายน 2569</strong> ที่ผ่านมา <strong>AMPEX GLOBAL AESTHETICS FORUM 2026</strong> ได้จัดขึ้นอย่างยิ่งใหญ่ ณ <strong>Waldorf Astoria Bangkok</strong> โดยภายในงานได้รวบรวมแพทย์ผู้เชี่ยวชาญและบุคลากรในวงการ <em>Aesthetics & Longevity</em> หลากหลายท่าน เพื่อแลกเปลี่ยนองค์ความรู้ เทคโนโลยี และแนวทางการรักษาสมัยใหม่ด้านความงามและการชะลอวัย
+            </p>
+
+            <img src="assets/images/blog/Event-neauvia/07 RE ADS หมอเดน งาน Neauvia-01.jpg" alt="หมอเด่น Speaker AMPEX GLOBAL AESTHETICS FORUM 2026" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>หมอเด่น Speaker ผู้ถ่ายทอดองค์ความรู้ Aesthetic Design</h2>
+            <p>
+                หนึ่งในไฮไลต์สำคัญของงาน คือการขึ้นบรรยายของ <strong>"หมอเด่น"</strong> ในฐานะ Speaker ผู้ถ่ายทอดองค์ความรู้ด้านการออกแบบใบหน้าและการแก้ไขปัญหาโครงสร้างใบหน้าอย่างเป็นธรรมชาติ ผ่านประสบการณ์ทางการแพทย์กว่า <strong>30 ปี</strong>
+            </p>
+
+            <img src="assets/images/blog/Event-neauvia/07 RE ADS หมอเดน งาน Neauvia-02.jpg" alt="หมอเด่นบรรยายบนเวที AMPEX 2026" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>เจาะปัญหา "Low Face" จุดอ่อนของโครงสร้างใบหน้าที่หลายคนมองข้าม</h2>
+            <p>
+                หัวข้อที่หมอเด่นได้นำเสนอภายในเวทีครั้งนี้ คือการวิเคราะห์และแก้ไขปัญหา <strong>"Low Face"</strong> หรือช่วงล่างของใบหน้า ซึ่งเป็นหนึ่งในปัญหาที่ส่งผลต่อความสมดุล ความอ่อนเยาว์ และมิติของใบหน้าโดยรวม
+            </p>
+            <p>
+                ไม่ว่าจะเป็นปัญหา <strong>หน้าหย่อนคล้อย</strong>, <strong>กรอบหน้าไม่ชัด</strong>, <strong>มุมปากตก</strong> หรือ <strong>โครงหน้าที่สูญเสียความสมดุลตามวัย</strong> — ปัญหาเหล่านี้ล้วนเกิดจากการทรุดตัวของโครงสร้างใบหน้าที่หมอเด่นได้ศึกษาและพัฒนาวิธีรักษามาอย่างต่อเนื่อง
+            </p>
+
+            <h2>Craft Vector Technique™ — เทคนิคเฉพาะที่ออกแบบโดยหมอเด่น</h2>
+            <p>
+                หมอเด่นได้ถ่ายทอดแนวคิดการรักษาผ่าน <strong>"Craft Vector Technique™"</strong> เทคนิคการฉีดยกหน้าและออกแบบใบหน้าที่หมอเด่น <em>คิดค้นและพัฒนาขึ้นด้วยตนเอง</em> เพื่อให้การแก้ไขใบหน้าไม่ได้เป็นเพียงการเติมเต็ม แต่เป็นการ <strong>"วิเคราะห์ทิศทางการทรุดตัวของโครงสร้างใบหน้า"</strong> และแก้ไขอย่างแม่นยำตามแนวแรง (Vector) ของแต่ละบุคคล
+            </p>
+
+            <img src="assets/images/blog/Event-neauvia/07 RE ADS หมอเดน งาน Neauvia-03.jpg" alt="Craft Vector Technique หมอเด่น" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">✨ จุดเด่นของ Craft Vector Technique™</h3>
+                <p style="margin-bottom:0;">ออกแบบให้เหมาะสมกับโครงสร้างใบหน้าของ <strong>คนไทยและชาวเอเชีย</strong> โดยเฉพาะ ทั้งในเรื่องของ <strong>ชั้นผิว, โครงกระดูก, เส้นเอ็น, การยุบตัวของเนื้อเยื่อ</strong> และ <strong>ทิศทางการหย่อนคล้อย</strong></p>
+            </div>
+
+            <p>
+                แนวคิดดังกล่าวจึงเป็นหนึ่งในเหตุผลที่ <strong>Craft Vector Technique™</strong> ได้รับความสนใจจากแพทย์และผู้เข้าร่วมงานหลากหลายท่าน ซึ่งตอกย้ำบทบาทผู้นำด้าน <em>Aesthetic Design</em> ของหมอเด่นบนเวทีระดับโลก
+            </p>
+
+            <h2>ก้าวสำคัญบนเวที Global Forum</h2>
+            <p>
+                การได้รับเชิญขึ้นบรรยายในเวทีระดับ <strong>Global Forum</strong> ครั้งนี้ ถือเป็นอีกหนึ่งก้าวสำคัญที่สะท้อนถึงบทบาทของหมอเด่นในฐานะแพทย์ด้าน <strong>Aesthetic Design</strong> ที่ได้รับการยอมรับทั้งในประเทศไทยและระดับนานาชาติ
+            </p>
+
+            <img src="assets/images/blog/Event-neauvia/07 RE ADS หมอเดน งาน Neauvia-04.jpg" alt="หมอเด่นบนเวที AMPEX Global Aesthetics Forum 2026" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <p>
+                นอกเหนือจากการรักษา หมอเด่นยังให้ความสำคัญกับ <strong>การพัฒนาองค์ความรู้ เทคนิค และแนวคิดใหม่ๆ</strong> เพื่อยกระดับมาตรฐานการรักษาด้านความงามให้มีความแม่นยำ และตอบโจทย์โครงสร้างใบหน้าของคนไทยได้อย่างแท้จริง
+            </p>
+
+            <p style="text-align:center;font-size:1.2rem;color:#C9A020;font-weight:600;margin:2rem 0;">
+                ❝ เวที AMPEX GLOBAL AESTHETICS FORUM 2026 ในครั้งนี้<br>
+                ไม่ใช่เพียงการแบ่งปันประสบการณ์<br>
+                แต่ยังเป็นอีกหนึ่งบทพิสูจน์ถึงการพัฒนาองค์ความรู้<br>
+                ของวงการ Aesthetics ไทยสู่ระดับสากล ❞
+            </p>
+
+            <div style="background:linear-gradient(135deg,#2c3e50,#1a252f);border-radius:20px;padding:3rem;margin:2.5rem 0;color:white;text-align:center;">
+                <p style="font-size:1.3rem;margin-bottom:0.5rem;opacity:0.9;">สนใจปรึกษาเทคนิค</p>
+                <h3 style="color:#E6B030;font-size:1.8rem;margin:0.5rem 0;">Craft Vector Technique™<br>โดยหมอเด่น</h3>
+                <p style="opacity:0.85;margin-bottom:1.5rem;">ปรึกษาทีมแพทย์ DR.DEN Clinic ฟรี ไม่มีค่าใช้จ่าย<br>วิเคราะห์โครงสร้างใบหน้าเฉพาะคุณ</p>
+                <a href="#" class="btn btn-primary cta-trigger" style="background:linear-gradient(135deg,#E6B030,#D4941F);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.1rem;display:inline-block;">
+                    ปรึกษาฟรี — นัดคิวเลย
+                </a>
+            </div>
+        `
     }
 ];
 
