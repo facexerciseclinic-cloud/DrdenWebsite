@@ -9646,7 +9646,7 @@ a[href^="tel:"] {
 /* Article Image */
 .article-image {
     position: relative;
-    aspect-ratio: 1536 / 488;
+    aspect-ratio: 625 / 417;
     height: auto;
     overflow: hidden;
     background: #f7f7f7;
