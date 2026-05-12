@@ -107,6 +107,70 @@ const PROMOTIONS_DATA = [
         badge: 'SPECIAL',
         category: 'package',
         featured: true
+    },
+    {
+        id: 14,
+        image: 'assets/images/โปร14.jpg',
+        title: 'โปรโมชั่น 14',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 15,
+        image: 'assets/images/โปร15.jpg',
+        title: 'โปรโมชั่น 15',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 16,
+        image: 'assets/images/โปร16.jpg',
+        title: 'โปรโมชั่น 16',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 17,
+        image: 'assets/images/โปร17.jpg',
+        title: 'โปรโมชั่น 17',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 18,
+        image: 'assets/images/โปร18.jpg',
+        title: 'โปรโมชั่น 18',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 19,
+        image: 'assets/images/โปร19.jpg',
+        title: 'โปรโมชั่น 19',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 20,
+        image: 'assets/images/โปร20.jpg',
+        title: 'โปรโมชั่น 20',
+        badge: null,
+        category: 'package',
+        featured: false
+    },
+    {
+        id: 21,
+        image: 'assets/images/โปร21.jpg',
+        title: 'โปรโมชั่น 21',
+        badge: null,
+        category: 'package',
+        featured: false
     }
 ];
 
