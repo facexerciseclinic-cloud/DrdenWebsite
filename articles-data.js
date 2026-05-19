@@ -3888,15 +3888,47 @@ const ARTICLES_DATA = [
             </div>
 
             <!-- ============ CHAPTER 5 — Injection Layer ============ -->
-            <h2>บทที่ 5 — ฉีดในชั้นไหน? Layer ที่ออกแบบมาเฉพาะ</h2>
+            <h2>บทที่ 5 — Craft Vector Technique™ × Lafullen: เทคนิคที่เปลี่ยนผลลัพธ์</h2>
             <p>
-                Lafullen ถูกออกแบบให้ฉีดในชั้น <strong>Deep Dermis</strong> โดยเฉพาะบริเวณที่มี <strong>Retinacula Cutis Superficialis (RCS)</strong> — เส้นใยที่ทำหน้าที่ยึดเหนี่ยวโครงสร้างผิวกับชั้น SMAS
+                Lafullen ถูกออกแบบให้ฉีดในชั้น <strong>Deep Dermis</strong> โดยเฉพาะบริเวณที่มี <strong>Retinacula Cutis Superficialis (RCS)</strong> — เส้นใยที่ทำหน้าที่ยึดเหนี่ยวโครงสร้างผิวกับชั้น SMAS ซึ่งเป็นชั้นที่มีโครงสร้าง <strong>"แรงพยุง"</strong> ของใบหน้า
             </p>
-            <ul>
-                <li>เป็นชั้นที่มีโครงสร้าง <strong>"แรงพยุง"</strong> ของใบหน้า</li>
-                <li>การวางตัวยาในชั้นนี้ส่งผลต่อ <strong>การกระจายแรง</strong> และโครงสร้างผิวโดยรวม</li>
-                <li>ผสานกับเทคนิค <strong>Craft Vector Technique</strong> ทำให้เห็นผลยกกระชับได้ทันที</li>
-            </ul>
+            <p>
+                สิ่งที่ทำให้ผลลัพธ์ของ Lafullen ที่ DR.DEN Clinic <strong>"แตกต่าง"</strong> คือการผสาน <strong>Craft Vector Technique™</strong> เข้ากับโปรแกรม — เทคนิคที่คิดค้นโดย <strong>นพ.อภิวัฒน์ มงคลสินธุ์ (หมอเด่น) ว.26872</strong> เพื่อให้การรักษาไม่ได้แค่ "เติมผิว" แต่เป็นการ <strong>"ออกแบบทิศทางการยกหน้า"</strong> ตามโครงสร้างใบหน้าของแต่ละบุคคล
+            </p>
+
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">🎯 แนวคิดหลัก — "ฉีดที่เอ็น ไม่ใช่แค่หย่อน"</h3>
+                <p style="margin-bottom:0.5rem;">"การฉีด Collagen Biostimulator ที่ดี <strong>ไม่ใช่แค่เติมให้หน้าฉ่ำ</strong> แต่ต้องมีทิศทาง — วิเคราะห์แนวแรง (Vector) การยุบตัวของโครงสร้างใบหน้าแต่ละคน แล้วออกแบบการวางยาตาม <strong>ทิศทางที่จะยกหน้า</strong> ไม่ใช่แค่จุดที่ยุบ"</p>
+                <p style="margin-bottom:0;font-size:0.9rem;color:#888;">— นพ.อภิวัฒน์ มงคลสินธุ์ (หมอเด่น)</p>
+            </div>
+
+            <h3>ผลลัพธ์ 4 มิติ จาก Craft Vector Technique™ × Lafullen</h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin:2rem 0;">
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">⚡</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">Immediate Volume</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">ผิวอิ่มฟู เต็มทันทีหลังทำ จาก CMC Gel ที่ออกฤทธิ์ทันที</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">🧬</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">Long-term Collagen</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">PCL กระตุ้นสร้างคอลลาเจนใหม่ต่อเนื่อง อยู่ได้นานถึง 2 ปี</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">🏗️</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">Structural Lift</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">พยุงและยกโครงสร้างใบหน้า ตามแนวแรง Vector เฉพาะบุคคล</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">✨</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">Skin Quality (ECM)</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">ฟื้นฟู Extracellular Matrix ให้คอลลาเจนเรียงตัวได้ดี แข็งแรง</p>
+                </div>
+            </div>
+
+            <p>
+                ผลลัพธ์ที่ได้ จึงไม่ใช่แค่ <strong>"หน้าฉ่ำ"</strong> แต่คือ <strong>ผิวแน่น ฟู ยก และดูสุขภาพดีอย่างเป็นธรรมชาติ</strong> — เพราะได้ทั้ง งานผิว + งานยกกระชับ + การฟื้นฟูโครงสร้างใบหน้า ในหัตถการเดียวกัน
+            </p>
 
             <img src="assets/images/blog/Lafullen/Program Lafullen-06.webp" alt="Lafullen การฉีดในชั้น Deep Dermis" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
@@ -3957,6 +3989,21 @@ const ARTICLES_DATA = [
             </div>
 
             <img src="assets/images/blog/Lafullen/Program Lafullen-08.webp" alt="ผลลัพธ์ Lafullen Dermal Thickness Collagen Density" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>Skin Quality (ECM): ทำไมบางคนฉีดเยอะ แต่ผิวยังไม่แน่น?</h2>
+            <p>
+                หนึ่งในปัญหาที่พบบ่อยในวงการ Aesthetic Medicine คือบางคนได้รับการรักษาด้วย Collagen Stimulator มาแล้ว แต่ผลลัพธ์กลับไม่ชัดเจนเท่าที่ควร — เหตุผลสำคัญประการหนึ่งคือสภาพของ <strong>Extracellular Matrix (ECM)</strong>
+            </p>
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">🌱 ECM เปรียบเสมือน "ดิน" ของผิว</h3>
+                <p style="margin-bottom:0;">"ผิวเหมือนต้นไม้ ส่วน ECM คือดิน — ถ้าดินไม่สมบูรณ์ ต่อให้เติมคอลลาเจนมากแค่ไหน ผลลัพธ์ก็ไม่เต็มประสิทธิภาพ" — นพ.อภิวัฒน์ มงคลสินธุ์</p>
+            </div>
+            <p>
+                <strong>ECM (Extracellular Matrix)</strong> คือโครงสร้างพื้นฐานของผิว ประกอบด้วยคอลลาเจน เส้นใยอีลาสติน และ Proteoglycan ที่ทำหน้าที่เป็น <strong>"นั่งร้าน"</strong> ให้เซลล์ผิวอยู่อาศัยและทำงาน เมื่อ ECM เสื่อมสภาพตามวัย คอลลาเจนใหม่ที่ถูกกระตุ้นขึ้นมาก็เรียงตัวได้ไม่ดี ส่งผลให้ผิวแน่นกระชับไม่เต็มศักยภาพ
+            </p>
+            <p>
+                แนวคิดของ Lafullen จึงไม่ได้เน้นแค่การเติมเต็มผิว แต่เน้นการ <strong>ฟื้นฟู Skin Microenvironment</strong> เพื่อให้คอลลาเจนใหม่ที่ PCL กระตุ้น เรียงตัวได้ดี แข็งแรง และมีคุณภาพมากขึ้น — นี่คือเหตุผลที่หลายคนมองหา <em>"โปรแกรมงานผิวที่ช่วยยกกระชับหน้า"</em> แทนการเติมเต็มเพียงอย่างเดียว
+            </p>
 
             <!-- ============ CHAPTER 8 — Who is Lafullen for ============ -->
             <h2>บทที่ 8 — Lafullen เหมาะกับใคร?</h2>
@@ -4128,6 +4175,34 @@ const ARTICLES_DATA = [
             </div>
 
             <img src="assets/images/blog/Lafullen/Program Lafullen-10.webp" alt="Lafullen DR.DEN Clinic โปรแกรมดูแลผิวระยะยาว" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>ทำไมต้องหมอเด่น? Speaker &amp; Trainer โปรแกรม Lafullen ระดับประเทศ</h2>
+            <p>
+                <strong>นพ.อภิวัฒน์ มงคลสินธุ์ (หมอเด่น) ว.26872</strong> ได้รับเกียรติให้เป็น <strong>Speaker &amp; Trainer โปรแกรม Lafullen</strong> ในงานวิชาการด้านความงามและการฟื้นฟูผิว เมื่อวันที่ 6 พฤษภาคม 2569 เพื่อถ่ายทอดแนวคิดด้าน <strong>Skin Quality (ECM)</strong>, <strong>Structural Lift</strong> และ <strong>Craft Vector Technique™</strong>
+            </p>
+            <p>
+                สิ่งสำคัญในการรักษาไม่ได้อยู่แค่ว่า "ใช้โปรแกรมอะไร" แต่อยู่ที่แพทย์สามารถ <strong>"วิเคราะห์โครงสร้างใบหน้า"</strong> และ <strong>"ออกแบบการรักษาเฉพาะบุคคล"</strong> ได้จริงหรือไม่
+            </p>
+
+            <div style="display:grid;gap:1.25rem;margin:2rem 0;">
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h3 style="color:#E6B030;margin-top:0;">① Method — "ฉีดที่เอ็น ไม่ใช่แค่หย่อน"</h3>
+                    <p style="margin-bottom:0;">แนวคิดของ Craft Vector Technique™ คือการวิเคราะห์ <strong>"ทิศทางการยก"</strong> ของใบหน้า ไม่ใช่เพียงเติมในจุดที่ยุบ เพราะถ้าฉีดโดยไม่มี Direction หน้าจะดูฟู แต่ไม่ยกโครงสร้าง</p>
+                </div>
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h3 style="color:#E6B030;margin-top:0;">② Product — "Lift + ผิวฟื้นฟู ในเข็มเดียว"</h3>
+                    <p style="margin-bottom:0;">Lafullen ถูกออกแบบให้ combine ทั้ง <strong>Collagen Stimulation</strong>, <strong>Immediate Volume</strong> และ <strong>Structural Design</strong> เพื่อให้ผลลัพธ์ดูธรรมชาติและคงอยู่ในระยะยาว</p>
+                </div>
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h3 style="color:#E6B030;margin-top:0;">③ Identity — "Speaker &amp; Trainer โปรแกรม Lafullen"</h3>
+                    <p style="margin-bottom:0;">การเป็น Speaker &amp; Trainer ไม่ได้หมายถึงแค่ "ฉีดเก่ง" แต่คือการสามารถ <strong>ถ่ายทอดเทคนิค</strong>, <strong>สอนระบบความคิด</strong> และออกแบบการรักษาให้ทีมแพทย์ทำตามได้จริง — นี่คือสิ่งที่ทำให้ Craft Vector Technique™ ได้รับการพูดถึงในวงการ Aesthetic Medicine ปัจจุบัน</p>
+                </div>
+            </div>
+
+            <p style="text-align:center;font-size:1.15rem;color:#C9A020;font-weight:600;margin:2rem 0;">
+                ❝ ความสวยที่ดี ต้องดูเป็นธรรมชาติ และปลอดภัยในระยะยาว<br>
+                "การรักษาที่ดี ต้องเริ่มจากการประเมินที่ถูกต้อง" ❞
+            </p>
 
             <!-- ============ CTA ============ -->
             <h2>บทสรุป — Lafullen คือทางเลือกใหม่ของคนรุ่นใหม่ที่อยากดูแลผิวระยะยาว</h2>
