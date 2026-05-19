@@ -4310,6 +4310,124 @@ const ARTICLES_DATA = [
                 </a>
             </div>
         `
+    },
+    {
+        id: 20,
+        slug: 'mordane-speaker-fillmed-masterclass-2026',
+        title: 'จากประสบการณ์รักษาจริงของหมอเด่น สู่เวทีสอนแพทย์ระดับ Masterclass — Fillmed Masterclass 2026',
+        excerpt: 'หมอเด่นรับเชิญเป็น Speaker & Trainer ปีที่ 2 บนเวที Fillmed Masterclass 2026 ถ่ายทอด 3B Facial Structural Longevity Framework และแนวคิด "The Art of Facial Longevity" สู่วงการแพทย์ความงามไทย',
+        metaDescription: 'หมอเด่น Speaker & Trainer ปีที่ 2 Fillmed Masterclass 2026 ถ่ายทอด 3B Facial Structural Longevity Framework แนวคิด Facial Longevity และเทคนิคการรักษาเฉพาะบุคคล | Paragon Clinic',
+        category: 'news',
+        categoryLabel: 'ข่าวสาร',
+        tags: ['หมอเด่น', 'Fillmed', 'Masterclass', 'Speaker', 'Trainer', 'Facial Longevity', '3B Framework', 'Paragon Clinic'],
+        image: 'assets/images/blog/Speaker-fillmed/Speaker Fillmed-01.webp',
+        author: 'ทีม DR.DEN Clinic',
+        date: '2026-05-19',
+        dateDisplay: '19 พฤษภาคม 2026',
+        readTime: '6 นาที',
+        views: 0,
+        featured: true,
+        content: \`
+            <p class="article-lead">
+                <strong>"ความสวยที่ยั่งยืน ต้องเริ่มจากความเข้าใจโครงสร้างใบหน้าอย่างลึกซึ้ง"</strong> — นี่คือแนวคิดหลักที่คุณหมอเด่นใช้ในการดูแลคนไข้ทุกเคสมาตลอด และเป็นเหตุผลสำคัญที่ทำให้คุณหมอได้รับเชิญในฐานะ <strong>Speaker &amp; Trainer เป็นปีที่ 2</strong> บนเวทีระดับแพทย์อย่าง <strong>Fillmed Masterclass 2026</strong>
+            </p>
+
+            <img src="assets/images/blog/Speaker-fillmed/Speaker Fillmed-01.webp" alt="หมอเด่น Speaker Fillmed Masterclass 2026 — The Art of Facial Longevity" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>The Art of Facial Longevity — ความสวยที่ยั่งยืน</h2>
+            <p>
+                สำหรับคุณหมอเด่น การรักษาที่ดีไม่ใช่เพียงการทำให้ <strong>"ดูดีทันที"</strong> แต่ต้องออกแบบผลลัพธ์ให้ <strong>ดูดีอย่างเป็นธรรมชาติ และดีขึ้นได้ในระยะยาว</strong>
+            </p>
+            <p>
+                แนวคิดนี้ถูกถ่ายทอดผ่านการรักษาจริงมาอย่างต่อเนื่อง และกลายเป็นแก่นสำคัญที่ทำให้ Fillmed เชิญคุณหมอเด่นขึ้นเป็นผู้บรรยายบนเวทีระดับ Masterclass ต่อเนื่องเป็นปีที่ 2
+            </p>
+
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">🎯 The Art of Facial Longevity</h3>
+                <p style="font-size:1.15rem;margin-bottom:0;">"ความสวยที่ยั่งยืน ต้องเริ่มจากความเข้าใจโครงสร้างใบหน้าอย่างลึกซึ้ง ไม่ใช่แค่การแก้ปัญหาที่มองเห็น แต่ต้องเข้าใจ <strong>ต้นเหตุ</strong> ของทุกการเปลี่ยนแปลง"</p>
+            </div>
+
+            <img src="assets/images/blog/Speaker-fillmed/Speaker Fillmed-02.webp" alt="หมอเด่นกับทีมแพทย์ผู้เข้าอบรม Fillmed Masterclass 2026" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>Speaker &amp; Trainer ปีที่ 2 — บนเวที Fillmed Masterclass 2026</h2>
+            <p>
+                บนเวทีครั้งนี้ คุณหมอเด่นได้ถ่ายทอดทั้ง <strong>เทคนิคการรักษา</strong> และ <strong>แนวคิดเชิงลึก</strong> ให้กับแพทย์ผู้เข้าร่วมจากทั่วประเทศ โดยมีธีมหลักคือ <em>"Elevating Outcomes Through Cellular Regeneration with Fillmed Regenerative Power"</em>
+            </p>
+            <p>
+                การได้รับเชิญเป็น Speaker ต่อเนื่องเป็นปีที่ 2 สะท้อนถึงการยอมรับในวงการแพทย์ความงาม ทั้งในด้านเทคนิค วิธีคิด และความสามารถในการถ่ายทอดองค์ความรู้ที่แพทย์คนอื่นนำไปใช้งานได้จริง
+            </p>
+
+            <img src="assets/images/blog/Speaker-fillmed/Speaker Fillmed-03.webp" alt="หมอเด่นบรรยาย 3B Facial Structural Longevity Framework" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>3B Facial Structural Longevity Framework — Framework จากประสบการณ์จริง</h2>
+            <p>
+                หัวใจของการบรรยายครั้งนี้คือ <strong>3B Facial Structural Longevity Framework</strong> — Framework ที่ถูกพัฒนาขึ้นจากประสบการณ์การรักษาจริง เพื่อให้แพทย์เข้าใจ <strong>"โครงสร้างใบหน้า"</strong> ในทุกมิติ ไม่ใช่แค่ผิวภายนอก
+            </p>
+            <p>
+                เพราะใบหน้าของแต่ละคน ไม่ได้มีเพียงปัญหาเรื่องริ้วรอยหรือการยุบตัวเพียงจุดเดียว แต่เกี่ยวข้องกับความสัมพันธ์ของโครงสร้างในทุกชั้น ตั้งแต่ <strong>กระดูก → ไขมัน → กล้ามเนื้อ → ไปจนถึงผิวหนัง</strong>
+            </p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin:2rem 0;">
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2.5rem;font-weight:800;color:#E6B030;margin-bottom:0.5rem;">B1</div>
+                    <h4 style="color:#333;margin:0 0 0.5rem;">Bone &amp; Deep Structure</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">วิเคราะห์โครงกระดูกและโครงสร้างชั้นลึกที่เป็นรากฐานของใบหน้า</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2.5rem;font-weight:800;color:#E6B030;margin-bottom:0.5rem;">B2</div>
+                    <h4 style="color:#333;margin:0 0 0.5rem;">Bio-tissue Dynamics</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">ทำความเข้าใจพลวัตของเนื้อเยื่อ ไขมัน กล้ามเนื้อ และการเปลี่ยนแปลงตามวัย</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2.5rem;font-weight:800;color:#E6B030;margin-bottom:0.5rem;">B3</div>
+                    <h4 style="color:#333;margin:0 0 0.5rem;">Beauty by Design</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">ออกแบบการรักษาที่ตอบโจทย์โครงสร้างเฉพาะบุคคล ให้ผลลัพธ์ดูเป็นธรรมชาติและยั่งยืน</p>
+                </div>
+            </div>
+
+            <img src="assets/images/blog/Speaker-fillmed/Speaker Fillmed-04.webp" alt="หมอเด่นสอนเทคนิคการรักษา Fillmed Masterclass" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>เริ่มจาก "การวิเคราะห์" ไม่ใช่ "จะฉีดอะไร"</h2>
+            <p>
+                ทุกเคสที่คุณหมอเด่นสอนแพทย์ จึงไม่ได้เริ่มจาก <strong>"จะฉีดอะไร"</strong> แต่เริ่มจาก <strong>"การวิเคราะห์ใบหน้าอย่างละเอียด"</strong> แบบจุดต่อจุด ในทุกเลเยอร์ เพื่อเข้าใจต้นเหตุของปัญหาอย่างแท้จริง
+            </p>
+            <ul>
+                <li>วิเคราะห์โครงสร้างใบหน้าในทุกมิติ ไม่ใช่แค่จุดที่ยุบหรือหย่อน</li>
+                <li>เข้าใจความสัมพันธ์ระหว่างโครงสร้างแต่ละชั้น</li>
+                <li>ออกแบบการรักษาที่ <strong>แก้ต้นเหตุ</strong> ไม่ใช่แค่แก้ปัญหาที่มองเห็น</li>
+                <li>คำนึงถึงผลลัพธ์ระยะยาว ไม่ใช่แค่ความสวยในวันนั้น</li>
+            </ul>
+
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">💡 แนวทางที่แตกต่าง</h3>
+                <p style="margin-bottom:0;">นี่คือเหตุผลที่ผลลัพธ์จากการรักษาในแบบของคุณหมอเด่น <strong>ไม่ได้ดูเป็นงานที่ "ทำมา"</strong> แต่เป็นความสวยที่ยังคงเอกลักษณ์ของแต่ละคนไว้อย่างพอดี <strong>ดูละมุน เป็นธรรมชาติ และมีความสมดุลในระยะยาว</strong></p>
+            </div>
+
+            <img src="assets/images/blog/Speaker-fillmed/Speaker Fillmed-05.webp" alt="Fillmed Masterclass 2026 หมอเด่น Paragon Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h2>Masterclass สะท้อนมาตรฐานที่คนไข้ทุกคนได้รับ</h2>
+            <p>
+                การได้รับเลือกให้เป็นผู้สอนแพทย์ในเวทีระดับ Masterclass จึงไม่ใช่เพียงการสะท้อนถึง <strong>เทคนิคการรักษา</strong> เท่านั้น แต่ยังสะท้อนถึง <strong>มาตรฐาน วิธีคิด และความเข้าใจเชิงโครงสร้าง</strong> ที่ลึกพอ จนสามารถถ่ายทอดให้แพทย์คนอื่นนำไปใช้ได้จริง
+            </p>
+            <p>
+                และทั้งหมดนี้ คือสิ่งเดียวกันกับที่คนไข้ทุกคนจะได้รับ ตั้งแต่ก้าวแรกที่เข้ามาที่ <strong>Paragon Clinic</strong>
+            </p>
+
+            <p style="text-align:center;font-size:1.2rem;color:#C9A020;font-weight:600;margin:2rem 0;">
+                ❝ เราไม่ได้มองแค่ "ความสวยวันนี้"<br>
+                แต่เราออกแบบ "ความสวยที่ดีขึ้นในระยะยาว"<br>
+                ให้กับคุณในทุกมิติของใบหน้าและการดูแลตัวเอง ❞
+            </p>
+
+            <div style="background:linear-gradient(135deg,#2c3e50,#1a252f);border-radius:20px;padding:3rem;margin:2.5rem 0;color:white;text-align:center;">
+                <p style="font-size:1.3rem;margin-bottom:0.5rem;opacity:0.9;">สนใจปรึกษา</p>
+                <h3 style="color:#E6B030;font-size:1.8rem;margin:0.5rem 0;">The Art of Facial Longevity<br>โดยหมอเด่น</h3>
+                <p style="opacity:0.85;margin-bottom:1.5rem;">ปรึกษาทีมแพทย์ Paragon Clinic ฟรี ไม่มีค่าใช้จ่าย<br>วิเคราะห์โครงสร้างใบหน้าเฉพาะคุณ ด้วยแนวทาง 3B Facial Structural Longevity Framework</p>
+                <a href="#" class="btn btn-primary cta-trigger" style="background:linear-gradient(135deg,#E6B030,#D4941F);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.1rem;display:inline-block;">
+                    ปรึกษาฟรี — นัดคิวเลย
+                </a>
+            </div>
+        \`
     }
 ];
 
