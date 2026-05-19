@@ -3752,7 +3752,7 @@ const ARTICLES_DATA = [
         category: 'treatment',
         categoryLabel: 'บทความการรักษา',
         tags: ['Lafullen', 'ลาฟูลเลน', 'PCL', 'Polycaprolactone', 'Collagen Stimulator', 'คอลลาเจน', 'ผิวเด้ง', 'ยกกระชับ', 'Samyang', 'Anti-Aging', 'ฟื้นฟูผิว'],
-        image: 'assets/images/blog/Sculptar/ปกเว็บ-08_0-1536x488.jpg',
+        image: 'assets/images/blog/Lafullen/Program Lafullen-cover.webp',
         author: 'ทีมแพทย์ DR.DEN Clinic',
         date: '2026-04-30',
         dateDisplay: '30 เมษายน 2026',
@@ -3766,7 +3766,7 @@ const ARTICLES_DATA = [
                 บทความนี้ทีมแพทย์ <strong>DR.DEN Clinic</strong> จะพาคุณเจาะลึกตั้งแต่กลไก PCL Microsphere, เทคโนโลยี Samyang, ไทม์ไลน์ผลลัพธ์, ไปจนถึงการเปรียบเทียบกับ <em>Sculptra</em> และ <em>Filler</em> แบบหมดเปลือก เพื่อช่วยให้คุณตัดสินใจได้ว่า "Lafullen ใช่สำหรับคุณหรือไม่?"
             </p>
 
-            <img src="assets/images/blog/Sculptar/ปกเว็บ-08_0-1536x488.jpg" alt="Lafullen PCL Collagen Stimulator คู่มือฉบับสมบูรณ์ DR.DEN Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
+            <img src="assets/images/blog/Lafullen/Program Lafullen-cover.webp" alt="Lafullen PCL Collagen Stimulator คู่มือฉบับสมบูรณ์ DR.DEN Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ TOC / Quick Answer (GEO friendly) ============ -->
             <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
@@ -3780,6 +3780,8 @@ const ARTICLES_DATA = [
                     <li>ผลลัพธ์อยู่ได้นาน <strong>~2 ปี</strong></li>
                 </ul>
             </div>
+
+            <img src="assets/images/blog/Lafullen/Program Lafullen_Artboard 2 copy.webp" alt="โปรแกรม Lafullen PCL Collagen Stimulator DR.DEN Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ CHAPTER 1 — What is Lafullen ============ -->
             <h2>บทที่ 1 — Lafullen คืออะไร? ทำไมถึงเป็น "ดาวรุ่ง" ของวงการ Collagen Stimulator</h2>
@@ -3806,6 +3808,8 @@ const ARTICLES_DATA = [
             <p style="text-align:center;font-size:1.15rem;color:#C9A020;font-weight:600;margin:2rem 0;">
                 ❝ การจับคู่ PCL + CMC ออกแบบมาเพื่อ "ฉีดง่าย + กระจายดี + กระตุ้นคอลลาเจนต่อเนื่อง" ❞
             </p>
+
+            <img src="assets/images/blog/Lafullen/Program Lafullen_Artboard 2-02.webp" alt="Lafullen PCL 30% + CMC Gel 70% สูตรผสม" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ CHAPTER 2 — Material Structure ============ -->
             <h2>บทที่ 2 — เจาะลึกโครงสร้างของสาร (Material Structure)</h2>
@@ -3836,6 +3840,8 @@ const ARTICLES_DATA = [
                 <li><strong>เพิ่มวอลลุ่มและพยุงผิวได้ทันทีหลังฉีด</strong> — ผิวดูอิ่มฟูทันตา ไม่ต้องรอ</li>
             </ul>
 
+            <img src="assets/images/blog/Lafullen/Program Lafullen-04.webp" alt="Lafullen วัสดุชีวภาพ PCL Microsphere + CMC" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
             <!-- ============ CHAPTER 3 — Particle Technology ============ -->
             <h2>บทที่ 3 — เทคโนโลยีของอนุภาค (Samyang EPT Technology)</h2>
             <p>
@@ -3855,6 +3861,8 @@ const ARTICLES_DATA = [
             <p style="text-align:center;font-style:italic;color:#C9A020;font-size:1.1rem;">
                 ❝ ผลลัพธ์: collagen deposition มากขึ้น + กระตุ้น fibroblast ต่อเนื่อง + ลดความเสี่ยงเกิด nodule ❞
             </p>
+
+            <img src="assets/images/blog/Lafullen/Program Lafullen-05.webp" alt="Samyang EPT Technology PCL อนุภาคสม่ำเสมอ" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ CHAPTER 4 — Mechanism ============ -->
             <h2>บทที่ 4 — กลไกการทำงานเมื่อเข้าสู่ผิว (Biological Mechanism)</h2>
@@ -3890,6 +3898,8 @@ const ARTICLES_DATA = [
                 <li>ผสานกับเทคนิค <strong>Craft Vector Technique</strong> ทำให้เห็นผลยกกระชับได้ทันที</li>
             </ul>
 
+            <img src="assets/images/blog/Lafullen/Program Lafullen-06.webp" alt="Lafullen การฉีดในชั้น Deep Dermis" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
             <!-- ============ CHAPTER 6 — Timeline ============ -->
             <h2>บทที่ 6 — Timeline ผลลัพธ์ Lafullen ที่ต้องรู้</h2>
             <p>การเปลี่ยนแปลงของผิวจะเกิดเป็นลำดับ ค่อยๆ ดีขึ้นและคงอยู่ยาวนาน:</p>
@@ -3916,6 +3926,8 @@ const ARTICLES_DATA = [
                     <p style="color:#555;">PCL เริ่มย่อยสลาย แต่ <strong>คอลลาเจนที่สะสมไว้ยังคงอยู่</strong> — ผลลัพธ์ผิวคงทน <strong>ยาวนานถึง 2 ปี*</strong></p>
                 </div>
             </div>
+
+            <img src="assets/images/blog/Lafullen/Program Lafullen-07.webp" alt="Timeline ผลลัพธ์ Lafullen ผิวดีขึ้นทีละขั้น" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ CHAPTER 7 — Results ============ -->
             <h2>บทที่ 7 — สิ่งที่ "เปลี่ยนจริง" ในผิวคุณ</h2>
@@ -3944,6 +3956,8 @@ const ARTICLES_DATA = [
                 <p style="margin-bottom:0;font-size:1.05rem;">การเปลี่ยนแปลงเหล่านี้เป็น <strong>"การเปลี่ยนโครงสร้าง"</strong> ของผิว — ไม่ใช่แค่การเพิ่มปริมาตรเฉพาะจุด นี่คือเหตุผลที่ผลลัพธ์ Lafullen ดู <strong>"เป็นธรรมชาติ"</strong> และ <strong>"คงทน"</strong> มากกว่าการเติมเฉยๆ</p>
             </div>
 
+            <img src="assets/images/blog/Lafullen/Program Lafullen-08.webp" alt="ผลลัพธ์ Lafullen Dermal Thickness Collagen Density" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
             <!-- ============ CHAPTER 8 — Who is Lafullen for ============ -->
             <h2>บทที่ 8 — Lafullen เหมาะกับใคร?</h2>
             <p>ทีมแพทย์ DR.DEN Clinic แนะนำ Lafullen สำหรับเคสเหล่านี้โดยเฉพาะ:</p>
@@ -3970,6 +3984,8 @@ const ARTICLES_DATA = [
                     <p style="font-size:0.95rem;color:#666;margin:0;">ผิวอิ่มฟูทันทีจาก CMC Gel ไม่ต้องรอนานเหมือนสารกระตุ้นบางชนิด</p>
                 </div>
             </div>
+
+            <img src="assets/images/blog/Lafullen/Program Lafullen-09.webp" alt="Lafullen เหมาะกับใคร โปรแกรม DR.DEN Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ CHAPTER 9 — Comparison Sculptra ============ -->
             <h2>บทที่ 9 — Lafullen vs Sculptra เลือกตัวไหนดี?</h2>
@@ -4110,6 +4126,8 @@ const ARTICLES_DATA = [
                     <p style="margin:1rem 0 0;color:#555;">A: <strong>ทำได้</strong> หากเป็น <strong>หัตถการฉีด</strong> คนละบริเวณหรือคนละชั้นผิว แต่ <strong>ไม่แนะนำ</strong> ทำร่วมกับงานเครื่องที่มีพลังงานความร้อน (เช่น HIFU, Thermage) ในวันเดียวกัน — ควรปรึกษาแพทย์ก่อนทุกครั้ง</p>
                 </details>
             </div>
+
+            <img src="assets/images/blog/Lafullen/Program Lafullen-10.webp" alt="Lafullen DR.DEN Clinic โปรแกรมดูแลผิวระยะยาว" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ CTA ============ -->
             <h2>บทสรุป — Lafullen คือทางเลือกใหม่ของคนรุ่นใหม่ที่อยากดูแลผิวระยะยาว</h2>
