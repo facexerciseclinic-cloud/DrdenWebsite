@@ -4327,7 +4327,7 @@ const ARTICLES_DATA = [
         readTime: '6 นาที',
         views: 0,
         featured: true,
-        content: \`
+        content: `
             <p class="article-lead">
                 <strong>"ความสวยที่ยั่งยืน ต้องเริ่มจากความเข้าใจโครงสร้างใบหน้าอย่างลึกซึ้ง"</strong> — นี่คือแนวคิดหลักที่คุณหมอเด่นใช้ในการดูแลคนไข้ทุกเคสมาตลอด และเป็นเหตุผลสำคัญที่ทำให้คุณหมอได้รับเชิญในฐานะ <strong>Speaker &amp; Trainer เป็นปีที่ 2</strong> บนเวทีระดับแพทย์อย่าง <strong>Fillmed Masterclass 2026</strong>
             </p>
@@ -4427,7 +4427,7 @@ const ARTICLES_DATA = [
                     ปรึกษาฟรี — นัดคิวเลย
                 </a>
             </div>
-        \`
+        `
     }
 ];
 
