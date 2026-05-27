@@ -4428,6 +4428,360 @@ const ARTICLES_DATA = [
                 </a>
             </div>
         `
+    },
+    {
+        id: 21,
+        slug: 'radiesse-collagen-biostimulator-by-mordane-clinic',
+        title: 'เจาะลึก โปรแกรม Radiesse กับคลินิกหมอเด่น — เติมเต็มทันที + ฟื้นโครงสร้างผิวต่อเนื่อง',
+        excerpt: 'Radiesse คืออะไร? เจาะลึก Collagen Biostimulator จาก Merz Aesthetics ที่ให้ผลทั้ง "เติมเต็มทันที" และ "ฟื้นโครงสร้างผิวต่อเนื่อง" ด้วย Calcium Hydroxylapatite (CaHA) + CMC Gel ฉีดโดยหมอเด่น 1 ใน 15 หมอฉีดของ Merz ประเทศไทย ด้วยเทคนิคเฉพาะ Babyface Skin Technique',
+        metaDescription: 'โปรแกรม Radiesse คลินิกหมอเด่น — Collagen Biostimulator CaHA + CMC Gel เติมเต็มทันที + กระตุ้นคอลลาเจน 5 องค์ประกอบสำคัญ ฉีดโดยหมอฉีดของ Merz 1 ใน 15 ด้วยเทคนิค Babyface Skin Technique | DR.DEN Clinic',
+        category: 'treatment',
+        categoryLabel: 'บทความการรักษา',
+        tags: ['Radiesse', 'Collagen Biostimulator', 'CaHA', 'Merz', 'หมอเด่น', 'Babyface Skin Technique', 'Radiesse+', 'RR MIX Program', 'ยกกระชับ', 'ฟื้นฟูผิว'],
+        image: 'assets/images/blog/Radiesse/Radiesse-01.webp',
+        author: 'ทีมแพทย์ DR.DEN Clinic',
+        date: '2026-05-27',
+        dateDisplay: '27 พฤษภาคม 2026',
+        readTime: '13 นาที',
+        views: 0,
+        featured: true,
+        content: `
+            <!-- ============ HERO LEAD ============ -->
+            <p class="article-lead">
+                ลองนึกภาพว่าผิวของคุณคือ <strong>"โครงสร้างที่ค่อยๆ ทรุดลงตามวัย"</strong> — ไม่ใช่แค่ผิวที่บางลง แต่ <em>กรอบหน้าหาย ร่องลึกขึ้น และคุณภาพผิวก็ลดลงพร้อมกัน</em><br><br>
+                จะดีแค่ไหน… ถ้ามีโปรแกรมเดียวที่ <strong>"เติมเต็มทันที"</strong> และ <strong>"ฟื้นโครงสร้างผิวต่อเนื่อง"</strong> ได้พร้อมกัน?<br>
+                นั่นคือสิ่งที่ <strong>Radiesse</strong> ทำได้ — Collagen Biostimulator จาก Merz Aesthetics
+            </p>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-01.webp" alt="โปรแกรม Radiesse คลินิกหมอเด่น Collagen Biostimulator" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ QUICK ANSWER / AEO ============ -->
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">💡 Quick Answer — Radiesse คืออะไร?</h3>
+                <p style="margin-bottom:0;font-size:1.05rem;">
+                    <strong>Radiesse</strong> คือโปรแกรมในกลุ่ม <strong>Collagen Biostimulator</strong> จาก Merz Aesthetics ที่ให้ผลทั้ง <strong>"เติมเต็มทันที"</strong> (จาก CMC Gel) และ <strong>"ฟื้นโครงสร้างผิวต่อเนื่อง"</strong> (จากอนุภาค Calcium Hydroxylapatite — CaHA) ในตัวเดียว — ผ่าน FDA สหรัฐฯ และเป็นแบบ <em>non-animal based</em> ปลอดภัยสูง โอกาสแพ้ต่ำมาก
+                </p>
+            </div>
+
+            <!-- ============ CHAPTER 1 ============ -->
+            <h2>บทที่ 1 — ทำความเข้าใจ Radiesse: ไม่ใช่ฟิลเลอร์ธรรมดา</h2>
+            <p>
+                ในกลุ่ม <strong>Collagen Biostimulator</strong> โลก Aesthetic Medicine มีหลายตัว — Sculptra, Lafullen, Radiesse — แต่ละตัวมีจุดเด่นต่างกัน <strong>Radiesse</strong> โดดเด่นที่ <em>"ผลทันที + ผลระยะยาว ในเข็มเดียว"</em> เพราะใช้หลักการ Dual-Action:
+            </p>
+            <ul>
+                <li><strong>เติมเต็มทันที</strong> — CMC Gel ทำหน้าที่พยุงและเติมเต็มเนื้อเยื่อตั้งแต่วันแรก เห็นการปรับ contour ได้เร็ว</li>
+                <li><strong>ฟื้นโครงสร้างต่อเนื่อง</strong> — อนุภาค CaHA ค่อยๆ กระตุ้นให้ผิวสร้าง <strong>5 องค์ประกอบสำคัญ</strong> ในระยะต่อมา</li>
+            </ul>
+            <p>
+                ผ่านการรับรองจาก <strong>US FDA</strong> มากว่า 20 ปี และเป็นโปรแกรมที่ Merz Aesthetics ผู้ผลิต <em>วางตำแหน่งเป็น "ราชาแห่งการฟื้นโครงสร้าง"</em>
+            </p>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-02.webp" alt="Radiesse Collagen Biostimulator คลินิกหมอเด่น" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ CHAPTER 2 ============ -->
+            <h2>บทที่ 2 — เจาะลึกองค์ประกอบ 2 ส่วน: CaHA 30% + CMC Gel 70%</h2>
+            <p>
+                ผลิตภัณฑ์ Radiesse จัดเป็น <strong>injectable implant</strong> ที่ประกอบด้วย:
+            </p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin:2rem 0;">
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:2rem;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">🦴</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">CaHA Microspheres <span style="font-size:0.85rem;color:#888;">30%</span></h4>
+                    <p style="font-size:0.95rem;color:#666;margin:0;"><strong>Calcium Hydroxylapatite</strong> — แคลเซียมไฮดร็อกซิลอะพาไทต์ ขนาด 25–45 ไมครอน มีธรรมชาติใกล้เคียงกับแร่ธาตุในกระดูกและฟัน เป็น <em>CaHA สังเคราะห์ทางการแพทย์</em></p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:2rem;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">💧</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">CMC Gel <span style="font-size:0.85rem;color:#888;">70%</span></h4>
+                    <p style="font-size:0.95rem;color:#666;margin:0;"><strong>Sodium Carboxymethylcellulose</strong> — เจลพาหะที่แขวนลอย CaHA Microspheres ทำหน้าที่ <em>เติมเต็มทันที</em> ในช่วงแรก</p>
+                </div>
+            </div>
+            <div style="background:#f8f9fa;border-radius:12px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid #E6B030;">
+                <p style="margin:0;"><strong>✨ จุดสำคัญ:</strong> Radiesse เป็นแบบ <strong>non-animal based</strong> ไม่ได้มาจากโปรตีนสัตว์ จึงเป็นผลิตภัณฑ์ที่มี <strong>ความปลอดภัยสูง</strong> และโอกาสแพ้ต่ำมากๆ</p>
+            </div>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-03.webp" alt="องค์ประกอบ CaHA และ CMC Gel ใน Radiesse" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ CHAPTER 3 — 5 องค์ประกอบ ============ -->
+            <h2>บทที่ 3 — 5 องค์ประกอบสำคัญที่ Radiesse กระตุ้นให้ผิวสร้างเอง</h2>
+            <p>
+                หัวใจของ Radiesse คือการที่ CaHA ทำหน้าที่เป็น <strong>scaffold</strong> (โครงร่าง) ให้ผิวค่อยๆ สร้าง <strong>5 องค์ประกอบสำคัญ</strong> ของผิวขึ้นมาเอง ตามผลการศึกษาทางวิชาการ:
+            </p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin:2rem 0;">
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:#E6B030;">+150%</div>
+                    <h4 style="color:#333;margin:0.5rem 0;">Collagen Type 1</h4>
+                    <p style="font-size:0.85rem;color:#666;margin:0;">คอลลาเจนหลักที่ทำให้ผิวแน่นและตึง</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:#E6B030;">+130%</div>
+                    <h4 style="color:#333;margin:0.5rem 0;">Collagen Type 3</h4>
+                    <p style="font-size:0.85rem;color:#666;margin:0;">คอลลาเจนชนิดเส้นใย ช่วยให้ผิวยืดหยุ่น</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:#E6B030;">+260%</div>
+                    <h4 style="color:#333;margin:0.5rem 0;">Elastin</h4>
+                    <p style="font-size:0.85rem;color:#666;margin:0;">โปรตีนความยืดหยุ่น ช่วยให้ผิวเด้งกลับเป็นรูป</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.25rem;">🧬</div>
+                    <h4 style="color:#333;margin:0.5rem 0;">Proteoglycan</h4>
+                    <p style="font-size:0.85rem;color:#666;margin:0;">การสร้างโปรตีนพื้นฐาน ดูแลโครงสร้าง ECM</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.75rem;text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.25rem;">🩸</div>
+                    <h4 style="color:#333;margin:0.5rem 0;">Angiogenesis</h4>
+                    <p style="font-size:0.85rem;color:#666;margin:0;">การสร้างเส้นเลือดฝอยใหม่ ผิวได้รับสารอาหารดีขึ้น</p>
+                </div>
+            </div>
+
+            <!-- ============ CHAPTER 4 ============ -->
+            <h2>บทที่ 4 — Radiesse ช่วยผิวยังไง? "เติมเต็ม + ฟื้นฟู" ใน 2 ระยะ</h2>
+            <p>
+                จุดเด่นของ Radiesse คือไม่ใช่แค่ <strong>"เติมเต็ม"</strong> แต่ช่วยเรื่อง <strong>"ฟื้นฟู"</strong> ด้วย โดยแบ่งเป็น 2 ระยะ:
+            </p>
+
+            <div style="display:grid;gap:1.5rem;margin:2rem 0;">
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:5px solid #E6B030;">
+                    <h3 style="color:#E6B030;margin-top:0;">⚡ ระยะทันที (Day 0 — Week 4)</h3>
+                    <p style="margin-bottom:0;">หลังฉีด <strong>CMC Gel</strong> จะช่วยเติมเต็มร่องและพยุงเนื้อเยื่อ ทำให้เห็นการปรับ <em>contour</em> หรือการรองรับผิวได้ค่อนข้างไว — ผิวอิ่ม กรอบหน้าชัดขึ้นทันที</p>
+                </div>
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:5px solid #E6B030;">
+                    <h3 style="color:#E6B030;margin-top:0;">🧬 ระยะต่อเนื่อง (Month 1 — Year 2)</h3>
+                    <p style="margin-bottom:0;">เมื่อเวลาผ่านไป อนุภาค <strong>CaHA</strong> ทำหน้าที่เสมือน <em>scaffold</em> ให้เกิดการตอบสนองของเนื้อเยื่อ ช่วยกระตุ้นกระบวนการสร้างโครงสร้างผิวใหม่ — Collagen, Elastin, Angiogenesis และองค์ประกอบของ <strong>Extracellular Matrix (ECM)</strong> อื่นๆ</p>
+                </div>
+            </div>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-04.webp" alt="Radiesse 2 ระยะ เติมเต็มทันทีและฟื้นฟูต่อเนื่อง" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ CHAPTER 5 — Who is it for ============ -->
+            <h2>บทที่ 5 — Radiesse เหมาะกับใคร?</h2>
+            <p>
+                เพราะ Radiesse ไม่ได้ทำหน้าที่แค่เพิ่มปริมาตรแบบผิวอิ่มขึ้นชั่วคราว แต่มีบทบาทกับ <strong>"คุณภาพผิว"</strong> และ <strong>"ความแน่นของโครงสร้างรองรับ"</strong> ด้วย จึงเหมาะกับคนที่มีปัญหา:
+            </p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin:2rem 0;">
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.5rem;">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">📉</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">ผิวบางลง</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">รู้สึกว่าผิวบางลง ขาดความหนาแน่น เห็นเส้นเลือดง่ายขึ้น</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.5rem;">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">😔</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">ผิวดูแฟบ ดูโทรม</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">ผิวขาดความอิ่มฟู หน้าดูทรุด ไม่สดใส</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.5rem;">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">📐</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">กรอบหน้าไม่คม</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">โครงหน้าไม่ชัด เริ่มมีหน้าหย่อนคล้อย กรอบเบลอ</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.5rem;">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">〰️</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">ร่องลึก / Volume Loss</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">ร่องลึกหรือ Volume Loss บางตำแหน่ง เช่น แก้ม ขมับ</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:1.5rem;">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">🤲</div>
+                    <h4 style="color:#C9A020;margin:0 0 0.5rem;">มือเหี่ยว เห็นเส้นเอ็น</h4>
+                    <p style="font-size:0.9rem;color:#666;margin:0;">หลังมือเหี่ยว เห็นเส้นเอ็นชัดจากอายุที่เพิ่มขึ้น</p>
+                </div>
+            </div>
+
+            <!-- ============ CHAPTER 6 — Merz Injector ============ -->
+            <h2>บทที่ 6 — หมอเด่น: 1 ใน 15 "หมอฉีดของ Merz" ประเทศไทย</h2>
+            <p>
+                อีกหนึ่งเหตุผลสำคัญที่ทำให้การฉีด Radiesse ที่ <strong>คลินิกหมอเด่น</strong> มีมาตรฐาน เพราะ <strong>นพ.อภิวัฒน์ มงคลสินธุ์ (ว.26872)</strong> ถูกเชิญให้เป็นหนึ่งใน <strong>"หมอฉีดของ Merz"</strong> — กลุ่มแพทย์ที่ถูกคัดเลือกในระดับประเทศ <em>เพียง 15 ท่าน</em> เพื่อเป็นตัวแทนถ่ายทอดองค์ความรู้และมาตรฐานการฉีดในระดับสากล
+            </p>
+
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">🏆 Merz Injector Gang — มาตรฐานสากล</h3>
+                <p style="margin-bottom:0;">การเป็นส่วนหนึ่งของ <strong>Merz Injector Gang</strong> ไม่ได้สะท้อนเพียงความเชี่ยวชาญด้านการฉีดเท่านั้น แต่ยังหมายถึงการผ่านการอัปเดตเทคนิค ความรู้ และแนวคิดการรักษาที่เน้น <strong>"ความปลอดภัย (Safety First)"</strong> และผลลัพธ์ที่เหมาะสมกับแต่ละบุคคล</p>
+            </div>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-06.webp" alt="หมอเด่น 1 ใน 15 หมอฉีดของ Merz ประเทศไทย" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <p>
+                เพราะผลลัพธ์ที่ดีของ Radiesse <strong>ไม่ได้ขึ้นอยู่กับตัวโปรดักส์เพียงอย่างเดียว</strong> แต่ขึ้นอยู่กับ:
+            </p>
+            <ul>
+                <li>การประเมินปัญหาเฉพาะบุคคล</li>
+                <li>การวิเคราะห์โครงสร้างใบหน้าและชั้นผิว</li>
+                <li>เทคนิคการวางแผนฉีดที่เหมาะกับแต่ละเคส</li>
+            </ul>
+
+            <!-- ============ CHAPTER 7 — Babyface Technique ============ -->
+            <h2>บทที่ 7 — Babyface Skin Technique™ เทคนิคเฉพาะของคลินิกหมอเด่น</h2>
+            <p>
+                คลินิกหมอเด่นไม่ได้ใช้แค่โปรดักส์ดี แต่พัฒนา <strong>เทคนิคเฉพาะ "Babyface Skin Technique™"</strong> — เทคนิค <em>2-in-1 เติมเต็มลดวัยผิว พร้อมเกิด 5 โครงสร้างผิวสำคัญ</em> ช่วยลดเลขใบหน้าได้จริง
+            </p>
+
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">💎 หัวใจของ Babyface Skin Technique™</h3>
+                <p style="margin-bottom:0;">"ผิวที่ดูเด็ก <strong>ไม่ได้เกิดจากการเติมเต็มเพียงจุดเดียว</strong> แต่เกิดจากความสมดุลของผิวในหลายชั้น" — เทคนิคนี้ประเมินผิวแบบ <strong>องค์รวม</strong> ทั้งคุณภาพผิว (Skin Quality), ความแน่นของโครงสร้าง (Structural Support) และการกระจายตัวของผลิตภัณฑ์</p>
+            </div>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-05.webp" alt="Babyface Skin Technique เทคนิคเฉพาะคลินิกหมอเด่น" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <h3>4 แนวคิดหลักของ Babyface Skin Technique™</h3>
+            <div style="display:grid;gap:1.25rem;margin:2rem 0;">
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h4 style="color:#E6B030;margin-top:0;">① แก้ปัญหา "ถูกชั้นผิว" ไม่ใช่แค่เติมให้เต็ม</h4>
+                    <p style="margin-bottom:0.5rem;">วิเคราะห์ว่าปัญหาเกิดจาก <strong>ชั้นผิวไหน</strong> แล้วเลือกเทคนิคและระดับการฉีดให้ถูกต้อง:</p>
+                    <ul style="margin:0;">
+                        <li><strong>ร่องลึก</strong> → ต้องการการพยุงโครงสร้าง</li>
+                        <li><strong>ผิวบาง / เหี่ยว</strong> → ต้องการการฟื้นฟูคุณภาพผิว</li>
+                    </ul>
+                </div>
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h4 style="color:#E6B030;margin-top:0;">② การกระจายตัวยา (Distribution) อย่างแม่นยำ</h4>
+                    <p style="margin-bottom:0;">เน้น <strong>"การกระจายตัวของผลิตภัณฑ์"</strong> มากกว่าการฉีดเป็นจุดๆ — ช่วยให้ผิวดูเรียบเนียนทั้งผืน <em>ไม่เป็นก้อน ไม่เป็นจุด</em> ผลลัพธ์ออกมาในลักษณะผิวดูดีขึ้นทั้งหน้า ไม่ใช่แค่บางตำแหน่ง</p>
+                </div>
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h4 style="color:#E6B030;margin-top:0;">③ ผสาน "เติม + ฟื้น" ในแนวทางเดียวกัน</h4>
+                    <p style="margin-bottom:0.5rem;">ออกแบบให้สอดคล้องกับคุณสมบัติของ Radiesse:</p>
+                    <ul style="margin:0;">
+                        <li><strong>ระยะสั้น</strong> → เติมเต็มและพยุงผิวทันที</li>
+                        <li><strong>ระยะยาว</strong> → กระตุ้นให้ผิวสร้างโครงสร้างใหม่ เช่น คอลลาเจน</li>
+                    </ul>
+                </div>
+                <div style="background:#f8f9fa;border-radius:16px;padding:1.75rem 2rem;border-left:4px solid #E6B030;">
+                    <h4 style="color:#E6B030;margin-top:0;">④ ลดความเสี่ยง Overfill Syndrome</h4>
+                    <p style="margin-bottom:0;">ปัญหาที่พบบ่อยคือ "เติมมากเกินไป" เพื่อให้เห็นผลทันที — Babyface Skin Technique™ เน้น <strong>ปริมาณที่เหมาะสม + การวางตำแหน่งที่แม่นยำ</strong> เพื่อให้ได้ผลลัพธ์ดูเด็กขึ้น <em>แต่ไม่ดูโป๊ะ หรือเปลี่ยนหน้า</em></p>
+                </div>
+            </div>
+
+            <!-- ============ CHAPTER 8 — Moon Ga-young ============ -->
+            <h2>บทที่ 8 — Radiesse x Moon Ga-young: ภาพลักษณ์ที่สะท้อนคุณค่าแบรนด์</h2>
+            <p>
+                การเลือก <strong>Moon Ga-young</strong> เป็น Presenter ของ Radiesse ไม่ใช่แค่การใช้ดาราที่สวย แต่คือการสื่อสาร <em>"ตัวตนของผิวในแบบที่แบรนด์ต้องการสื่อสารถึงลูกค้า"</em>
+            </p>
+            <p>
+                ภาพลักษณ์ของเธอที่ดู <strong>เรียบเนียน แน่น สุขภาพดี และเป็นธรรมชาติ</strong> สื่อถึงผลลัพธ์ของ Radiesse ที่ <em>ไม่ได้ทำให้หน้าเปลี่ยน</em> แต่ช่วยให้ผิวดูดีขึ้นในแบบของตัวเอง พร้อมสะท้อนความมั่นใจในผิวอย่างแท้จริง
+            </p>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-07.webp" alt="Radiesse x Moon Ga-young Presenter" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ CHAPTER 9 — 2 ปี ============ -->
+            <h2>บทที่ 9 — 2 ปีแห่งการอัปเดต: RADIESSE x คลินิกหมอเด่น</h2>
+            <p>
+                ตลอด <strong>2 ปี</strong> ที่ผ่านมา ตั้งแต่โปรแกรม Radiesse เข้ามาเป็นหนึ่งในโปรแกรมสำคัญของวงการความงามไทย หมอเด่นและทีมแพทย์ของ <strong>คลินิกหมอเด่น</strong> ได้รับเชิญเข้าร่วมงาน อัปเดตความรู้ และ <strong>Hands-on Workshop</strong> จาก <em>Merz Aesthetics</em> อย่างต่อเนื่อง
+            </p>
+            <p>
+                เพราะสำหรับเรา การฉีดโปรแกรม Radiesse ไม่ใช่แค่การเลือกใช้โปรดักส์ที่ดี แต่คือการเข้าใจว่า:
+            </p>
+            <ul>
+                <li>ฉีดอย่างไรให้ <strong>เหมาะกับโครงสร้างผิว</strong></li>
+                <li>ฉีดอย่างไรให้ได้ <strong>ผลลัพธ์ที่เป็นธรรมชาติ</strong></li>
+                <li>ฉีดอย่างไรให้ <strong>ตอบโจทย์ปัญหาผิวของคนไทย</strong>อย่างแท้จริง</li>
+            </ul>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-08.webp" alt="ทีมแพทย์คลินิกหมอเด่น Hands-on Workshop Merz Aesthetics" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ CHAPTER 10 — Classic vs Plus ============ -->
+            <h2>บทที่ 10 — Radiesse Classic vs Radiesse+ ต่างกันอย่างไร?</h2>
+            <p>
+                ใน 2 ปีที่ผ่านมา ทีมแพทย์คลินิกหมอเด่นได้เข้าร่วม Hands-on Workshop ทั้งของ <strong>Radiesse Classic</strong> และ <strong>Radiesse+</strong>:
+            </p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:2rem 0;">
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:2rem;">
+                    <h4 style="color:#C9A020;margin-top:0;">🌟 Radiesse Classic</h4>
+                    <p style="font-size:0.95rem;color:#666;margin:0;">โปรแกรมที่โดดเด่นด้านการ <strong>ฟื้นโครงสร้างผิว</strong> เสริมความแน่น ยกกระชับ และช่วยให้ผิวดูอ่อนวัยขึ้นในระยะยาว</p>
+                </div>
+                <div style="background:#fff;border:2px solid #f0e6c8;border-radius:16px;padding:2rem;">
+                    <h4 style="color:#C9A020;margin-top:0;">💎 Radiesse+</h4>
+                    <p style="font-size:0.95rem;color:#666;margin:0;">ต่อยอดจาก Radiesse Classic โดยมีจุดเด่นด้าน <strong>การปรับรูปหน้า</strong> เสริมกรอบหน้า และสร้างความคมชัดของโครงหน้าได้อย่างมีมิติ</p>
+                </div>
+            </div>
+
+            <h3>Radiesse+ x ณเดชน์ คูกิมิยะ</h3>
+            <p>
+                ทีมแพทย์คลินิกหมอเด่นได้ร่วมอัปเดตกับงาน <strong>เปิดตัว Radiesse+</strong> ที่มี Presenter คือ <em>ณเดชน์ คูกิมิยะ</em> — สะท้อนภาพลักษณ์ของความหล่อ ดูดี <strong>มีโครงหน้า</strong> และความคมชัดอย่างเป็นธรรมชาติ ซึ่งตรงกับจุดเด่นของ Radiesse+ ที่ช่วยเรื่อง <em>กรอบหน้าคม โครงหน้าชัด และผิวที่ดูแน่นขึ้นอย่างมีมิติ</em>
+            </p>
+            <p>
+                สิ่งนี้ตอกย้ำว่า Radiesse <strong>ไม่ได้เหมาะเฉพาะกับผู้หญิงเท่านั้น</strong> แต่ยังตอบโจทย์ผู้ชายที่ต้องการดูดีขึ้นแบบไม่เยอะ — <em>ดูสดขึ้น คมขึ้น และยังคงความเป็นตัวเอง</em>
+            </p>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-09.webp" alt="Radiesse+ ณเดชน์ คูกิมิยะ Presenter" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <!-- ============ CHAPTER 11 — RR MIX ============ -->
+            <h2>บทที่ 11 — RR MIX Program: อัปเดตจากเวที AMWC ระดับนานาชาติ</h2>
+            <p>
+                อีกหนึ่งก้าวสำคัญของการพัฒนาความรู้ คือการเดินทางไปร่วมงาน <strong>AMWC (Aesthetic & Anti-aging Medicine World Congress)</strong> เพื่ออัปเดตโปรโตคอลใหม่อย่าง <strong>RR MIX Program</strong>
+            </p>
+            <div style="background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:16px;padding:2rem;margin:2rem 0;border-left:5px solid #E6B030;">
+                <h3 style="margin-top:0;color:#C9A020;">🌏 RR MIX Program คืออะไร?</h3>
+                <p style="margin-bottom:0;"><strong>RR MIX Program</strong> คือแนวทางการ <em>ผสานโปรดักส์เพื่อดูแลผิวแบบองค์รวม</em> โดยเน้นการฟื้นฟูทั้งเรื่อง <strong>คุณภาพผิว ความแน่น ความฉ่ำ และความอ่อนวัย</strong> — ตอบโจทย์เคสที่ปัญหาผิวมีหลายมิติ เช่น ทั้งร่องลึก ผิวโทรม ผิวขาดน้ำ และโครงหน้าที่เริ่มดรอป ในเคสเดียวกัน</p>
+            </div>
+
+            <img src="assets/images/blog/Radiesse/Radiesse-10.webp" alt="RR MIX Program AMWC คลินิกหมอเด่น" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <p>
+                การมีความรู้ด้านโปรโตคอลที่ลึกขึ้น จึงช่วยให้แพทย์ของคลินิกหมอเด่นสามารถ <strong>วางแผนการรักษาได้แม่นยำกว่าเดิม</strong>
+            </p>
+
+            <p style="text-align:center;font-size:1.2rem;color:#C9A020;font-weight:600;margin:2rem 0;">
+                ❝ ผลลัพธ์ที่ดี เริ่มจากแพทย์ที่ไม่หยุดอัปเดต<br>
+                การเลือกฉีด Radiesse ไม่ควรเลือกจากราคา หรือชื่อโปรแกรมเพียงอย่างเดียว<br>
+                แต่ควรเลือกจาก <strong>แพทย์ที่เข้าใจโปรดักส์ ทีมที่มีมาตรฐาน และคลินิกที่ให้ความสำคัญกับการพัฒนาอย่างต่อเนื่อง</strong> ❞
+            </p>
+
+            <!-- ============ FAQ — AEO ============ -->
+            <h2>บทที่ 12 — FAQ คำถามที่พบบ่อยเกี่ยวกับ Radiesse</h2>
+            <div style="display:grid;gap:1rem;margin:2rem 0;">
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: Radiesse เป็นฟิลเลอร์หรือเปล่า?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: <strong>ไม่ใช่ฟิลเลอร์ HA</strong> Radiesse จัดอยู่ในกลุ่ม <strong>Collagen Biostimulator</strong> ที่ใช้ Calcium Hydroxylapatite (CaHA) ผสมกับ CMC Gel — ให้ผลทั้งเติมเต็มทันทีและกระตุ้นการสร้างคอลลาเจนใหม่ในระยะยาว</p>
+                </details>
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: Radiesse อยู่ได้นานแค่ไหน?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: ผลลัพธ์ของ Radiesse คงอยู่โดยเฉลี่ย <strong>12–18 เดือน</strong> และในบางเคสอาจคงผลได้ <strong>ถึง 2 ปี</strong> เพราะเป็นการกระตุ้นการสร้างคอลลาเจนของผิวเอง ไม่ใช่แค่การเติมสารเข้าไปแล้วสลายตัว</p>
+                </details>
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: Radiesse ฉีดที่ไหนได้บ้าง?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: นิยมฉีดที่ <strong>โหนกแก้ม กรอบหน้า คาง ขมับ มุมปาก ใต้ตา</strong> รวมถึง <strong>หลังมือ</strong> เพื่อแก้ปัญหามือเหี่ยวเห็นเส้นเอ็น — แพทย์จะวิเคราะห์ตำแหน่งที่เหมาะกับโครงสร้างของแต่ละคน</p>
+                </details>
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: Radiesse ปลอดภัยไหม? แพ้ง่ายไหม?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: <strong>ปลอดภัยสูง</strong> เพราะ Radiesse เป็น <strong>non-animal based</strong> (ไม่ได้มาจากโปรตีนสัตว์) ทำให้ <em>โอกาสแพ้ต่ำมาก</em> และผ่านการรับรอง US FDA มากว่า 20 ปี — แต่ต้องฉีดโดยแพทย์ที่ผ่านการอบรมเฉพาะ เช่น Merz Injector</p>
+                </details>
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: Radiesse Classic vs Radiesse+ ต่างกันอย่างไร?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: <strong>Radiesse Classic</strong> เน้นการฟื้นโครงสร้างผิว ยกกระชับ — <strong>Radiesse+</strong> มีจุดเด่นด้าน <em>การปรับรูปหน้า เสริมกรอบ และสร้างความคมชัด</em> เหมาะกับงาน Contouring มากกว่า — แพทย์จะเลือกประเภทตามเป้าหมายของเคส</p>
+                </details>
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: หลังฉีด Radiesse ต้องดูแลตัวเองยังไง?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: หลีกเลี่ยง <strong>การกด นวด หรือกระทบบริเวณที่ฉีดในช่วง 1–2 สัปดาห์แรก</strong>, งดงานเครื่องที่มีความร้อนสูง (HIFU, Thermage) ในช่วง 2 สัปดาห์, ดื่มน้ำเยอะ และหลีกเลี่ยงแอลกอฮอล์/อาหารเค็มจัดใน 2–3 วันแรก</p>
+                </details>
+                <details style="background:#fff;border:2px solid #f0e6c8;border-radius:12px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:700;color:#C9A020;cursor:pointer;font-size:1.05rem;">Q: ทำไมต้องฉีด Radiesse กับ "หมอฉีดของ Merz"?</summary>
+                    <p style="margin:1rem 0 0;color:#555;">A: เพราะผลลัพธ์ของ Radiesse ขึ้นอยู่กับ <strong>การประเมินชั้นผิว เทคนิคการกระจายตัวยา และความเข้าใจในโครงสร้างใบหน้า</strong> ไม่ใช่แค่โปรดักส์ดี — Merz Injector เป็นแพทย์ที่ผ่านการคัดเลือกในระดับประเทศและอัปเดตเทคนิคอย่างต่อเนื่อง</p>
+                </details>
+            </div>
+
+            <!-- ============ CTA ============ -->
+            <h2>บทสรุป — Radiesse ที่คลินิกหมอเด่น คือคำตอบของผิวยุคใหม่</h2>
+            <p>
+                ที่คลินิกหมอเด่น เรา <strong>ไม่ได้แค่ฉีด Radiesse</strong> — แต่เราออกแบบผลลัพธ์ด้วยความเข้าใจในผิว โครงสร้าง และตัวตนของลูกค้าแต่ละคน ผ่าน:
+            </p>
+            <ul>
+                <li><strong>หมอเด่น</strong> — 1 ใน 15 หมอฉีดของ Merz ประเทศไทย</li>
+                <li><strong>Babyface Skin Technique™</strong> — เทคนิคเฉพาะของคลินิกหมอเด่น</li>
+                <li><strong>RR MIX Program</strong> — โปรโตคอลใหม่จากเวที AMWC ระดับโลก</li>
+                <li><strong>ทีมแพทย์ที่ผ่าน Hands-on Workshop</strong> — Radiesse Classic + Radiesse+ ต่อเนื่อง 2 ปี</li>
+            </ul>
+
+            <div style="background:linear-gradient(135deg,#2c3e50,#1a252f);border-radius:20px;padding:3rem;margin:2.5rem 0;color:white;text-align:center;">
+                <p style="font-size:1.3rem;margin-bottom:0.5rem;opacity:0.9;">หากคุณพร้อมจะ</p>
+                <h3 style="color:#E6B030;font-size:1.8rem;margin:0.5rem 0;">"เติมเต็มทันที + ฟื้นโครงสร้างผิวต่อเนื่อง"<br>ในหัตถการเดียว</h3>
+                <p style="opacity:0.85;margin-bottom:1.5rem;">ปรึกษาทีมแพทย์ DR.DEN Clinic ฟรี ไม่มีค่าใช้จ่าย<br>วิเคราะห์โครงสร้างใบหน้าและออกแบบ Radiesse Program เฉพาะคุณ</p>
+                <a href="#" class="btn btn-primary cta-trigger" style="background:linear-gradient(135deg,#E6B030,#D4941F);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.1rem;display:inline-block;">
+                    ปรึกษาฟรี — นัดคิว Radiesse เลย
+                </a>
+            </div>
+
+            <p style="font-size:0.85rem;color:#999;text-align:center;margin-top:2rem;">
+                * ผลลัพธ์อาจแตกต่างกันในแต่ละบุคคล ขึ้นอยู่กับสภาพผิว อายุ และการดูแลหลังหัตถการ ควรปรึกษาแพทย์เฉพาะทางเพื่อรับการประเมินที่เหมาะสม
+            </p>
+        `
     }
 ];
 
