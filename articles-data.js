@@ -4438,7 +4438,7 @@ const ARTICLES_DATA = [
         category: 'treatment',
         categoryLabel: 'บทความการรักษา',
         tags: ['Radiesse', 'Collagen Biostimulator', 'CaHA', 'Merz', 'หมอเด่น', 'Babyface Skin Technique', 'Craft Vector Technique', 'Radiesse+', 'RR MIX Program', 'Moon Ga-young', 'ณเดชน์', 'ยกกระชับ', 'ฟื้นฟูผิว'],
-        image: 'assets/images/blog/Radiesse/Screenshot 2569-05-20 at 10.49.35.png',
+        image: 'assets/images/blog/Radiesse/Radiesse-01.webp',
         author: 'ทีมแพทย์ DR.DEN Clinic',
         date: '2026-05-27',
         dateDisplay: '27 พฤษภาคม 2026',
