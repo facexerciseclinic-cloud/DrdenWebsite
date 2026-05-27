@@ -4776,7 +4776,7 @@ const ARTICLES_DATA = [
             <img src="assets/images/blog/Radiesse/Radiesse-12.webp" alt="ทีมแพทย์คลินิกหมอเด่นร่วมงานเปิดตัว Radiesse+ Lift & Contour" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <h3>🎥 ดูคลิป: ร่วมงาน Brand Ambassador ณเดชน์ × Radiesse+</h3>
-            <div style="position:relative;padding-bottom:177.78%;max-width:400px;margin:2rem auto;border-radius:16px;overflow:hidden;">
+            <div style="position:relative;padding-bottom:130%;max-width:360px;margin:2rem auto;border-radius:16px;overflow:hidden;background:#000;">
                 <iframe src="https://www.youtube.com/embed/v5h_fntQrNY" title="หมอเด่น × ณเดชน์ — Radiesse+ Brand Ambassador" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
             </div>
 
@@ -4801,7 +4801,7 @@ const ARTICLES_DATA = [
             <img src="assets/images/blog/Radiesse/Radiesse-15.webp" alt="กว่า 10 ปี Radiesse — หมอเด่น × ณเดชน์ MERZ AESTHETICS" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <h3>🎥 ดูคลิป: AMWC × RR MIX Program</h3>
-            <div style="position:relative;padding-bottom:177.78%;max-width:400px;margin:2rem auto;border-radius:16px;overflow:hidden;">
+            <div style="position:relative;padding-bottom:130%;max-width:360px;margin:2rem auto;border-radius:16px;overflow:hidden;background:#000;">
                 <iframe src="https://www.youtube.com/embed/7AVk5qHTU2E" title="AMWC × RR MIX Program — คลินิกหมอเด่น" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
             </div>
 
@@ -4832,7 +4832,7 @@ const ARTICLES_DATA = [
             </p>
 
             <h3>🎥 ดูคลิป: ที่คลินิกหมอเด่น ไม่เคยหยุดพัฒนา</h3>
-            <div style="position:relative;padding-bottom:177.78%;max-width:400px;margin:2rem auto;border-radius:16px;overflow:hidden;">
+            <div style="position:relative;padding-bottom:130%;max-width:360px;margin:2rem auto;border-radius:16px;overflow:hidden;background:#000;">
                 <iframe src="https://www.youtube.com/embed/IHpAMpRb0_0" title="คลินิกหมอเด่น — ไม่หยุดพัฒนา Radiesse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
             </div>
 
