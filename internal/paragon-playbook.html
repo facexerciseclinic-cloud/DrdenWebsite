@@ -599,6 +599,123 @@ mark.pb-mark { background: rgba(200,167,106,0.35); color: var(--pb-ink); padding
 
 .pb-channel ul { margin: 0.5rem 0 0 1.2rem; padding: 0; font-size: 0.86rem; line-height: 1.7; color: var(--pb-ink); }
 .pb-channel ul li { margin-bottom: 0.2rem; }
+
+/* ============================================================
+   POLISH LAYER v3 — premium refinement (additive only)
+   ============================================================ */
+html { scroll-behavior: smooth; }
+*, *::before, *::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background-color: var(--pb-ivory);
+    background-image:
+        radial-gradient(circle at 12% 16%, rgba(200,167,106,0.07), transparent 42%),
+        radial-gradient(circle at 88% 6%, rgba(246,214,207,0.11), transparent 38%),
+        radial-gradient(circle at 50% 110%, rgba(203,185,163,0.09), transparent 55%);
+    background-attachment: fixed;
+}
+
+/* ---- Reading progress bar ---- */
+.pb-progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: linear-gradient(90deg, var(--pb-blush), var(--pb-gold), var(--pb-gold-deep));
+    z-index: 999; transition: width 0.12s linear;
+    box-shadow: 0 0 12px rgba(200,167,106,0.55);
+}
+
+/* ---- Custom scrollbar ---- */
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: rgba(234,219,192,0.35); }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--pb-taupe), var(--pb-gold-deep));
+    border-radius: 8px; border: 2px solid var(--pb-ivory);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--pb-gold-deep); }
+* { scrollbar-color: var(--pb-gold-deep) rgba(234,219,192,0.35); scrollbar-width: thin; }
+::selection { background: var(--pb-gold); color: #fff; }
+
+/* ---- Lock screen entrance ---- */
+.lock-card { animation: pbLockIn 0.85s cubic-bezier(0.2,0.85,0.2,1) both; }
+.lock-icon { animation: pbFloat 3.6s ease-in-out infinite; }
+.lock-brand { animation: pbFadeUp 0.9s 0.15s ease both; }
+.lock-title { animation: pbFadeUp 0.9s 0.25s ease both; }
+.lock-sub   { animation: pbFadeUp 0.9s 0.35s ease both; }
+.lock-form  { animation: pbFadeUp 0.9s 0.45s ease both; }
+@keyframes pbLockIn { from { opacity:0; transform: translateY(30px) scale(0.97); } to { opacity:1; transform:none; } }
+@keyframes pbFadeUp { from { opacity:0; transform: translateY(14px); } to { opacity:1; transform:none; } }
+@keyframes pbFloat  { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-7px); } }
+
+/* ---- Section scroll-reveal (JS-gated, safe fallback) ---- */
+.js-reveal .pb-section.pb-pending { opacity: 0; transform: translateY(36px); }
+.js-reveal .pb-section.pb-in {
+    opacity: 1; transform: none;
+    transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.2,0.85,0.2,1);
+}
+
+/* ---- Elegant divider between sections ---- */
+.pb-section + .pb-section { position: relative; }
+.pb-section + .pb-section::before {
+    content: "";
+    position: absolute; top: -2.4rem; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--pb-gold) 50%, transparent);
+}
+.pb-section + .pb-section::after {
+    content: "◆";
+    position: absolute; top: -2.4rem; left: 50%; transform: translate(-50%,-52%);
+    color: var(--pb-gold); font-size: 0.62rem; background: var(--pb-ivory);
+    padding: 0 0.5rem; letter-spacing: 2px;
+}
+
+/* ---- Refined micro-interactions ---- */
+.pb-section-num {
+    transition: transform 0.4s cubic-bezier(0.2,0.85,0.2,1), letter-spacing 0.4s ease;
+}
+.pb-section:hover .pb-section-num { letter-spacing: 0.5px; }
+.pb-card, .pb-pillar, .pb-template, .pb-kpi, .pb-tier-card,
+.pb-week, .pb-phase, .pb-method-step, .pb-angle, .pb-step {
+    transition: transform 0.4s cubic-bezier(0.2,0.85,0.2,1),
+                box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+}
+
+/* ---- Back-to-top floating button ---- */
+.pb-totop {
+    position: fixed; right: 26px; bottom: 26px; width: 50px; height: 50px;
+    border-radius: 50%; border: 1px solid var(--pb-gold);
+    background: linear-gradient(135deg, var(--pb-gold), var(--pb-gold-deep));
+    color: #fff; font-size: 1.25rem; line-height: 1; cursor: pointer; z-index: 200;
+    opacity: 0; transform: translateY(22px) scale(0.8); pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2,0.85,0.2,1), box-shadow 0.4s ease;
+    box-shadow: 0 8px 24px rgba(168,136,78,0.35);
+    display: flex; align-items: center; justify-content: center;
+}
+.pb-totop.show { opacity: 1; transform: none; pointer-events: auto; }
+.pb-totop:hover { transform: translateY(-4px) scale(1.07); box-shadow: 0 14px 32px rgba(168,136,78,0.48); }
+
+/* ---- Focus visibility ---- */
+a:focus-visible, button:focus-visible, input:focus-visible,
+.pb-chip:focus-visible { outline: 2px solid var(--pb-gold); outline-offset: 3px; }
+
+/* ---- Sidebar active link polish ---- */
+#pbTocList a { transition: color 0.3s ease, padding-left 0.3s ease, background 0.3s ease; }
+#pbTocList a.active { padding-left: 14px; }
+
+/* ---- Reduced motion + print safety ---- */
+@media print {
+    .pb-progress, .pb-totop { display: none !important; }
+    .pb-section + .pb-section::before, .pb-section + .pb-section::after { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, .lock-card, .lock-icon, .lock-brand, .lock-title, .lock-sub, .lock-form {
+        animation: none !important; transition: none !important;
+    }
+    .js-reveal .pb-section.pb-pending { opacity: 1 !important; transform: none !important; }
+}
+/* ============ END POLISH LAYER ============ */
 </style>
 </head>
 <body>
@@ -628,6 +745,8 @@ mark.pb-mark { background: rgba(200,167,106,0.35); color: var(--pb-ink); padding
             <button class="pb-conf-btn" onclick="lockAgain()">LOCK</button>
         </div>
     </div>
+    <div class="pb-progress" id="pbProgress"></div>
+    <button class="pb-totop" id="pbToTop" aria-label="กลับขึ้นบน" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
     <div class="pb-layout">
         <aside class="pb-toc" id="pbToc">
             <div class="pb-toc-title">CONTENTS</div>
@@ -705,6 +824,7 @@ function renderPlaybook(html) {
     buildTOC();
     setupFilterUI();
     setupTocActive();
+    setupEnhancements();
     window.scrollTo({ top: 0, behavior: 'instant' });
     document.getElementById('pwInput').value = '';
 }
@@ -845,6 +965,43 @@ function setupTocActive() {
         });
     }, { rootMargin: '-30% 0px -60% 0px' });
     sections.forEach(s => obs.observe(s));
+}
+
+function setupEnhancements() {
+    const container = document.getElementById('pbContainer');
+    const sections = document.querySelectorAll('#pbMain .pb-section');
+    container.classList.add('js-reveal');
+    sections.forEach(s => s.classList.add('pb-pending'));
+    const revObs = new IntersectionObserver((entries) => {
+        entries.forEach(en => {
+            if (en.isIntersecting) {
+                en.target.classList.add('pb-in');
+                en.target.classList.remove('pb-pending');
+                revObs.unobserve(en.target);
+            }
+        });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    sections.forEach(s => revObs.observe(s));
+
+    const prog = document.getElementById('pbProgress');
+    const totop = document.getElementById('pbToTop');
+    const onScroll = () => {
+        const h = document.documentElement;
+        const max = h.scrollHeight - h.clientHeight;
+        const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+        if (prog) prog.style.width = pct + '%';
+        if (totop) totop.classList.toggle('show', h.scrollTop > 600);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    document.querySelectorAll('#pbTocList a').forEach(a => {
+        a.addEventListener('click', (e) => {
+            const id = a.getAttribute('href');
+            const t = id && document.querySelector(id);
+            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
 }
 
 function lockAgain() {
