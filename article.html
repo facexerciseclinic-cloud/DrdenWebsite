@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บทความ | DR.DEN Clinic - คลินิกหมอเด่น</title>
     <meta name="description" content="">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="author" content="DR.DEN Clinic">
+    <meta name="theme-color" content="#E6B030">
+    <link rel="canonical" id="canonicalLink" href="https://www.drdengroup.com/articles">
+    <link rel="icon" href="/assets/images/Logo.png" type="image/png">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -13,11 +18,13 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="DR.DEN Clinic - คลินิกหมอเด่น">
+    <meta property="og:locale" content="th_TH">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
     
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -197,6 +204,8 @@
         document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
         document.querySelector('meta[name="twitter:title"]').setAttribute('content', article.title);
         document.querySelector('meta[name="twitter:description"]').setAttribute('content', article.metaDescription);
+        document.querySelector('meta[name="twitter:image"]').setAttribute('content', window.location.origin + '/' + article.image);
+        document.getElementById('canonicalLink').setAttribute('href', 'https://www.drdengroup.com/article?slug=' + article.slug);
 
         // JSON-LD Structured Data
         const schema = {
@@ -219,6 +228,8 @@
             },
             "datePublished": article.date,
             "dateModified": article.date,
+            "inLanguage": "th-TH",
+            "url": window.location.href,
             "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": window.location.href

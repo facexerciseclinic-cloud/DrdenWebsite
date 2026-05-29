@@ -1,4 +1,90 @@
+# robots.txt — DR.DEN Clinic (drdengroup.com)
+# Allow all search engines and AI answer engines to crawl public content.
+
 User-agent: *
+Allow: /
 Disallow: /internal/
 Disallow: /_pgn/
 Disallow: /admin/
+
+# --- Search engines (explicit) ---
+User-agent: Googlebot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+# --- AI / Answer engines (AEO): explicitly allowed to read public pages ---
+User-agent: Google-Extended
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: Applebot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /internal/
+Disallow: /_pgn/
+Disallow: /admin/
+
+Sitemap: https://www.drdengroup.com/sitemap.xml
