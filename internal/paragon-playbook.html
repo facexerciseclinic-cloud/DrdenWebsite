@@ -610,11 +610,14 @@ html { scroll-behavior: smooth; }
     text-rendering: optimizeLegibility;
 }
 body {
-    background-color: var(--pb-ivory);
+    background-color: #1a1a2e;
+}
+.pb-container.active {
     background-image:
         radial-gradient(circle at 12% 16%, rgba(200,167,106,0.07), transparent 42%),
         radial-gradient(circle at 88% 6%, rgba(246,214,207,0.11), transparent 38%),
-        radial-gradient(circle at 50% 110%, rgba(203,185,163,0.09), transparent 55%);
+        radial-gradient(circle at 50% 110%, rgba(203,185,163,0.09), transparent 55%),
+        linear-gradient(180deg, var(--pb-ivory) 0%, #fffdf7 100%);
     background-attachment: fixed;
 }
 
