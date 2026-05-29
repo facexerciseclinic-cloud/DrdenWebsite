@@ -232,6 +232,82 @@ function applyFilter(items, search, fields) {
 }
 
 /* ============================================================
+   BANNERS (homepage hero slider)
+============================================================ */
+SECTION_RENDERERS.banners = function () {
+    const items = load('banners').slice().sort((a, b) => (a.order || 0) - (b.order || 0));
+    const tbody = document.getElementById('bannersTableBody');
+    if (!tbody) return;
+    const search = document.getElementById('bannerSearch')?.value.trim() || '';
+    const filtered = applyFilter(items, search, ['alt', 'link']);
+    if (!filtered.length) {
+        tbody.innerHTML = `<tr><td colspan="6" class="text-center">${items.length ? 'ไม่พบผลลัพธ์' : 'ยังไม่มีแบนเนอร์ — กดปุ่ม "เพิ่มแบนเนอร์"'}</td></tr>`;
+        return;
+    }
+    tbody.innerHTML = filtered.map(b => `
+        <tr>
+            <td>${b.image ? `<img src="${escapeHtml(b.image)}" class="cell-thumb" style="width:100px;height:48px;object-fit:cover" alt="">` : '—'}</td>
+            <td>${escapeHtml(b.alt || '-')}</td>
+            <td>${b.link ? `<small>${escapeHtml(b.link)}</small>` : '—'}</td>
+            <td>${b.order ?? '-'}</td>
+            <td><span class="status-badge status-${b.status === 'inactive' ? 'inactive' : 'active'}">${b.status === 'inactive' ? 'ปิด' : 'แสดง'}</span></td>
+            <td>
+                <div class="table-actions">
+                    <button class="btn-action btn-edit" onclick="formBanner(${b.id})" title="แก้ไข"><i class="fas fa-edit"></i></button>
+                    <button class="btn-action btn-delete" onclick="deleteItem('banners',${b.id})" title="ลบ"><i class="fas fa-trash"></i></button>
+                </div>
+            </td>
+        </tr>`).join('');
+};
+
+function formBanner(id = null) {
+    const item = id ? load('banners').find(b => b.id === id) : null;
+    const nextOrder = item?.order ?? (load('banners').length + 1);
+    const body = `
+        <form id="resourceForm" onsubmit="return saveBanner(event, ${id || 'null'})">
+            ${imageUploadField('image', item?.image)}
+            <div class="form-group">
+                <label class="form-label">คำอธิบายรูป (Alt) — ดีต่อ SEO *</label>
+                <input class="form-control" name="alt" required value="${escapeHtml(item?.alt || '')}">
+            </div>
+            <div class="form-group">
+                <label class="form-label">ลิงก์เมื่อคลิก (ไม่บังคับ)</label>
+                <input class="form-control" name="link" placeholder="เช่น promotions หรือ https://..." value="${escapeHtml(item?.link || '')}">
+            </div>
+            <div class="form-grid-2">
+                <div class="form-group">
+                    <label class="form-label">ลำดับการแสดง</label>
+                    <input class="form-control" type="number" name="order" min="0" value="${escapeHtml(nextOrder)}">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">สถานะ</label>
+                    <select class="form-control" name="status">
+                        <option value="active" ${item?.status !== 'inactive' ? 'selected' : ''}>แสดง</option>
+                        <option value="inactive" ${item?.status === 'inactive' ? 'selected' : ''}>ปิด</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-outline" onclick="closeModal()">ยกเลิก</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> บันทึก</button>
+            </div>
+        </form>`;
+    openModal(id ? 'แก้ไขแบนเนอร์' : 'เพิ่มแบนเนอร์', body, 'lg');
+    bindImageUpload('image');
+}
+
+function saveBanner(e, id) {
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const data = Object.fromEntries(fd);
+    data.order = parseInt(data.order) || 0;
+    data.image = document.querySelector('[data-img-field="image"]')?.dataset.value || data.image || '';
+    if (!data.image) { toast('กรุณาเลือกรูปแบนเนอร์', 'error'); return false; }
+    upsert('banners', data, id);
+    return false;
+}
+
+/* ============================================================
    REVIEWS
 ============================================================ */
 SECTION_RENDERERS.reviews = function () {
@@ -948,7 +1024,7 @@ function clearImage(name) {
 ============================================================ */
 function exportData() {
     const data = { exportDate: new Date().toISOString() };
-    ['reviews', 'services', 'promotions', 'articles', 'doctors', 'branches'].forEach(k => data[k] = load(k));
+    ['banners', 'reviews', 'services', 'promotions', 'articles', 'doctors', 'branches'].forEach(k => data[k] = load(k));
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -967,7 +1043,7 @@ function importData() {
         try {
             const data = JSON.parse(await file.text());
             if (!await confirmAction('ต้องการนำเข้าข้อมูล? ข้อมูลปัจจุบันจะถูกแทนที่')) return;
-            ['reviews', 'services', 'promotions', 'articles', 'doctors', 'branches'].forEach(k => {
+            ['banners', 'reviews', 'services', 'promotions', 'articles', 'doctors', 'branches'].forEach(k => {
                 if (Array.isArray(data[k])) save(k, data[k]);
             });
             toast('นำเข้าข้อมูลสำเร็จ');
@@ -980,7 +1056,7 @@ function importData() {
 async function clearAllData() {
     if (!await confirmAction('ต้องการลบข้อมูลทั้งหมด? การกระทำนี้ย้อนกลับไม่ได้!')) return;
     if (!await confirmAction('ยืนยันอีกครั้ง — ข้อมูลทั้งหมดจะถูกลบจริง!')) return;
-    ['reviews', 'services', 'promotions', 'articles', 'doctors', 'branches', 'activities'].forEach(k => localStorage.removeItem(KEY(k)));
+    ['banners', 'reviews', 'services', 'promotions', 'articles', 'doctors', 'branches', 'activities'].forEach(k => localStorage.removeItem(KEY(k)));
     toast('ลบข้อมูลทั้งหมดแล้ว');
     setTimeout(() => location.reload(), 600);
 }
@@ -998,6 +1074,8 @@ async function seedFromWebsite() {
     };
     const reviews = await fetchAndEval('/reviews-data.js', 'REVIEWS_DATA');
     if (reviews) { save('reviews', reviews); count++; }
+    const banners = await fetchAndEval('/banners-data.js', 'HERO_BANNERS');
+    if (banners) { save('banners', banners); count++; }
     const articles = await fetchAndEval('/articles-data.js', 'ARTICLES_DATA');
     if (articles) { save('articles', articles); count++; }
     const promos = await fetchAndEval('/promotions-data.js', 'PROMOTIONS_DATA');
@@ -1055,6 +1133,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
     // Add buttons
+    document.getElementById('addBannerBtn')?.addEventListener('click', () => formBanner());
     document.getElementById('addReviewBtn')?.addEventListener('click', () => formReview());
     document.getElementById('addServiceBtn')?.addEventListener('click', () => formService());
     document.getElementById('addPromotionBtn')?.addEventListener('click', () => formPromo());
@@ -1064,6 +1143,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Search inputs (debounced)
     [
+        ['bannerSearch', 'banners'],
         ['reviewSearch', 'reviews'],
         ['serviceSearch', 'services'],
         ['promoSearch', 'promotions'],
@@ -1087,6 +1167,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.addEventListener('click', () => {
             const k = btn.dataset.exportJs;
             const map = {
+                banners: ['HERO_BANNERS', 'banners-data.js'],
                 reviews: ['REVIEWS_DATA', 'reviews-data.js'],
                 articles: ['ARTICLES_DATA', 'articles-data.js'],
                 promotions: ['PROMOTIONS_DATA', 'promotions-data.js'],

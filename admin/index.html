@@ -18,6 +18,7 @@
         </div>
         <nav class="admin-nav">
             <a href="#dashboard" class="admin-nav-link active" data-section="dashboard"><i class="fas fa-chart-line"></i><span>Dashboard</span></a>
+            <a href="#banners" class="admin-nav-link" data-section="banners"><i class="fas fa-image"></i><span>แบนเนอร์หน้าเว็บ</span></a>
             <a href="#reviews" class="admin-nav-link" data-section="reviews"><i class="fas fa-star"></i><span>จัดการรีวิว</span></a>
             <a href="#services" class="admin-nav-link" data-section="services"><i class="fas fa-syringe"></i><span>จัดการบริการ</span></a>
             <a href="#promotions" class="admin-nav-link" data-section="promotions"><i class="fas fa-gift"></i><span>จัดการโปรโมชั่น</span></a>
@@ -70,6 +71,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="admin-section" id="section-banners">
+            <div class="admin-container">
+                <div class="section-header-admin"><h2>แบนเนอร์หน้าเว็บ</h2><button class="btn btn-primary" id="addBannerBtn"><i class="fas fa-plus"></i> เพิ่มแบนเนอร์</button></div>
+                <p class="section-hint" style="margin:-6px 0 16px;color:#888;font-size:14px">แบนเนอร์สไลด์ด้านบนสุดของหน้าแรก — ลากลำดับด้วยช่อง "ลำดับ" (เลขน้อยขึ้นก่อน) เสร็จแล้วไปที่ "ตั้งค่า" เพื่อ Export ไฟล์ banners-data.js</p>
+                <div class="section-toolbar"><div class="search-box"><i class="fas fa-search"></i><input id="bannerSearch" placeholder="ค้นหาแบนเนอร์..."></div></div>
+                <div class="table-container"><table class="admin-table"><thead><tr><th style="width:120px">รูป</th><th>คำอธิบาย (Alt)</th><th>ลิงก์</th><th>ลำดับ</th><th>สถานะ</th><th style="width:120px">จัดการ</th></tr></thead><tbody id="bannersTableBody"><tr><td colspan="6" class="text-center">กำลังโหลด...</td></tr></tbody></table></div>
             </div>
         </section>
 
@@ -148,6 +158,7 @@
                         <h3><i class="fas fa-file-code"></i> ส่งออกเป็นไฟล์ .js</h3>
                         <p class="text-muted" style="margin-bottom:1rem;font-size:.9rem;">นำไฟล์ที่ดาวน์โหลดไปแทนที่ในโปรเจกต์เพื่ออัปเดตเว็บไซต์จริง</p>
                         <div class="settings-actions">
+                            <button class="btn btn-outline" data-export-js="banners"><i class="fas fa-image"></i> banners-data.js</button>
                             <button class="btn btn-outline" data-export-js="reviews"><i class="fas fa-star"></i> reviews-data.js</button>
                             <button class="btn btn-outline" data-export-js="articles"><i class="fas fa-newspaper"></i> articles-data.js</button>
                             <button class="btn btn-outline" data-export-js="promotions"><i class="fas fa-gift"></i> promotions-data.js</button>

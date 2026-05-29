@@ -80,22 +80,9 @@
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
-    <!-- Hero Banner Section -->
+    <!-- Hero Banner Section (slides rendered dynamically from banners-data.js) -->
     <section class="hero-banner">
-        <div class="hero-banner-slider">
-            <!-- Slide 1 -->
-            <div class="hero-banner-slide active">
-                <img src="assets/images/PC-Hero-banner-OliX.jpg" alt="Campaign 1" class="slide-image">
-            </div>
-            <!-- Slide 2 -->
-            <div class="hero-banner-slide">
-                <img src="assets/images/Xerf.jpg" alt="Campaign 2" class="slide-image">
-            </div>
-            <!-- Slide 3 -->
-            <div class="hero-banner-slide">
-                <img src="assets/images/Banner pro may.jpg" alt="Promotion May" class="slide-image">
-            </div>
-        </div>
+        <div class="hero-banner-slider"></div>
 
         <!-- Slider Controls -->
         <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
@@ -104,78 +91,10 @@
         <button class="slider-btn next-btn" onclick="changeSlide(1)">
             <i class="fas fa-chevron-right"></i>
         </button>
-        
-        <!-- Slider Dots -->
-        <div class="slider-dots">
-            <span class="dot active" onclick="goToSlide(0)"></span>
-            <span class="dot" onclick="goToSlide(1)"></span>
-            <span class="dot" onclick="goToSlide(2)"></span>
-        </div>
-    </section>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-banner-slide');
-        const dots = document.querySelectorAll('.slider-dots .dot');
-        
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active');
-                if (dots[i]) dots[i].classList.remove('active');
-            });
-            
-            if (index >= slides.length) currentSlide = 0;
-            if (index < 0) currentSlide = slides.length - 1;
-            
-            slides[currentSlide].classList.add('active');
-            if (dots[currentSlide]) dots[currentSlide].classList.add('active');
-        }
-        
-        function changeSlide(direction) {
-            currentSlide += direction;
-            if (currentSlide >= slides.length) currentSlide = 0;
-            if (currentSlide < 0) currentSlide = slides.length - 1;
-            showSlide(currentSlide);
-        }
-        
-        function goToSlide(index) {
-            currentSlide = index;
-            showSlide(currentSlide);
-        }
-        
-        // Touch/Swipe support for hero banner
-        (function() {
-            const slider = document.querySelector('.hero-banner-slider');
-            if (!slider) return;
-            let startX = 0, startY = 0, isDragging = false;
-            
-            slider.addEventListener('touchstart', function(e) {
-                startX = e.touches[0].clientX;
-                startY = e.touches[0].clientY;
-                isDragging = true;
-            }, { passive: true });
-            
-            slider.addEventListener('touchend', function(e) {
-                if (!isDragging) return;
-                isDragging = false;
-                const endX = e.changedTouches[0].clientX;
-                const endY = e.changedTouches[0].clientY;
-                const diffX = startX - endX;
-                const diffY = Math.abs(startY - endY);
-                
-                // Only trigger if horizontal swipe > 50px and greater than vertical
-                if (Math.abs(diffX) > 50 && Math.abs(diffX) > diffY) {
-                    if (diffX > 0) changeSlide(1);  // Swipe left → next
-                    else changeSlide(-1);            // Swipe right → prev
-                }
-            }, { passive: true });
-        })();
-        
-        // Auto slide every 5 seconds
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
-    </script>
+        <!-- Slider Dots -->
+        <div class="slider-dots"></div>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -1198,6 +1117,7 @@
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
+    <script src="banners-data.js"></script>
     <script src="articles-data.js"></script>
     <script src="data-bridge.js"></script>
     <script src="doctors-data.js"></script>
