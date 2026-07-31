@@ -92,8 +92,8 @@ const BRANCHES_CONTACT = [
     {
         id: 'ry',
         name: 'สาขาระยอง',
-        brand: 'Nirvana Clinic',
-        brandClass: 'nirvana',
+        brand: 'Paragon Clinic',
+        brandClass: 'paragon',
         phone: '0640686429',
         phoneDisplay: '064-068-6429',
         line: 'https://lin.ee/m1lQ4Uv',
@@ -106,8 +106,8 @@ const BRANCHES_CONTACT = [
     {
         id: 'sr',
         name: 'สาขาศรีราชา ชลบุรี',
-        brand: 'Nirvana Clinic',
-        brandClass: 'nirvana',
+        brand: 'Paragon Clinic',
+        brandClass: 'paragon',
         phone: '0638602000',
         phoneDisplay: '063-860-2000',
         line: 'https://lin.ee/e2HKB4P',
@@ -120,8 +120,8 @@ const BRANCHES_CONTACT = [
     {
         id: 'bk',
         name: 'สาขาถนนวิทยุ กรุงเทพ',
-        brand: 'FXC Clinic',
-        brandClass: 'fxc',
+        brand: 'Paragon Clinic',
+        brandClass: 'paragon',
         phone: '0982712744',
         phoneDisplay: '098-271-2744',
         line: 'https://lin.ee/AqLYwNQ',

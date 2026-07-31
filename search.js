@@ -82,9 +82,9 @@
         { title: 'สาขาอยุธยา', desc: 'Paragon Clinic อยุธยา', keywords: 'อยุธยา paragon', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Paragon' },
         { title: 'สาขาอุตรดิตถ์', desc: 'Paragon Clinic อุตรดิตถ์', keywords: 'อุตรดิตถ์ paragon', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Paragon' },
         { title: 'สาขานครสวรรค์', desc: 'Paragon Clinic นครสวรรค์', keywords: 'นครสวรรค์ paragon', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Paragon' },
-        { title: 'สาขาระยอง', desc: 'Nirvana Clinic ระยอง', keywords: 'ระยอง nirvana', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Nirvana' },
-        { title: 'สาขาศรีราชา ชลบุรี', desc: 'Nirvana Clinic ศรีราชา', keywords: 'ศรีราชา ชลบุรี nirvana', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Nirvana' },
-        { title: 'สาขาถนนวิทยุ กรุงเทพ', desc: 'FXC Clinic ถนนวิทยุ (Premium)', keywords: 'กรุงเทพ วิทยุ FXC bangkok premium', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'FXC' }
+        { title: 'สาขาระยอง', desc: 'Paragon Clinic ระยอง', keywords: 'ระยอง paragon', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Paragon' },
+        { title: 'สาขาศรีราชา ชลบุรี', desc: 'Paragon Clinic ศรีราชา', keywords: 'ศรีราชา ชลบุรี paragon', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Paragon' },
+        { title: 'สาขาถนนวิทยุ กรุงเทพ', desc: 'Paragon Clinic ถนนวิทยุ (Premium)', keywords: 'กรุงเทพ วิทยุ paragon bangkok premium', url: 'branches.html', icon: 'fas fa-map-marker-alt', brand: 'Paragon' }
     ];
 
     const PAGES_INDEX = [

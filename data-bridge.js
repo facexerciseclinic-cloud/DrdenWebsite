@@ -274,7 +274,7 @@ const DataBridge = {
                 name: 'นพ.อภิวัฒน์ มงคลสินธุ์',
                 nickname: 'หมอเด่น',
                 license: 'ว.26872',
-                branches: ['Paragon', 'Nirvana', 'FXC Clinic'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอเด่น.webp',
                 status: 'active'
             },
@@ -283,7 +283,7 @@ const DataBridge = {
                 name: 'พญ.กันยารัตน์ ตฤงณวสุนธรา',
                 nickname: 'หมอเฟิร์น',
                 license: 'ว.71875',
-                branches: ['Paragon', 'Nirvana'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอเฟิร์น.webp',
                 status: 'active'
             },
@@ -292,7 +292,7 @@ const DataBridge = {
                 name: 'นพ.ณัฐพัชร์ ธรรมสิริรัตน์',
                 nickname: 'หมอบับเบิ้ล',
                 license: 'ว.69131',
-                branches: ['Paragon'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอบับเบิ้ล.webp',
                 status: 'active'
             },
@@ -301,7 +301,7 @@ const DataBridge = {
                 name: 'พญ.กวิสรา เทียนทอง',
                 nickname: 'หมอมุ้งมิ้ง',
                 license: 'ว.75283',
-                branches: ['Paragon', 'FXC Clinic'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอมุ้งมิ้ง.webp',
                 status: 'active'
             },
@@ -310,7 +310,7 @@ const DataBridge = {
                 name: 'พญ.จิตาภา อุดมพันท์',
                 nickname: 'หมอจีจี้',
                 license: 'ว.61919',
-                branches: ['Paragon'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอจีจี้.webp',
                 status: 'active'
             },
@@ -319,7 +319,7 @@ const DataBridge = {
                 name: 'พญ.ธนรักษ์ หย่ำวิไล',
                 nickname: 'หมอเชฟ',
                 license: 'ว.61954',
-                branches: ['Paragon'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอเซฟ.webp',
                 status: 'active'
             },
@@ -328,17 +328,8 @@ const DataBridge = {
                 name: 'พญ.ปรียสุดา นาคาคง',
                 nickname: 'หมอบัว',
                 license: 'ว.34659',
-                branches: ['Paragon'],
+                branches: ['Paragon Clinic'],
                 image: 'หมอบัว.webp',
-                status: 'active'
-            },
-            {
-                id: 8,
-                name: 'นพ.กรชัย พิมพนิช',
-                nickname: 'หมอกร',
-                license: 'ว.69225',
-                branches: ['Paragon', 'Nirvana', 'FXC Clinic'],
-                image: 'หมอกร.webp',
                 status: 'active'
             },
             {
@@ -348,6 +339,24 @@ const DataBridge = {
                 license: 'ว.75182',
                 branches: ['สาขาพิษณุโลก', 'สาขานครสวรรค์'],
                 image: 'หมอผึ้ง.webp',
+                status: 'active'
+            },
+            {
+                id: 10,
+                name: 'พญ.มาริสา ปัญญาวุฒิชัย',
+                nickname: 'หมอมุก',
+                license: 'ว.75035',
+                branches: ['สาขาอยุธยา'],
+                image: 'หมอมุก-PC.jpg',
+                status: 'active'
+            },
+            {
+                id: 11,
+                name: 'นพ.ณิฐินันท์ อารีศักดิ์',
+                nickname: 'หมอเกมส์',
+                license: 'ว.60824',
+                branches: ['สาขานครสวรรค์'],
+                image: 'หมอเกมส์-PC.jpg',
                 status: 'active'
             }
         ];
@@ -370,20 +379,83 @@ const DataBridge = {
         return [
             {
                 id: 1,
-                name: 'DR.DEN สาขาสยาม',
-                region: 'กรุงเทพและปริมณฑล',
-                address: '123 ถนนพระราม 1 แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330',
-                phone: '02-123-4567',
-                hours: 'จันทร์-ศุกร์ 9:00-20:00, เสาร์-อาทิตย์ 10:00-18:00',
+                name: 'Paragon Clinic สาขากำแพงเพชร',
+                region: 'ภาคเหนือ',
+                address: 'อำเภอในเมือง, กำแพงเพชร',
+                phone: '090-969-5203',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
                 status: 'active'
             },
             {
                 id: 2,
-                name: 'DR.DEN สาขาเซ็นทรัลเวิลด์',
-                region: 'กรุงเทพและปริมณฑล',
-                address: 'ชั้น 7 เซ็นทรัลเวิลด์ ถนนราชดำริ แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330',
-                phone: '02-234-5678',
-                hours: 'ทุกวัน 10:00-22:00',
+                name: 'Paragon Clinic สาขาพิษณุโลก',
+                region: 'ภาคเหนือ',
+                address: 'อำเภอเมือง, พิษณุโลก',
+                phone: '065-223-9942',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 3,
+                name: 'Paragon Clinic สาขาพิจิตร',
+                region: 'ภาคเหนือ',
+                address: 'อำเภอในเมือง, พิจิตร',
+                phone: '083-267-8967',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 4,
+                name: 'Paragon Clinic สาขาอยุธยา',
+                region: 'ภาคกลาง',
+                address: 'อำเภอเมือง, อยุธยา',
+                phone: '065-959-6987',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 5,
+                name: 'Paragon Clinic สาขาอุตรดิตถ์',
+                region: 'ภาคเหนือ',
+                address: 'อำเภอเมือง, อุตรดิตถ์',
+                phone: '099-632-5144',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 6,
+                name: 'Paragon Clinic สาขานครสวรรค์',
+                region: 'ภาคกลาง',
+                address: 'อำเภอเมือง, นครสวรรค์',
+                phone: '064-826-1000',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 7,
+                name: 'Paragon Clinic สาขาระยอง',
+                region: 'ภาคตะวันออก',
+                address: 'อำเภอเมือง, ระยอง',
+                phone: '064-068-6429',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 8,
+                name: 'Paragon Clinic สาขาศรีราชา ชลบุรี',
+                region: 'ภาคตะวันออก',
+                address: 'ศรีราชา, ชลบุรี',
+                phone: '063-860-2000',
+                hours: 'จันทร์-อาทิตย์ 10:00-20:00 น.',
+                status: 'active'
+            },
+            {
+                id: 9,
+                name: 'Paragon Clinic สาขาถนนวิทยุ กรุงเทพ',
+                region: 'กรุงเทพ',
+                address: 'ถนนวิทยุ, กรุงเทพมหานคร',
+                phone: '098-271-2744',
+                hours: 'จันทร์-อาทิตย์ 09:00-21:00 น.',
                 status: 'active'
             }
         ];

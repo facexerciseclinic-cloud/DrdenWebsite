@@ -741,7 +741,7 @@ SECTION_RENDERERS.doctors = function () {
 
 function formDoctor(id = null) {
     const item = id ? load('doctors').find(d => d.id === id) : null;
-    const allBranches = ['Paragon', 'Nirvana', 'FXC Clinic'];
+    const allBranches = ['Paragon Clinic', 'สาขากำแพงเพชร', 'สาขาพิษณุโลก', 'สาขาพิจิตร', 'สาขาอยุธยา', 'สาขาอุตรดิตถ์', 'สาขานครสวรรค์', 'สาขาระยอง', 'สาขาศรีราชา ชลบุรี', 'สาขาถนนวิทยุ กรุงเทพ'];
     const allSpecs = ['dermatology', 'aesthetic', 'antiaging', 'laser', 'surgery'];
     const branches = (item?.branches || []).map(b => typeof b === 'string' ? b : b.name);
     const body = `
@@ -812,10 +812,10 @@ function saveDoctor(e, id) {
     e.preventDefault();
     const fd = new FormData(e.target);
     const data = Object.fromEntries(fd);
-    const allBranches = ['Paragon', 'Nirvana', 'FXC Clinic'];
+    const allBranches = ['Paragon Clinic', 'สาขากำแพงเพชร', 'สาขาพิษณุโลก', 'สาขาพิจิตร', 'สาขาอยุธยา', 'สาขาอุตรดิตถ์', 'สาขานครสวรรค์', 'สาขาระยอง', 'สาขาศรีราชา ชลบุรี', 'สาขาถนนวิทยุ กรุงเทพ'];
     const allSpecs = ['dermatology', 'aesthetic', 'antiaging', 'laser', 'surgery'];
-    const classMap = { Paragon: 'paragon', Nirvana: 'nirvana', 'FXC Clinic': 'fxc' };
-    data.branches = allBranches.filter(b => fd.get(`branch_${b}`)).map(name => ({ name, class: classMap[name] }));
+    const classMap = { 'Paragon Clinic': 'paragon' };
+    data.branches = allBranches.filter(b => fd.get(`branch_${b}`)).map(name => ({ name, class: classMap[name] || 'branch-custom' }));
     data.specialties = allSpecs.filter(s => fd.get(`spec_${s}`));
     allBranches.forEach(b => delete data[`branch_${b}`]);
     allSpecs.forEach(s => delete data[`spec_${s}`]);
@@ -858,7 +858,7 @@ SECTION_RENDERERS.branches = function () {
 
 function formBranch(id = null) {
     const item = id ? load('branches').find(b => b.id === id) : null;
-    const brands = ['Paragon Clinic', 'Nirvana Clinic', 'FXC Clinic'];
+    const brands = ['Paragon Clinic'];
     const regions = ['ภาคเหนือ', 'ภาคกลาง', 'ภาคอีสาน', 'ภาคใต้', 'กรุงเทพฯ'];
     const body = `
         <form id="resourceForm" onsubmit="return saveBranch(event, ${id || 'null'})">
@@ -930,7 +930,7 @@ function saveBranch(e, id) {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target));
     data.phone = (data.phoneDisplay || '').replace(/\D/g, '');
-    const classMap = { 'Paragon Clinic': 'paragon', 'Nirvana Clinic': 'nirvana', 'FXC Clinic': 'fxc' };
+    const classMap = { 'Paragon Clinic': 'paragon' };
     data.brandClass = classMap[data.brand] || '';
     upsert('branches', data, id);
     return false;

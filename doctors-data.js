@@ -5,9 +5,7 @@
 
 /** Brand color & label config */
 const BRAND_COLORS = {
-    paragon: { primary: '#E6B030', light: '#FFD54F', name: 'Paragon' },
-    nirvana: { primary: '#0288D1', light: '#039BE5', name: 'Nirvana' },
-    fxc:     { primary: '#8B0000', light: '#C62828', name: 'FXC Clinic' }
+    paragon: { primary: '#E6B030', light: '#FFD54F', name: 'Paragon Clinic' }
 };
 
 const DOCTORS_DATA = [
@@ -17,16 +15,9 @@ const DOCTORS_DATA = [
         fullName: 'นพ.อภิวัฒน์ มงคลสินธุ์',
         license: 'ว.26872',
         image: 'assets/images/doctor-new/Paragon/หมอเด่น-PC.webp',
-        brandImages: {
-            paragon: 'assets/images/doctor-new/Paragon/หมอเด่น-PC.webp',
-            nirvana: 'assets/images/doctor-new/Nirvana/หมอเด่น-NC04.webp',
-            fxc: 'assets/images/doctor-new/FXC/หมอเด่น-FXC-1.webp'
-        },
         specialties: ['dermatology', 'aesthetic', 'antiaging'],
         branches: [
-            { name: 'Paragon', class: 'paragon' },
-            { name: 'Nirvana', class: 'nirvana' },
-            { name: 'FXC Clinic', class: 'fxc' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: 'ผู้อำนวยการคลินิก',
         featured: true,
@@ -46,14 +37,9 @@ const DOCTORS_DATA = [
         fullName: 'พญ.กันยารัตน์ ตฤงณวสุนธรา',
         license: 'ว.71875',
         image: 'assets/images/doctor-new/Nirvana/หมอเฟิร์น-NC05.webp',
-        brandImages: {
-            nirvana: 'assets/images/doctor-new/Nirvana/หมอเฟิร์น-NC05.webp',
-            fxc: 'assets/images/doctor-new/FXC/หมอเฟิร์น-FXC-2.webp'
-        },
         specialties: ['aesthetic', 'laser'],
         branches: [
-            { name: 'Paragon', class: 'paragon' },
-            { name: 'Nirvana', class: 'nirvana' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: null,
         featured: false,
@@ -73,12 +59,9 @@ const DOCTORS_DATA = [
         fullName: 'นพ.ณัฐพัชร์ ธรรมสิริรัตน์',
         license: 'ว.69131',
         image: 'assets/images/doctor-new/Paragon/หมอบับเบิ้ล-PC-scaled.webp',
-        brandImages: {
-            paragon: 'assets/images/doctor-new/Paragon/หมอบับเบิ้ล-PC-scaled.webp'
-        },
         specialties: ['dermatology', 'aesthetic'],
         branches: [
-            { name: 'Paragon', class: 'paragon' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: null,
         featured: false,
@@ -98,14 +81,9 @@ const DOCTORS_DATA = [
         fullName: 'พญ.กวิสรา เทียนทอง',
         license: 'ว.75283',
         image: 'assets/images/doctor-new/Paragon/หมอมุ้งมิ้ง-PC-scaled.webp',
-        brandImages: {
-            paragon: 'assets/images/doctor-new/Paragon/หมอมุ้งมิ้ง-PC-scaled.webp',
-            fxc: 'assets/images/doctor-new/FXC/หมอมุ้งมิ้ง-FXC-6.webp'
-        },
         specialties: ['aesthetic', 'antiaging'],
         branches: [
-            { name: 'Paragon', class: 'paragon' },
-            { name: 'FXC Clinic', class: 'fxc' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: null,
         featured: false,
@@ -125,12 +103,9 @@ const DOCTORS_DATA = [
         fullName: 'พญ.จิตาภา อุดมพันท์',
         license: 'ว.61919',
         image: 'assets/images/doctor-new/Paragon/หมอจีจี้-PC.webp',
-        brandImages: {
-            paragon: 'assets/images/doctor-new/Paragon/หมอจีจี้-PC.webp'
-        },
         specialties: ['dermatology', 'aesthetic'],
         branches: [
-            { name: 'Paragon', class: 'paragon' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: null,
         featured: false,
@@ -150,12 +125,9 @@ const DOCTORS_DATA = [
         fullName: 'พญ.ธนรักษ์ หย่ำวิไล',
         license: 'ว.61954',
         image: 'assets/images/doctor-new/Paragon/หมอเซฟ-PC-scaled.webp',
-        brandImages: {
-            paragon: 'assets/images/doctor-new/Paragon/หมอเซฟ-PC-scaled.webp'
-        },
         specialties: ['aesthetic', 'laser'],
         branches: [
-            { name: 'Paragon', class: 'paragon' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: null,
         featured: false,
@@ -175,12 +147,9 @@ const DOCTORS_DATA = [
         fullName: 'พญ.ปรียสุดา นาคาคง',
         license: 'ว.34659',
         image: 'assets/images/doctor-new/Paragon/หมอบัว-PC.webp',
-        brandImages: {
-            paragon: 'assets/images/doctor-new/Paragon/หมอบัว-PC.webp'
-        },
         specialties: ['dermatology', 'aesthetic'],
         branches: [
-            { name: 'Paragon', class: 'paragon' }
+            { name: 'Paragon Clinic', class: 'paragon' }
         ],
         role: null,
         featured: false,
@@ -195,43 +164,11 @@ const DOCTORS_DATA = [
         certifications: ['แพทยสภา', 'สมาคมแพทย์ผิวหนังแห่งประเทศไทย']
     },
     {
-        id: 8,
-        nickname: 'หมอกร',
-        fullName: 'นพ.กรชัย พิมพนิช',
-        license: 'ว.69225',
-        image: 'assets/images/doctor-new/FXC/หมอกร-FXC-3.webp',
-        brandImages: {
-            fxc: 'assets/images/doctor-new/FXC/หมอกร-FXC-3.webp',
-            nirvana: 'assets/images/doctor-new/Nirvana/หมอกร-NC01.webp'
-        },
-        specialties: ['aesthetic', 'antiaging', 'laser'],
-        branches: [
-            { name: 'Paragon', class: 'paragon' },
-            { name: 'Nirvana', class: 'nirvana' },
-            { name: 'FXC Clinic', class: 'fxc' }
-        ],
-        role: null,
-        featured: false,
-        bio: 'แพทย์ผู้เชี่ยวชาญด้านความงาม ชะลอวัย และเลเซอร์ พร้อมดูแลคุณด้วยเทคนิคที่ทันสมัยและปลอดภัย',
-        education: [
-            'แพทยศาสตรบัณฑิต',
-            'Certificate in Anti-Aging Medicine',
-            'Certificate in Laser & Aesthetic'
-        ],
-        experience: '7+ ปี',
-        expertise: ['ฟิลเลอร์', 'โบท็อกซ์', 'เลเซอร์', 'ร้อยไหม', 'Anti-Aging Program'],
-        certifications: ['แพทยสภา']
-    },
-    {
         id: 9,
         nickname: 'หมอพิ้ง',
         fullName: 'พญ.พรรณราย เลิศวณิชโรจน์',
         license: 'ว.75182',
         image: 'assets/images/doctor-new/FXC/หมอผึ้ง-FXC-5.webp',
-        brandImages: {
-            fxc: 'assets/images/doctor-new/FXC/หมอผึ้ง-FXC-5.webp',
-            nirvana: 'assets/images/doctor-new/Nirvana/หมอผึ้ง-NC03.webp'
-        },
         specialties: ['dermatology', 'aesthetic'],
         branches: [
             { name: 'สาขาพิษณุโลก', class: 'branch-custom' },
@@ -247,6 +184,48 @@ const DOCTORS_DATA = [
         ],
         experience: '4+ ปี',
         expertise: ['รักษาสิว', 'ดูแลผิวหนัง', 'เลเซอร์', 'ฟิลเลอร์', 'Skin Booster'],
+        certifications: ['แพทยสภา']
+    },
+    {
+        id: 10,
+        nickname: 'หมอมุก',
+        fullName: 'พญ.มาริสา ปัญญาวุฒิชัย',
+        license: 'ว.75035',
+        image: 'assets/images/doctor-new/Paragon/หมอมุก-PC.jpg',
+        specialties: ['aesthetic', 'dermatology'],
+        branches: [
+            { name: 'สาขาอยุธยา', class: 'branch-custom' }
+        ],
+        role: null,
+        featured: false,
+        bio: 'แพทย์ผู้เชี่ยวชาญด้านความงามและผิวหนัง ประจำสาขาอยุธยา ดูแลคนไข้ด้วยความใส่ใจในทุกรายละเอียด เพื่อผลลัพธ์ที่เป็นธรรมชาติและปลอดภัย',
+        education: [
+            'แพทยศาสตรบัณฑิต',
+            'ประกาศนียบัตรเวชศาสตร์ความงาม'
+        ],
+        experience: null,
+        expertise: ['ฟิลเลอร์', 'โบท็อกซ์', 'เลเซอร์รักษาผิว', 'Skin Booster'],
+        certifications: ['แพทยสภา']
+    },
+    {
+        id: 11,
+        nickname: 'หมอเกมส์',
+        fullName: 'นพ.ณิฐินันท์ อารีศักดิ์',
+        license: 'ว.60824',
+        image: 'assets/images/doctor-new/Paragon/หมอเกมส์-PC.jpg',
+        specialties: ['aesthetic', 'antiaging'],
+        branches: [
+            { name: 'สาขานครสวรรค์', class: 'branch-custom' }
+        ],
+        role: null,
+        featured: false,
+        bio: 'แพทย์ผู้เชี่ยวชาญด้านความงามและชะลอวัย ประจำสาขานครสวรรค์ ให้คำปรึกษาและดูแลคนไข้อย่างใกล้ชิด เน้นผลลัพธ์ที่เป็นธรรมชาติ',
+        education: [
+            'แพทยศาสตรบัณฑิต',
+            'ประกาศนียบัตรเวชศาสตร์ชะลอวัย'
+        ],
+        experience: null,
+        expertise: ['ฟิลเลอร์', 'โบท็อกซ์', 'ร้อยไหม', 'Anti-Aging Program'],
         certifications: ['แพทยสภา']
     }
 ];
