@@ -23,9 +23,9 @@ const HERO_BANNERS = [
     },
     {
         id: 3,
-        image: "assets/images/Banner pro may.jpg",
-        alt: "โปรโมชั่นเดือนพฤษภาคม",
-        link: "promotions",
+        image: "assets/images/blog/Craft-vector/cover page พารากอนเพจกลาง.jpg",
+        alt: "Craft Vector Technique โดยหมอเด่น",
+        link: "article.html?slug=craft-vector-technique",
         status: "active",
         order: 3
     }
