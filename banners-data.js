@@ -7,27 +7,11 @@
 const HERO_BANNERS = [
     {
         id: 1,
-        image: "assets/images/PC-Hero-banner-OliX.jpg",
-        alt: "Campaign OliX",
-        link: "",
-        status: "active",
-        order: 1
-    },
-    {
-        id: 2,
-        image: "assets/images/Xerf.jpg",
-        alt: "Campaign Xerf",
-        link: "",
-        status: "active",
-        order: 2
-    },
-    {
-        id: 3,
         image: "assets/images/blog/Craft-vector/cover page พารากอนเพจกลาง.jpg",
         alt: "Craft Vector Technique โดยหมอเด่น",
         link: "article.html?slug=craft-vector-technique",
         status: "active",
-        order: 3
+        order: 1
     }
 ];
 
