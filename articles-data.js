@@ -4925,7 +4925,7 @@ const ARTICLES_DATA = [
         category: 'treatment',
         categoryLabel: 'บทความการรักษา',
         tags: ['Craft Vector Technique', 'หมอเด่น', 'วิเคราะห์โครงสร้างใบหน้า', 'Facial Harmony', 'ฟิลเลอร์', 'Collagen Biostimulator', 'Treatment Planning', 'Paragon Clinic'],
-        image: 'assets/images/blog/Craft-vector/cover page พารากอนเพจกลาง.jpg',
+        image: 'assets/images/blog/Craft-vector/Craft vector-01.jpg',
         author: 'นพ.อภิวัฒน์ มงคลสินธุ์ (หมอเด่น) ว.26872',
         date: '2026-07-07',
         dateDisplay: '7 กรกฎาคม 2026',
@@ -4975,7 +4975,7 @@ const ARTICLES_DATA = [
                 </p>
             </div>
 
-            <img src="assets/images/blog/Craft-vector/cover page พารากอนเพจกลาง.jpg" alt="Craft Vector Technique โดยหมอเด่น Paragon Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
+            <img src="assets/images/blog/Craft-vector/Craft vector-01.jpg" alt="Craft Vector Technique ศาสตร์แห่งการยกหน้าโดยหมอเด่น Paragon Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <!-- ============ SECTION 1 ============ -->
             <h2>Craft Vector Technique คืออะไร</h2>
@@ -4988,6 +4988,9 @@ const ARTICLES_DATA = [
 
             <!-- ============ SECTION 2 ============ -->
             <h2>Craft Vector Technique แตกต่างจากการปรับรูปหน้าแบบทั่วไปอย่างไร</h2>
+
+            <img src="assets/images/blog/Craft-vector/Craft vector-02.jpg" alt="เปรียบเทียบการปรับรูปหน้าแบบทั่วไป (Symptom-Based) กับ Craft Vector Technique (Cause-Based)" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
             <p>ความแตกต่างอยู่ที่ <strong>ลำดับของกระบวนการคิด</strong> ไม่ใช่ตัวหัตถการ</p>
 
             <table class="article-table">
@@ -5065,7 +5068,7 @@ const ARTICLES_DATA = [
             <!-- ============ SECTION 4 ============ -->
             <h2>จุดเริ่มต้นของ Craft Vector Technique</h2>
 
-            <img src="assets/images/blog/Craft-vector/468252491_122147312252291487_6939019931238955037_n.jpg" alt="หมอเด่น นพ.อภิวัฒน์ มงคลสินธุ์ ผู้พัฒนา Craft Vector Technique" style="width:100%;border-radius:16px;margin:2rem 0;" />
+            <img src="assets/images/blog/Craft-vector/Craft vector-03.jpg" alt="จุดเริ่มต้นของ Craft Vector Technique โดยหมอเด่น" style="width:100%;border-radius:16px;margin:2rem 0;" />
 
             <p>
                 ตลอดกว่า 19 ปีในฐานะแพทย์ความงาม <strong>หมอเด่น (นพ.อภิวัฒน์ มงคลสินธุ์ — ว.26872)</strong> พบว่าผู้รับบริการหลายคนมีปัญหาคล้ายกันแต่สาเหตุต่างกันโดยสิ้นเชิง เช่น ร่องแก้มลึกที่คนหนึ่งเกิดจากการสูญเสียปริมาตรหน้าแก้ม ขณะที่อีกคนเกิดจากเอ็นยึดพยุงเสื่อมสภาพ — ซึ่งต้องใช้แนวทางรักษาที่ต่างกันโดยสิ้นเชิง
@@ -5076,6 +5079,9 @@ const ARTICLES_DATA = [
 
             <!-- ============ SECTION 5 ============ -->
             <h2>3 องค์ประกอบสำคัญของ Craft Vector Technique</h2>
+
+            <img src="assets/images/blog/Craft-vector/Craft vector-05.jpg" alt="3 องค์ประกอบของ Craft Vector Technique — Structural Support, Volume Harmony, Skin Quality &amp; Collagen Support" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
             <p>Craft Vector Technique ใช้ 3 องค์ประกอบหลักในการวิเคราะห์และวางแผนการรักษา</p>
             <ul>
                 <li><strong>Structural Support</strong> — การพยุงโครงสร้างใบหน้า</li>
@@ -5101,6 +5107,9 @@ const ARTICLES_DATA = [
 
             <!-- ============ SECTION 6 ============ -->
             <h2>ขั้นตอนการออกแบบการรักษาด้วย Craft Vector Technique มีอะไรบ้าง</h2>
+
+            <img src="assets/images/blog/Craft-vector/Craft vector-04.jpg" alt="โครงสร้างใบหน้า 5 ชั้น — ผิวหนัง ชั้นไขมัน เอ็นยึดพยุง กล้ามเนื้อ และโครงสร้างกระดูก" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
             <p>
                 การออกแบบการรักษาด้วย Craft Vector Technique มี <strong>4 ขั้นตอนหลัก</strong> เริ่มจากการประเมินภาพรวม ไปจนถึงการวางแผนตามโครงสร้างแต่ละชั้น
             </p>
@@ -5209,6 +5218,16 @@ const ARTICLES_DATA = [
                 ค่าใช้จ่ายขึ้นอยู่กับแผนการรักษาที่ออกแบบเฉพาะบุคคลหลังการประเมิน ซึ่งอาจรวมหัตถการมากกว่าหนึ่งชนิด แนะนำให้เข้ารับการประเมินโดยไม่มีค่าใช้จ่ายที่ Paragon Clinic เพื่อรับใบเสนอราคาตามแผนการรักษาจริง
             </p>
 
+            <img src="assets/images/blog/Craft-vector/ราคา craft vector lorient.png" alt="ราคาโปรแกรม Craft Vector Technique Paragon Clinic" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <img src="assets/images/blog/Craft-vector/Artboard 1(2).jpg" alt="ราคาฟิลเลอร์ Paragon Clinic — Restylane, Art Filler, Belotero, Yviore, Lorient" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <img src="assets/images/blog/Craft-vector/Artboard 4(1).jpg" alt="ราคาฟิลเลอร์ Paragon Clinic — YouthFill, Neuramis Deep" style="width:100%;border-radius:16px;margin:2rem 0;" />
+
+            <p style="font-size:0.9rem;color:#888;">
+                * ราคาข้างต้นเป็นราคาโปรแกรมฟิลเลอร์อ้างอิง อาจมีการเปลี่ยนแปลงตามช่วงโปรโมชั่นและแตกต่างกันในแต่ละสาขา กรุณาสอบถามเจ้าหน้าที่เพื่อยืนยันราคาล่าสุด
+            </p>
+
             <!-- ============ SUMMARY ============ -->
             <h2>สรุป</h2>
             <p>
@@ -5222,9 +5241,17 @@ const ARTICLES_DATA = [
                 <p style="font-size:1.3rem;margin-bottom:0.5rem;opacity:0.9;">สนใจปรึกษา</p>
                 <h3 style="color:#E6B030;font-size:1.8rem;margin:0.5rem 0;">Craft Vector Technique<br>โดยหมอเด่น</h3>
                 <p style="opacity:0.85;margin-bottom:1.5rem;">ปรึกษาแพทย์ Paragon Clinic ฟรี ไม่มีค่าใช้จ่าย<br>วิเคราะห์โครงสร้างใบหน้าและวางแผนการรักษาเฉพาะคุณ</p>
-                <a href="#" class="btn btn-primary cta-trigger" style="background:linear-gradient(135deg,#E6B030,#D4941F);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.1rem;display:inline-block;">
-                    ปรึกษาฟรี — นัดคิวเลย
-                </a>
+                <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;">
+                    <a href="https://www.facebook.com/ParagonClinic023" target="_blank" rel="noopener" style="background:#1877F2;color:white;padding:0.9rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block;">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://lin.ee/XNZJtqd" target="_blank" rel="noopener" style="background:#06C755;color:white;padding:0.9rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block;">
+                        <i class="fab fa-line"></i> LINE
+                    </a>
+                    <a href="tel:0982712744" style="background:linear-gradient(135deg,#E6B030,#D4941F);color:white;padding:0.9rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block;">
+                        <i class="fas fa-phone"></i> 098 271 2744
+                    </a>
+                </div>
             </div>
 
             <p style="font-size:0.85rem;color:#999;text-align:center;margin-top:2rem;">
