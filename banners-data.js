@@ -7,8 +7,8 @@
 const HERO_BANNERS = [
     {
         id: 1,
-        image: "assets/images/blog/Craft-vector/Craft vector-01.jpg",
-        alt: "Craft Vector Technique ศาสตร์แห่งการยกหน้าโดยหมอเด่น",
+        image: "assets/images/blog/Craft-vector/cover page พารากอนเพจกลาง.jpg",
+        alt: "Craft Vector Technique โดยหมอเด่น Paragon Clinic",
         link: "article.html?slug=craft-vector-technique",
         status: "active",
         order: 1
