@@ -35,6 +35,7 @@
 
     <!-- JSON-LD Structured Data (set dynamically) -->
     <script type="application/ld+json" id="articleSchema"></script>
+    <script type="application/ld+json" id="articleFaqSchema"></script>
 </head>
 <body>
     <!-- Header Placeholder -->
@@ -236,6 +237,22 @@
             }
         };
         document.getElementById('articleSchema').textContent = JSON.stringify(schema);
+
+        // FAQPage schema (only for articles that define a faq list)
+        const faqSchemaEl = document.getElementById('articleFaqSchema');
+        if (Array.isArray(article.faq) && article.faq.length) {
+            faqSchemaEl.textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": article.faq.map(item => ({
+                    "@type": "Question",
+                    "name": item.q,
+                    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+                }))
+            });
+        } else {
+            faqSchemaEl.remove();
+        }
 
         // Hero background
         document.getElementById('articleHero').style.backgroundImage = `url('${article.image}')`;
